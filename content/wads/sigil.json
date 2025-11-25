@@ -1,0 +1,32 @@
+{
+  "slug": "sigil",
+  "title": "SIGIL",
+  "authors": [{ "name": "John Romero" }],
+  "year": 2019,
+  "description": "John Romero's unofficial fifth episode for the original Doom. A free megawad featuring 9 single-player and 9 deathmatch levels, with music by Buckethead. A love letter to classic Doom from one of its original creators.",
+  "iwad": "doom",
+  "type": "episode",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://romero.com/sigil",
+      "filename": "SIGIL_v1_21.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [
+    {
+      "id": "4VibM9vCguc",
+      "title": "SIGIL Announcement Trailer",
+      "type": "trailer"
+    }
+  ],
+  "awards": [],
+  "tags": ["classic", "episode", "john-romero", "official"],
+  "difficulty": "hard",
+  "_schemaVersion": 1,
+  "_source": "manual"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "eviternity",
+  "title": "Eviternity",
+  "authors": [{ "name": "Dragonfly" }],
+  "year": 2018,
+  "description": "A 32-level megawad spanning 6 themed chapters from ancient civilizations to futuristic hellscapes. Features custom monsters, new weapons, and an original soundtrack. One of the most acclaimed megawads of all time.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "mbf21",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/eviternity",
+      "filename": "eviternity.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [
+    {
+      "id": "MbJJpM4pTSI",
+      "title": "Eviternity MAP12: Brisk (UV 100%)",
+      "type": "playthrough"
+    }
+  ],
+  "awards": [
+    { "type": "cacoward", "year": 2018 }
+  ],
+  "tags": ["megawad", "custom-monsters", "custom-music", "highly-rated"],
+  "difficulty": "hard",
+  "_schemaVersion": 1,
+  "_source": "manual"
+}

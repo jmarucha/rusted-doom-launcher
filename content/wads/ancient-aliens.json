@@ -1,0 +1,34 @@
+{
+  "slug": "ancient-aliens",
+  "title": "Ancient Aliens",
+  "authors": [{ "name": "skillsaw" }],
+  "year": 2016,
+  "description": "A 32-level megawad with a vibrant purple alien aesthetic. Features unique architecture, custom textures, new enemies, and an original soundtrack. Known for its distinctive visual style and challenging gameplay.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://www.quaddicted.com/files/idgames/levels/doom2/Ports/megawads/aaliens.zip",
+      "filename": "aaliens.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [
+    {
+      "id": "pZXu29KMpgI",
+      "title": "Ancient Aliens MAP08 (UV 100%)",
+      "type": "playthrough"
+    }
+  ],
+  "awards": [
+    { "type": "cacoward", "year": 2016 }
+  ],
+  "tags": ["megawad", "custom-textures", "aliens", "purple"],
+  "difficulty": "hard",
+  "_schemaVersion": 1,
+  "_source": "manual"
+}

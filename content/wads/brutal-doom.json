@@ -1,0 +1,34 @@
+{
+  "slug": "brutal-doom",
+  "title": "Brutal Doom",
+  "authors": [{ "name": "Sergeant_Mark_IV" }],
+  "year": 2012,
+  "description": "A gameplay mod that adds enhanced gore, fatalities, new weapons, and modernized mechanics to classic Doom. Features headshots, dual-wielding, executions, and enhanced enemy AI. One of the most popular Doom mods ever created.",
+  "iwad": "doom2",
+  "type": "gameplay-mod",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://archive.org/download/brutalv21/brutalv21.pk3",
+      "filename": "brutalv21.pk3"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [
+    {
+      "id": "iPyq0jFgVjI",
+      "title": "Brutal Doom v21 Gold Release Trailer",
+      "type": "trailer"
+    }
+  ],
+  "awards": [
+    { "type": "cacoward", "year": 2012 }
+  ],
+  "tags": ["gameplay-mod", "gore", "action", "popular"],
+  "difficulty": "medium",
+  "_schemaVersion": 1,
+  "_source": "manual"
+}

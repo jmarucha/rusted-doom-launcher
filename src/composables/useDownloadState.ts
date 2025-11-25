@@ -1,11 +1,11 @@
 import { ref, computed } from "vue";
 import { exists, readTextFile, writeTextFile, remove } from "@tauri-apps/plugin-fs";
-import { homeDir } from "@tauri-apps/api/path";
 import {
   type LauncherDownloads,
   LauncherDownloadsSchema,
   createEmptyLauncherDownloads,
 } from "../lib/schema";
+import { getGZDoomDir } from "../lib/wadUtils";
 
 const STATE_FILENAME = "launcher-downloads.json";
 
@@ -18,13 +18,12 @@ const error = ref<string | null>(null);
 const activeDownloads = ref<Map<string, number>>(new Map());
 
 async function getStateFilePath(): Promise<string> {
-  const home = await homeDir();
-  return `${home}/Library/Application Support/gzdoom/${STATE_FILENAME}`;
+  const gzdoomDir = await getGZDoomDir();
+  return `${gzdoomDir}/${STATE_FILENAME}`;
 }
 
 async function getWadsDir(): Promise<string> {
-  const home = await homeDir();
-  return `${home}/Library/Application Support/gzdoom`;
+  return getGZDoomDir();
 }
 
 export function useDownloadState() {
@@ -33,40 +32,29 @@ export function useDownloadState() {
     error.value = null;
 
     try {
-      console.log("loadState: getting file path...");
       const filePath = await getStateFilePath();
-      console.log("loadState: path =", filePath);
-
-      console.log("loadState: checking if file exists...");
       const fileExists = await exists(filePath);
-      console.log("loadState: exists =", fileExists);
 
       if (!fileExists) {
-        console.log("loadState: no state file, using empty state");
         state.value = createEmptyLauncherDownloads();
         loading.value = false;
         return;
       }
 
-      console.log("loadState: reading file...");
       const content = await readTextFile(filePath);
-      console.log("loadState: read", content.length, "bytes");
-
       const parsed = JSON.parse(content);
       const validated = LauncherDownloadsSchema.safeParse(parsed);
 
       if (validated.success) {
         state.value = validated.data;
-        console.log("loadState: loaded downloads:", Object.keys(state.value.downloads));
       } else {
-        console.error("loadState: invalid state file, resetting:", validated.error);
+        console.error("Invalid state file, resetting:", validated.error);
         state.value = createEmptyLauncherDownloads();
       }
     } catch (e) {
-      console.error("loadState: FAILED:", e);
+      console.error("Failed to load download state:", e);
       error.value = e instanceof Error ? e.message : String(e);
       state.value = createEmptyLauncherDownloads();
-      // Don't re-throw - just log and continue with empty state
     } finally {
       loading.value = false;
     }

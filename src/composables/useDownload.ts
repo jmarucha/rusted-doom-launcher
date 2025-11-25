@@ -19,12 +19,6 @@ export function useDownload() {
     getWadsDir,
   } = useDownloadState();
 
-  // Get full path to a WAD file
-  async function getWadPath(filename: string): Promise<string> {
-    const wadsDir = await getWadsDir();
-    return `${wadsDir}/${filename}`;
-  }
-
   // Check if WAD file exists and its tracking status
   async function checkFileStatus(wad: WadEntry): Promise<FileStatus> {
     if (wad.downloads.length === 0) {
@@ -231,7 +225,6 @@ export function useDownload() {
   return {
     error,
     getWadsDir,
-    getWadPath,
     checkFileStatus,
     markExistingAsDownloaded,
     forceRedownload,

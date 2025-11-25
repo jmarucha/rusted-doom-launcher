@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import type { WadEntry } from "../lib/schema";
+import { getTypeLabel, getPlaceholderImage, getYouTubeThumbnail } from "../lib/wadUtils";
 
 const props = defineProps<{
   wad: WadEntry;
@@ -11,31 +12,13 @@ const emit = defineEmits<{
   play: [wad: WadEntry];
 }>();
 
-// Placeholder image for WADs without thumbnails
-const placeholderImage =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='225' viewBox='0 0 400 225'%3E%3Crect fill='%23991b1b' width='400' height='225'/%3E%3Ctext x='200' y='120' text-anchor='middle' fill='%23fca5a5' font-family='sans-serif' font-size='24'%3EDOOM%3C/text%3E%3C/svg%3E";
+const placeholderImage = getPlaceholderImage(400, 225);
 
 const displayImage = computed(() => {
   return props.wad.thumbnail && props.wad.thumbnail.length > 0
     ? props.wad.thumbnail
     : placeholderImage;
 });
-
-function getTypeLabel(type: WadEntry["type"]): string {
-  const labels: Record<WadEntry["type"], string> = {
-    "single-level": "Single Level",
-    episode: "Episode",
-    megawad: "Megawad",
-    "gameplay-mod": "Gameplay Mod",
-    "total-conversion": "Total Conversion",
-    "resource-pack": "Resource Pack",
-  };
-  return labels[type];
-}
-
-function getYouTubeThumbnail(videoId: string): string {
-  return `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
-}
 
 function openYouTubeVideo(videoId: string): void {
   window.open(`https://www.youtube.com/watch?v=${videoId}`, "_blank");

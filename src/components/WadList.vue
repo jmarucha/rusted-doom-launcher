@@ -64,25 +64,28 @@ function handleCloseDetail() {
   selectedWad.value = null;
 }
 
+// Helper to validate WAD prerequisites (IWAD and download availability)
+async function validateWadPrerequisites(wad: WadEntry): Promise<boolean> {
+  await detectIwads();
+  if (!availableIwads.value.includes(wad.iwad)) {
+    statusMessage.value = `Missing IWAD: ${wad.iwad.toUpperCase()}.WAD - Add it to ~/Library/Application Support/gzdoom/`;
+    statusType.value = "error";
+    return false;
+  }
+  if (wad.downloads.length === 0) {
+    statusMessage.value = "No download available for this WAD";
+    statusType.value = "error";
+    return false;
+  }
+  return true;
+}
+
 async function handleDownload(wad: WadEntry) {
   statusMessage.value = "";
   statusType.value = "info";
 
   try {
-    // Check IWAD availability first
-    await detectIwads();
-    if (!availableIwads.value.includes(wad.iwad)) {
-      statusMessage.value = `Missing IWAD: ${wad.iwad.toUpperCase()}.WAD - Add it to ~/Library/Application Support/gzdoom/`;
-      statusType.value = "error";
-      return;
-    }
-
-    // Check if download available
-    if (wad.downloads.length === 0) {
-      statusMessage.value = "No download available for this WAD";
-      statusType.value = "error";
-      return;
-    }
+    if (!(await validateWadPrerequisites(wad))) return;
 
     // Check file status - if exists but untracked, show dialog
     const status = await checkFileStatus(wad);
@@ -146,20 +149,7 @@ async function handlePlay(wad: WadEntry) {
   statusType.value = "info";
 
   try {
-    // Check IWAD availability
-    await detectIwads();
-    if (!availableIwads.value.includes(wad.iwad)) {
-      statusMessage.value = `Missing IWAD: ${wad.iwad.toUpperCase()}.WAD - Add it to ~/Library/Application Support/gzdoom/`;
-      statusType.value = "error";
-      return;
-    }
-
-    // Check if download available
-    if (wad.downloads.length === 0) {
-      statusMessage.value = "No download available for this WAD";
-      statusType.value = "error";
-      return;
-    }
+    if (!(await validateWadPrerequisites(wad))) return;
 
     // Download WAD and dependencies (will skip if already downloaded)
     const { wadPath, dependencyPaths } = await downloadWadWithDependencies(wad, wads.value);

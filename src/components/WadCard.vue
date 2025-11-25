@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import type { WadEntry } from "../lib/schema";
+import { getTypeLabel, getPlaceholderImage, getYouTubeThumbnail } from "../lib/wadUtils";
 
 const props = defineProps<{
   wad: WadEntry;
@@ -16,21 +17,16 @@ const emit = defineEmits<{
   select: [wad: WadEntry];
 }>();
 
-// Placeholder image for WADs without thumbnails or videos
-const placeholderImage =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect fill='%23991b1b' width='200' height='120'/%3E%3Ctext x='100' y='65' text-anchor='middle' fill='%23fca5a5' font-family='sans-serif' font-size='14'%3EDOOM%3C/text%3E%3C/svg%3E";
+const placeholderImage = getPlaceholderImage(200, 120);
 
 // Use YouTube thumbnail if video exists, otherwise thumbnail, otherwise placeholder
 const displayImage = computed(() => {
-  // First try YouTube video thumbnail
   if (props.wad.youtubeVideos.length > 0) {
-    return `https://img.youtube.com/vi/${props.wad.youtubeVideos[0].id}/mqdefault.jpg`;
+    return getYouTubeThumbnail(props.wad.youtubeVideos[0].id);
   }
-  // Then try WAD thumbnail
   if (props.wad.thumbnail && props.wad.thumbnail.length > 0) {
     return props.wad.thumbnail;
   }
-  // Fallback to placeholder
   return placeholderImage;
 });
 
@@ -40,18 +36,6 @@ const progressPercent = computed(() => {
   if (props.progress === null) return 0;
   return Math.round(props.progress);
 });
-
-function getTypeLabel(type: WadEntry["type"]): string {
-  const labels: Record<WadEntry["type"], string> = {
-    "single-level": "Single Level",
-    episode: "Episode",
-    megawad: "Megawad",
-    "gameplay-mod": "Gameplay Mod",
-    "total-conversion": "Total Conversion",
-    "resource-pack": "Resource Pack",
-  };
-  return labels[type];
-}
 
 function openVideo() {
   if (props.wad.youtubeVideos.length > 0) {

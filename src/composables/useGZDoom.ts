@@ -1,8 +1,8 @@
 import { ref } from "vue";
 import { Command } from "@tauri-apps/plugin-shell";
 import { readDir } from "@tauri-apps/plugin-fs";
-import { homeDir } from "@tauri-apps/api/path";
 import type { Iwad } from "../lib/schema";
+import { getGZDoomDir } from "../lib/wadUtils";
 
 // IWAD filename mapping (canonical names, uppercase)
 const IWAD_FILES: Record<Iwad, string> = {
@@ -22,13 +22,8 @@ export function useGZDoom() {
   const availableIwads = ref<Iwad[]>([]);
   const iwadFilenames = ref<Map<Iwad, string>>(new Map());
 
-  async function getGZDoomDataDir(): Promise<string> {
-    const home = await homeDir();
-    return `${home}/Library/Application Support/gzdoom`;
-  }
-
   async function detectIwads(): Promise<Iwad[]> {
-    const dataDir = await getGZDoomDataDir();
+    const dataDir = await getGZDoomDir();
     console.log("detectIwads: Reading directory:", dataDir);
     const detected: Iwad[] = [];
     const filenames = new Map<Iwad, string>();
@@ -58,7 +53,7 @@ export function useGZDoom() {
   ): Promise<void> {
     error.value = null;
 
-    const dataDir = await getGZDoomDataDir();
+    const dataDir = await getGZDoomDir();
 
     const actualFilename = iwadFilenames.value.get(iwad);
     if (!actualFilename) {
@@ -107,6 +102,6 @@ export function useGZDoom() {
     availableIwads,
     detectIwads,
     launch,
-    getGZDoomDataDir,
+    getGZDoomDir,
   };
 }

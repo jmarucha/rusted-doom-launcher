@@ -1,238 +1,90 @@
 import { ref } from "vue";
-import { exists, mkdir, writeFile, remove, stat } from "@tauri-apps/plugin-fs";
+import { homeDir } from "@tauri-apps/api/path";
+import { exists, mkdir, writeFile, remove, readTextFile, writeTextFile } from "@tauri-apps/plugin-fs";
 import { fetch as tauriFetch } from "@tauri-apps/plugin-http";
 import type { WadEntry } from "../lib/schema";
-import { useDownloadState } from "./useDownloadState";
+import { LauncherDownloadsSchema, type LauncherDownloads } from "../lib/schema";
 
-export type FileStatus = "not-exists" | "tracked" | "untracked-exists";
+// Singleton state
+const downloads = ref<LauncherDownloads>({ version: 1, downloads: {} });
+const downloading = ref<Set<string>>(new Set());
+let gzdoomDir: string | null = null;
+
+async function getDir(): Promise<string> {
+  if (!gzdoomDir) gzdoomDir = `${await homeDir()}/Library/Application Support/gzdoom`;
+  return gzdoomDir;
+}
 
 export function useDownload() {
-  const error = ref<string | null>(null);
-
-  const {
-    isTracked,
-    markDownloaded,
-    setProgress,
-    clearProgress,
-    getProgress,
-    isDownloading,
-    getWadsDir,
-  } = useDownloadState();
-
-  // Check if WAD file exists and its tracking status
-  async function checkFileStatus(wad: WadEntry): Promise<FileStatus> {
-    if (wad.downloads.length === 0) {
-      return "not-exists";
-    }
-
-    const download = wad.downloads[0];
-    const wadsDir = await getWadsDir();
-    const filePath = `${wadsDir}/${download.filename}`;
-
-    if (isTracked(wad.slug)) {
-      // Verify file still exists
-      const fileExists = await exists(filePath);
-      if (fileExists) {
-        return "tracked";
-      }
-      // File was deleted externally - treat as not exists
-      return "not-exists";
-    }
-
-    // Not tracked - check if file exists anyway
-    const fileExists = await exists(filePath);
-    if (fileExists) {
-      return "untracked-exists";
-    }
-
-    return "not-exists";
-  }
-
-  // Mark an existing (untracked) file as downloaded
-  async function markExistingAsDownloaded(wad: WadEntry): Promise<string> {
-    if (wad.downloads.length === 0) {
-      throw new Error("No download info available for this WAD");
-    }
-
-    const download = wad.downloads[0];
-    const wadsDir = await getWadsDir();
-    const filePath = `${wadsDir}/${download.filename}`;
-
-    // Get file size
-    const fileStat = await stat(filePath);
-    const size = fileStat.size;
-
-    // Mark as downloaded
-    await markDownloaded(wad.slug, download.filename, size);
-    console.log(`Marked existing file as downloaded: ${download.filename}`);
-
-    return filePath;
-  }
-
-  // Force re-download: delete existing file and download fresh
-  async function forceRedownload(wad: WadEntry): Promise<string> {
-    if (wad.downloads.length === 0) {
-      throw new Error("No download URL available for this WAD");
-    }
-
-    const download = wad.downloads[0];
-    const wadsDir = await getWadsDir();
-    const filePath = `${wadsDir}/${download.filename}`;
-
-    // Delete existing file if it exists
-    const fileExists = await exists(filePath);
-    if (fileExists) {
-      await remove(filePath);
-      console.log(`Deleted existing file: ${download.filename}`);
-    }
-
-    // Now download fresh (this will handle progress and tracking)
-    return downloadWad(wad);
-  }
-
-  // Download with progress tracking using Tauri HTTP plugin (bypasses CORS)
-  async function downloadWithProgress(
-    url: string,
-    slug: string
-  ): Promise<{ data: Uint8Array; size: number }> {
-    const response = await tauriFetch(url);
-
-    if (!response.ok) {
-      throw new Error(`Download failed: ${response.status} ${response.statusText}`);
-    }
-
-    const contentLength = response.headers.get("Content-Length");
-    const total = contentLength ? parseInt(contentLength, 10) : 0;
-
-    if (!response.body) {
-      throw new Error("Response body is null");
-    }
-
-    const reader = response.body.getReader();
-    const chunks: Uint8Array[] = [];
-    let received = 0;
-
-    while (true) {
-      const { done, value } = await reader.read();
-      if (done) break;
-
-      chunks.push(value);
-      received += value.length;
-
-      // Update progress
-      if (total > 0) {
-        setProgress(slug, (received / total) * 100);
-      } else {
-        // Unknown size - show indeterminate-ish progress (received bytes as proxy)
-        setProgress(slug, Math.min(90, received / 10000));
-      }
-    }
-
-    // Combine chunks into single Uint8Array
-    const data = new Uint8Array(received);
-    let pos = 0;
-    for (const chunk of chunks) {
-      data.set(chunk, pos);
-      pos += chunk.length;
-    }
-
-    return { data, size: received };
-  }
-
-  // Download a WAD from URL to the GZDoom directory
-  async function downloadWad(wad: WadEntry): Promise<string> {
-    if (wad.downloads.length === 0) {
-      throw new Error("No download URL available for this WAD");
-    }
-
-    const download = wad.downloads[0];
-    const wadsDir = await getWadsDir();
-    const filePath = `${wadsDir}/${download.filename}`;
-
-    // Check if already tracked by us
-    if (isTracked(wad.slug)) {
-      // Verify file still exists
-      const fileExists = await exists(filePath);
-      if (fileExists) {
-        console.log(`WAD already downloaded: ${download.filename}`);
-        return filePath;
-      }
-      // File was deleted externally, continue with download
-    }
-
-    // Check if file exists (maybe downloaded manually)
-    const fileExists = await exists(filePath);
-    if (fileExists) {
-      console.log(`WAD file exists (not tracked): ${download.filename}`);
-      return filePath;
-    }
-
-    setProgress(wad.slug, 0);
-    error.value = null;
-
+  async function loadState() {
+    const dir = await getDir();
     try {
-      // Ensure directory exists
-      await mkdir(wadsDir, { recursive: true });
-
-      console.log(`Downloading ${download.filename} from ${download.url}`);
-
-      // Download with progress tracking
-      const { data, size } = await downloadWithProgress(download.url, wad.slug);
-
-      // Write to file
-      await writeFile(filePath, data);
-
-      // Mark as downloaded in state
-      await markDownloaded(wad.slug, download.filename, size);
-
-      console.log(`Downloaded ${download.filename} to ${filePath}`);
-      setProgress(wad.slug, 100);
-
-      return filePath;
-    } catch (e) {
-      error.value = e instanceof Error ? e.message : "Download failed";
-      throw e;
-    } finally {
-      // Clear progress after a short delay to show 100%
-      setTimeout(() => clearProgress(wad.slug), 500);
-    }
+      const content = await readTextFile(`${dir}/launcher-downloads.json`);
+      const parsed = LauncherDownloadsSchema.safeParse(JSON.parse(content));
+      if (parsed.success) downloads.value = parsed.data;
+    } catch { /* file doesn't exist yet */ }
   }
 
-  // Download WAD and its dependencies
-  async function downloadWadWithDependencies(
-    wad: WadEntry,
-    allWads: WadEntry[]
-  ): Promise<{ wadPath: string; dependencyPaths: string[] }> {
-    // Download dependencies first
-    const dependencyPaths: string[] = [];
+  async function saveState() {
+    const dir = await getDir();
+    await writeTextFile(`${dir}/launcher-downloads.json`, JSON.stringify(downloads.value, null, 2));
+  }
 
-    for (const dep of wad.requires) {
-      const depWad = allWads.find((w) => w.slug === dep.slug);
-      if (depWad) {
-        const depPath = await downloadWad(depWad);
-        dependencyPaths.push(depPath);
-      } else {
-        console.warn(`Dependency ${dep.slug} not found in WAD list`);
+  function isDownloaded(slug: string): boolean {
+    return slug in downloads.value.downloads;
+  }
+
+  function isDownloading(slug: string): boolean {
+    return downloading.value.has(slug);
+  }
+
+  async function downloadWad(wad: WadEntry): Promise<string> {
+    const dir = await getDir();
+    const { url, filename } = wad.downloads[0];
+    const path = `${dir}/${filename}`;
+
+    if (await exists(path)) {
+      if (!isDownloaded(wad.slug)) {
+        downloads.value.downloads[wad.slug] = { filename, downloadedAt: new Date().toISOString(), size: 0 };
+        await saveState();
       }
+      return path;
     }
 
-    // Download the main WAD
-    const wadPath = await downloadWad(wad);
+    downloading.value.add(wad.slug);
+    try {
+      await mkdir(dir, { recursive: true });
+      const response = await tauriFetch(url);
+      if (!response.ok) throw new Error(`Download failed: ${response.status}`);
 
-    return { wadPath, dependencyPaths };
+      const data = new Uint8Array(await response.arrayBuffer());
+      await writeFile(path, data);
+
+      downloads.value.downloads[wad.slug] = { filename, downloadedAt: new Date().toISOString(), size: data.length };
+      await saveState();
+      return path;
+    } finally {
+      downloading.value.delete(wad.slug);
+    }
   }
 
-  return {
-    error,
-    getWadsDir,
-    checkFileStatus,
-    markExistingAsDownloaded,
-    forceRedownload,
-    downloadWad,
-    downloadWadWithDependencies,
-    // Expose state functions for convenience
-    isTracked,
-    getProgress,
-    isDownloading,
-  };
+  async function downloadWithDeps(wad: WadEntry, allWads: WadEntry[]): Promise<{ wadPath: string; depPaths: string[] }> {
+    const depPaths: string[] = [];
+    for (const dep of wad.requires) {
+      const depWad = allWads.find(w => w.slug === dep.slug);
+      if (depWad) depPaths.push(await downloadWad(depWad));
+    }
+    return { wadPath: await downloadWad(wad), depPaths };
+  }
+
+  async function deleteWad(slug: string) {
+    const info = downloads.value.downloads[slug];
+    if (!info) return;
+    const dir = await getDir();
+    try { await remove(`${dir}/${info.filename}`); } catch { /* ignore */ }
+    delete downloads.value.downloads[slug];
+    await saveState();
+  }
+
+  return { loadState, isDownloaded, isDownloading, downloadWad, downloadWithDeps, deleteWad, getDir };
 }

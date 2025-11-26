@@ -2,106 +2,34 @@ import { ref } from "vue";
 import { Command } from "@tauri-apps/plugin-shell";
 import { readDir } from "@tauri-apps/plugin-fs";
 import type { Iwad } from "../lib/schema";
-import { getGZDoomDir } from "../lib/wadUtils";
+import { useDownload } from "./useDownload";
 
-// IWAD filename mapping (canonical names, uppercase)
-const IWAD_FILES: Record<Iwad, string> = {
-  doom: "DOOM.WAD",
-  doom2: "DOOM2.WAD",
-  plutonia: "PLUTONIA.WAD",
-  tnt: "TNT.WAD",
-  heretic: "HERETIC.WAD",
-  hexen: "HEXEN.WAD",
-  freedoom1: "FREEDOOM1.WAD",
-  freedoom2: "FREEDOOM2.WAD",
-};
+const IWADS: Iwad[] = ["doom", "doom2", "plutonia", "tnt", "heretic", "hexen", "freedoom1", "freedoom2"];
 
 export function useGZDoom() {
   const isRunning = ref(false);
-  const error = ref<string | null>(null);
   const availableIwads = ref<Iwad[]>([]);
-  const iwadFilenames = ref<Map<Iwad, string>>(new Map());
+  const { getDir } = useDownload();
 
-  async function detectIwads(): Promise<Iwad[]> {
-    const dataDir = await getGZDoomDir();
-    console.log("detectIwads: Reading directory:", dataDir);
-    const detected: Iwad[] = [];
-    const filenames = new Map<Iwad, string>();
-
-    const entries = await readDir(dataDir);
-    console.log("detectIwads: Found entries:", entries.length);
-    for (const entry of entries) {
-      if (!entry.name) continue;
-      const upperName = entry.name.toUpperCase();
-      for (const [iwad, canonical] of Object.entries(IWAD_FILES)) {
-        if (upperName === canonical.toUpperCase()) {
-          detected.push(iwad as Iwad);
-          filenames.set(iwad as Iwad, entry.name);
-        }
-      }
-    }
-
-    availableIwads.value = detected;
-    iwadFilenames.value = filenames;
-    return detected;
+  async function detectIwads() {
+    const dir = await getDir();
+    const entries = await readDir(dir);
+    const files = new Set(entries.map(e => e.name?.toUpperCase()));
+    availableIwads.value = IWADS.filter(iwad => files.has(`${iwad.toUpperCase()}.WAD`));
   }
 
-  async function launch(
-    wadPath: string,
-    iwad: Iwad,
-    additionalFiles: string[] = []
-  ): Promise<void> {
-    error.value = null;
-
-    const dataDir = await getGZDoomDir();
-
-    const actualFilename = iwadFilenames.value.get(iwad);
-    if (!actualFilename) {
-      const err = `Required IWAD not found: ${IWAD_FILES[iwad]}. Please add it to ${dataDir}`;
-      error.value = err;
-      throw new Error(err);
-    }
-
-    const iwadPath = `${dataDir}/${actualFilename}`;
+  async function launch(wadPath: string, iwad: Iwad, additionalFiles: string[] = []) {
+    const dir = await getDir();
+    const iwadPath = `${dir}/${iwad.toUpperCase()}.WAD`;
     const args = ["-iwad", iwadPath, "-file", wadPath, ...additionalFiles.flatMap(f => ["-file", f])];
 
-    console.log("Launching GZDoom with args:", args);
-
     const command = Command.create("gzdoom", args);
+    command.on("close", () => { isRunning.value = false; });
+    command.on("error", () => { isRunning.value = false; });
 
-    command.on("close", (data) => {
-      console.log(`GZDoom exited with code ${data.code}`);
-      isRunning.value = false;
-    });
-
-    command.on("error", (err) => {
-      console.error("GZDoom error:", err);
-      error.value = err;
-      isRunning.value = false;
-    });
-
-    try {
-      console.log("About to spawn GZDoom command...");
-      const child = await command.spawn();
-      console.log("GZDoom spawn() returned, pid:", child.pid);
-      // Only set running after spawn succeeds
-      isRunning.value = true;
-      console.log("GZDoom spawned successfully");
-    } catch (e) {
-      console.error("Failed to spawn GZDoom:", e);
-      console.error("Error details:", JSON.stringify(e, Object.getOwnPropertyNames(e)));
-      error.value = e instanceof Error ? e.message : String(e);
-      isRunning.value = false;
-      throw e;
-    }
+    await command.spawn();
+    isRunning.value = true;
   }
 
-  return {
-    isRunning,
-    error,
-    availableIwads,
-    detectIwads,
-    launch,
-    getGZDoomDir,
-  };
+  return { isRunning, availableIwads, detectIwads, launch };
 }

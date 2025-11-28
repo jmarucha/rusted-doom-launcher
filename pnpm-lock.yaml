@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      tauri-plugin-mcp:
+        specifier: file:../tauri-plugin-mcp
+        version: file:../tauri-plugin-mcp
       vue:
         specifier: ^3.5.13
         version: 3.5.25(typescript@5.6.3)
@@ -33,6 +36,9 @@ importers:
       '@types/node':
         specifier: ^24.10.1
         version: 24.10.1
+      '@types/youtube':
+        specifier: ^0.1.2
+        version: 0.1.2
       '@vitejs/plugin-vue':
         specifier: ^5.2.1
         version: 5.2.4(vite@6.4.1(@types/node@24.10.1)(jiti@1.21.7))(vue@3.5.25(typescript@5.6.3))
@@ -469,6 +475,9 @@ packages:
 
   '@types/node@24.10.1':
     resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+
+  '@types/youtube@0.1.2':
+    resolution: {integrity: sha512-n1/KqusanheyQRWHamNZv8K3kydlRqyEsZEKxMTeNWXQTC15lZprITCUt+WgL1vAIvKHCjPBIWz/gf/KQLsB3g==}
 
   '@vitejs/plugin-vue@5.2.4':
     resolution: {integrity: sha512-7Yx/SXSOcQq5HiiV3orevHUFn+pmMB4cgbEkDYgnkUWb0WfeQ/wa2yFv6D5ICiCQOVpjA7vYDXrC7AGO8yjDHA==}
@@ -931,6 +940,9 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  tauri-plugin-mcp@file:../tauri-plugin-mcp:
+    resolution: {directory: ../tauri-plugin-mcp, type: directory}
+
   thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
     engines: {node: '>=0.8'}
@@ -1340,6 +1352,8 @@ snapshots:
   '@types/node@24.10.1':
     dependencies:
       undici-types: 7.16.0
+
+  '@types/youtube@0.1.2': {}
 
   '@vitejs/plugin-vue@5.2.4(vite@6.4.1(@types/node@24.10.1)(jiti@1.21.7))(vue@3.5.25(typescript@5.6.3))':
     dependencies:
@@ -1843,6 +1857,10 @@ snapshots:
     transitivePeerDependencies:
       - tsx
       - yaml
+
+  tauri-plugin-mcp@file:../tauri-plugin-mcp:
+    dependencies:
+      '@tauri-apps/api': 2.9.0
 
   thenify-all@1.6.0:
     dependencies:

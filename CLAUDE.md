@@ -19,6 +19,24 @@ Tauri 2 + Vue 3 + TypeScript app for launching GZDoom with community WADs.
 - WebView DevTools: Cmd+Option+I
 - Rust errors appear in terminal, JS errors in DevTools console
 
+### YouTube Embeds in WKWebView
+WKWebView (macOS) blocks autoplay unless triggered by a valid user gesture.
+
+**What doesn't work:**
+- `mouseenter` events - not considered a user gesture
+- Async `playVideo()` calls - gesture expires after any `await`
+- `autoplay=1` in iframe URL - blocked by same policy
+
+**What works:**
+- Pre-load YouTube iframes on component mount (hidden behind overlay)
+- Call `playVideo()` synchronously in click handler
+- Player must be fully ready before user clicks
+
+**Implementation:** See `src/components/WadCard.vue`
+- Load YouTube API on mount
+- Create players immediately (visible, with play button overlay)
+- Click → synchronous `playVideo()` → works!
+
 ### MCP Debugging (AI-assisted)
 The app has `tauri-plugin-mcp` integrated for AI debugging via Claude Code.
 

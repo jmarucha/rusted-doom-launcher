@@ -1,0 +1,34 @@
+{
+  "slug": "sunder",
+  "title": "Sunder",
+  "authors": [{ "name": "Insane_Gazebo" }],
+  "year": 2009,
+  "description": "A legendary slaughter megawad featuring massive battles in beautifully crafted environments. Known for its challenging gameplay with huge monster counts and intricate level design. Ongoing development with 21+ maps.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://dsdarchive.com/files/wads/doom2/2726/sunder.zip",
+      "filename": "sunder.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [
+    {
+      "id": "i4gUiAAHOgA",
+      "title": "Sunder MAP14 UV Max (Zero-Master)",
+      "type": "speedrun"
+    }
+  ],
+  "awards": [
+    { "type": "mention", "year": 2018 }
+  ],
+  "tags": ["megawad", "slaughter", "hard", "beautiful"],
+  "difficulty": "slaughter",
+  "_schemaVersion": 1,
+  "_source": "manual"
+}

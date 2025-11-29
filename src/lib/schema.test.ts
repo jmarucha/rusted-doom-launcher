@@ -90,6 +90,7 @@ describe("WAD Entry Schema", () => {
           awards: [],
           tags: [],
           difficulty: "unknown",
+          notes: "",
           _schemaVersion: 1,
           _source: "manual",
         })
@@ -115,6 +116,7 @@ describe("WAD Entry Schema", () => {
           awards: [],
           tags: [],
           difficulty: "unknown",
+          notes: "",
           _schemaVersion: 1,
           _source: "manual",
         })
@@ -140,6 +142,7 @@ describe("WAD Entry Schema", () => {
           awards: [],
           tags: [],
           difficulty: "unknown",
+          notes: "",
           _schemaVersion: 1,
           _source: "manual",
         })

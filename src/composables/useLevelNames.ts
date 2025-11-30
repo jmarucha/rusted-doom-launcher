@@ -4,6 +4,7 @@ import { unzipSync, strFromU8 } from "fflate";
 import { extractLevelNames, extractLevelNamesFromData } from "../lib/wadParser";
 import { useSettings } from "./useSettings";
 import { LauncherDownloadsSchema } from "../lib/schema";
+import { isNotFoundError } from "../lib/errors";
 
 // Singleton cache: slug -> (mapId -> levelName)
 const levelNamesCache = ref<Map<string, Map<string, string>>>(new Map());
@@ -22,7 +23,11 @@ export function useLevelNames() {
       if (parsed.success && parsed.data.downloads[slug]) {
         return parsed.data.downloads[slug];
       }
-    } catch { /* file doesn't exist */ }
+    } catch (e) {
+      if (!isNotFoundError(e)) {
+        console.error(`Error reading launcher-downloads.json for ${slug}:`, e);
+      }
+    }
     return null;
   }
 

@@ -2,6 +2,7 @@ import { ref } from "vue";
 import { readDir, readFile, stat } from "@tauri-apps/plugin-fs";
 import { unzipSync, strFromU8 } from "fflate";
 import { useSettings } from "./useSettings";
+import { isNotFoundError } from "../lib/errors";
 
 export interface LevelStats {
   levelname: string;
@@ -67,7 +68,9 @@ export function useSaves() {
           if (mtime && (!lastPlayed || mtime > lastPlayed)) {
             lastPlayed = mtime;
           }
-        } catch { /* ignore stat errors */ }
+        } catch (e) {
+          console.error(`Error getting stats for save ${save.name}:`, e);
+        }
       }
 
       // Parse all saves to collect level stats (keep each level+skill combo)
@@ -86,8 +89,11 @@ export function useSaves() {
 
       saveInfoCache.value.set(slug, info);
       return info;
-    } catch {
-      // Save directory doesn't exist or is empty
+    } catch (e) {
+      if (!isNotFoundError(e)) {
+        console.error(`Error getting save info for ${slug}:`, e);
+      }
+      // Save directory doesn't exist or other error
       return null;
     }
   }
@@ -121,8 +127,8 @@ export function useSaves() {
             });
           }
         }
-      } catch {
-        // Skip saves that can't be parsed
+      } catch (e) {
+        console.error(`Failed to parse save file ${saveName}:`, e);
       }
     }
 
@@ -173,8 +179,9 @@ export function useSaves() {
       }));
 
       return { levels, skill };
-    } catch {
+    } catch (e) {
       // Not a valid ZIP or JSON - might be old binary format
+      console.warn(`Save file ${path} couldn't be parsed (may be old binary format):`, e);
       return { levels: [], skill: 2 };
     }
   }

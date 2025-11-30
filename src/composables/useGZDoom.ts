@@ -3,6 +3,7 @@ import { Command } from "@tauri-apps/plugin-shell";
 import { readDir, mkdir } from "@tauri-apps/plugin-fs";
 import type { Iwad } from "../lib/schema";
 import { useSettings } from "./useSettings";
+import { isExistsError } from "../lib/errors";
 
 const IWADS: Iwad[] = ["doom", "doom2", "plutonia", "tnt", "heretic", "hexen", "freedoom1", "freedoom2"];
 
@@ -27,7 +28,10 @@ export function useGZDoom() {
     if (saveDir) {
       try {
         await mkdir(saveDir, { recursive: true });
-      } catch { /* directory may already exist */ }
+      } catch (e) {
+        if (!isExistsError(e)) throw e;
+        // Directory already exists - that's fine
+      }
     }
 
     const args = [

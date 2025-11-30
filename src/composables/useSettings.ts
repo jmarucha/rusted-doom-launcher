@@ -1,6 +1,7 @@
 import { ref } from "vue";
 import { homeDir } from "@tauri-apps/api/path";
 import { exists, readTextFile, writeTextFile } from "@tauri-apps/plugin-fs";
+import { isNotFoundError } from "../lib/errors";
 
 interface Settings {
   gzdoomPath: string | null;  // null = auto-detect
@@ -43,7 +44,10 @@ export function useSettings() {
         if (parsed.gzdoomPath !== undefined) settings.value.gzdoomPath = parsed.gzdoomPath;
         if (parsed.libraryPath !== undefined) settings.value.libraryPath = parsed.libraryPath;
       }
-    } catch { /* settings file doesn't exist yet */ }
+    } catch (e) {
+      if (!isNotFoundError(e)) throw e;
+      // Settings file doesn't exist yet - that's expected on first run
+    }
 
     // Auto-detect GZDoom if not configured
     await detectGZDoom();
@@ -84,7 +88,12 @@ export function useSettings() {
           gzdoomCommandName.value = loc.cmd;
           return;
         }
-      } catch { /* permission denied or other error */ }
+      } catch (e) {
+        if (!isNotFoundError(e)) {
+          console.error(`Error checking GZDoom at ${loc.path}:`, e);
+        }
+        // File doesn't exist or permission denied - continue to next location
+      }
     }
 
     // Not found

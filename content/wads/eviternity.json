@@ -10,8 +10,8 @@
   "requires": [],
   "downloads": [
     {
-      "type": "idgames",
-      "url": "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/eviternity",
+      "type": "direct",
+      "url": "https://www.quaddicted.com/files/idgames/levels/doom2/Ports/megawads/eviternity.zip",
       "filename": "eviternity.zip"
     }
   ],

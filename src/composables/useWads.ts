@@ -11,9 +11,13 @@ export function useWads() {
   onMounted(() => {
     try {
       const loaded: WadEntry[] = [];
-      for (const [, module] of Object.entries(wadModules)) {
+      for (const [path, module] of Object.entries(wadModules)) {
         const result = WadEntrySchema.safeParse(module.default);
-        if (result.success) loaded.push(result.data);
+        if (result.success) {
+          loaded.push(result.data);
+        } else {
+          console.error(`WAD validation failed for ${path}:`, result.error.format());
+        }
       }
       wads.value = loaded.sort((a, b) => a.title.localeCompare(b.title));
     } catch (e) {

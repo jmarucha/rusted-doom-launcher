@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from "vue";
+import { ref, onMounted } from "vue";
 import { open } from "@tauri-apps/plugin-dialog";
 import WadList from "./components/WadList.vue";
 import { useWads } from "./composables/useWads";
@@ -18,28 +18,6 @@ const { loadSettings, setGZDoomPath, setLibraryPath, getLibraryPath } = useSetti
 const settingsOpen = ref(false);
 const errorMsg = ref("");
 const libraryPathDisplay = ref("");
-
-const statusLine = computed(() => {
-  const parts: string[] = [];
-
-  if (isGZDoomFound()) {
-    parts.push("GZDoom");
-  } else {
-    parts.push("GZDoom not found");
-  }
-
-  if (availableIwads.value.length > 0) {
-    parts.push(availableIwads.value.map(i => i.toUpperCase()).join(", "));
-  } else if (isGZDoomFound()) {
-    parts.push("No IWADs");
-  }
-
-  parts.push(`${wads.value.length} WADs`);
-
-  return parts.join(" \u2022 ");
-});
-
-const statusOk = computed(() => isGZDoomFound() && availableIwads.value.length > 0);
 
 onMounted(async () => {
   if (!window.__TAURI_INTERNALS__) {
@@ -146,17 +124,18 @@ function shortenPath(path: string | null): string {
           Settings
         </button>
       </div>
-      <p class="mt-1 text-sm text-zinc-400">
-        <span :class="statusOk ? 'text-green-400' : 'text-red-400'">{{ statusOk ? '\u2713' : '\u2717' }}</span>
-        {{ statusLine }}
-      </p>
-
       <!-- Settings Panel -->
       <div v-if="settingsOpen" class="mt-4 rounded-lg bg-zinc-800 p-4">
         <div class="space-y-3">
           <div class="flex items-center gap-3">
             <label class="w-20 text-sm text-zinc-400">GZDoom:</label>
-            <span class="flex-1 truncate text-sm text-zinc-200">{{ shortenPath(gzdoomDetectedPath) }}</span>
+            <div class="flex-1">
+              <span class="truncate text-sm text-zinc-200">{{ shortenPath(gzdoomDetectedPath) }}</span>
+              <div class="mt-1 text-xs">
+                <span v-if="isGZDoomFound()" class="text-green-400">✓ GZDoom found</span>
+                <span v-else class="text-red-400">✗ GZDoom not found</span>
+              </div>
+            </div>
             <button
               class="rounded bg-zinc-700 px-3 py-1 text-sm text-zinc-300 transition-colors hover:bg-zinc-600"
               @click="browseGZDoom"
@@ -173,6 +152,13 @@ function shortenPath(path: string | null): string {
             >
               Browse
             </button>
+          </div>
+          <div class="flex items-center gap-3">
+            <label class="w-20 text-sm text-zinc-400">IWADs:</label>
+            <span v-if="availableIwads.length > 0" class="flex-1 text-sm text-zinc-200">
+              {{ availableIwads.map(i => i.toUpperCase()).join(', ') }}
+            </span>
+            <span v-else class="flex-1 text-sm text-red-400">None found</span>
           </div>
         </div>
       </div>

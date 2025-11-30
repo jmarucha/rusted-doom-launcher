@@ -1,23 +1,19 @@
 import { ref } from "vue";
-import { homeDir } from "@tauri-apps/api/path";
 import { exists, mkdir, writeFile, remove, readTextFile, writeTextFile } from "@tauri-apps/plugin-fs";
 import { fetch as tauriFetch } from "@tauri-apps/plugin-http";
 import type { WadEntry } from "../lib/schema";
 import { LauncherDownloadsSchema, type LauncherDownloads } from "../lib/schema";
+import { useSettings } from "./useSettings";
 
 // Singleton state
 const downloads = ref<LauncherDownloads>({ version: 1, downloads: {} });
 const downloading = ref<Set<string>>(new Set());
-let gzdoomDir: string | null = null;
-
-async function getDir(): Promise<string> {
-  if (!gzdoomDir) gzdoomDir = `${await homeDir()}/Library/Application Support/gzdoom`;
-  return gzdoomDir;
-}
 
 export function useDownload() {
+  const { getLibraryPath } = useSettings();
+
   async function loadState() {
-    const dir = await getDir();
+    const dir = await getLibraryPath();
     try {
       const content = await readTextFile(`${dir}/launcher-downloads.json`);
       const parsed = LauncherDownloadsSchema.safeParse(JSON.parse(content));
@@ -26,7 +22,7 @@ export function useDownload() {
   }
 
   async function saveState() {
-    const dir = await getDir();
+    const dir = await getLibraryPath();
     await writeTextFile(`${dir}/launcher-downloads.json`, JSON.stringify(downloads.value, null, 2));
   }
 
@@ -39,7 +35,7 @@ export function useDownload() {
   }
 
   async function downloadWad(wad: WadEntry): Promise<string> {
-    const dir = await getDir();
+    const dir = await getLibraryPath();
     const { url, filename } = wad.downloads[0];
     const path = `${dir}/${filename}`;
 
@@ -80,11 +76,11 @@ export function useDownload() {
   async function deleteWad(slug: string) {
     const info = downloads.value.downloads[slug];
     if (!info) return;
-    const dir = await getDir();
+    const dir = await getLibraryPath();
     try { await remove(`${dir}/${info.filename}`); } catch { /* ignore */ }
     delete downloads.value.downloads[slug];
     await saveState();
   }
 
-  return { loadState, isDownloaded, isDownloading, downloadWad, downloadWithDeps, deleteWad, getDir };
+  return { loadState, isDownloaded, isDownloading, downloadWad, downloadWithDeps, deleteWad, getLibraryPath };
 }

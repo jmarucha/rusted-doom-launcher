@@ -5,6 +5,8 @@
   "windows": ["main"],
   "permissions": [
     "core:default",
+    "dialog:default",
+    "dialog:allow-open",
     "fs:default",
     "fs:allow-read-text-file",
     "fs:allow-write-text-file",
@@ -20,7 +22,11 @@
         "$RESOURCE/**",
         "$APPDATA/**",
         "$HOME/Library/Application Support/gzdoom",
-        "$HOME/Library/Application Support/gzdoom/**"
+        "$HOME/Library/Application Support/gzdoom/**",
+        "/Applications/GZDoom.app/**",
+        "/opt/homebrew/bin/gzdoom",
+        "/usr/local/bin/gzdoom",
+        "$HOME/Applications/GZDoom.app/**"
       ]
     },
     "http:default",
@@ -37,6 +43,21 @@
         {
           "name": "gzdoom",
           "cmd": "/Applications/GZDoom.app/Contents/MacOS/gzdoom",
+          "args": true
+        },
+        {
+          "name": "gzdoom-homebrew-arm",
+          "cmd": "/opt/homebrew/bin/gzdoom",
+          "args": true
+        },
+        {
+          "name": "gzdoom-homebrew-intel",
+          "cmd": "/usr/local/bin/gzdoom",
+          "args": true
+        },
+        {
+          "name": "gzdoom-user-apps",
+          "cmd": "$HOME/Applications/GZDoom.app/Contents/MacOS/gzdoom",
           "args": true
         }
       ]

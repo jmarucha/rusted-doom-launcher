@@ -12,14 +12,24 @@ export interface LevelStats {
   itemcount: number;
   totalitems: number;
   leveltime: number; // in tics (35 tics = 1 second)
+  skill: number; // 0-4, skill level this was played on
 }
+
+// GZDoom skill levels
+export const SKILL_NAMES = [
+  "I'm too young to die",
+  "Hey, not too rough",
+  "Hurt me plenty",
+  "Ultra-Violence",
+  "Nightmare",
+] as const;
 
 export interface WadSaveInfo {
   slug: string;
   saveCount: number;
   mapsPlayed: number;
   lastPlayed: Date | null;
-  levels: LevelStats[]; // Detailed per-level stats (best stats across all saves)
+  levels: LevelStats[]; // Per-level stats, one entry per level+skill combination
 }
 
 // Singleton state - cache save info per slug
@@ -60,13 +70,16 @@ export function useSaves() {
         } catch { /* ignore stat errors */ }
       }
 
-      // Parse all saves to find unique maps played and aggregate best stats
-      const levels = await aggregateLevelStats(saveDir, saveFiles.map(s => s.name!));
+      // Parse all saves to collect level stats (keep each level+skill combo)
+      const levels = await collectLevelStats(saveDir, saveFiles.map(s => s.name!));
+
+      // Count unique maps (regardless of skill)
+      const uniqueMaps = new Set(levels.map(l => l.levelname.toUpperCase()));
 
       const info: WadSaveInfo = {
         slug,
         saveCount: saveFiles.length,
-        mapsPlayed: levels.length,
+        mapsPlayed: uniqueMaps.size,
         lastPlayed,
         levels,
       };
@@ -79,30 +92,32 @@ export function useSaves() {
     }
   }
 
-  async function aggregateLevelStats(saveDir: string, saveNames: string[]): Promise<LevelStats[]> {
-    // Map of levelname -> best stats for that level
+  async function collectLevelStats(saveDir: string, saveNames: string[]): Promise<LevelStats[]> {
+    // Key by levelname+skill to keep separate entries for each difficulty
     const levelMap = new Map<string, LevelStats>();
 
     for (const saveName of saveNames) {
       try {
-        const levels = await parseSaveFile(`${saveDir}/${saveName}`);
+        const { levels } = await parseSaveFile(`${saveDir}/${saveName}`);
+
         for (const level of levels) {
-          const key = level.levelname.toUpperCase();
+          const key = `${level.levelname.toUpperCase()}_${level.skill}`;
           const existing = levelMap.get(key);
 
           if (!existing) {
             levelMap.set(key, level);
           } else {
-            // Keep best stats (most kills, secrets, items; fastest time)
+            // Same level+skill: keep best stats
             levelMap.set(key, {
               levelname: level.levelname,
               killcount: Math.max(existing.killcount, level.killcount),
-              totalkills: level.totalkills, // totals should be same
+              totalkills: level.totalkills,
               secretcount: Math.max(existing.secretcount, level.secretcount),
               totalsecrets: level.totalsecrets,
               itemcount: Math.max(existing.itemcount, level.itemcount),
               totalitems: level.totalitems,
-              leveltime: Math.min(existing.leveltime, level.leveltime), // fastest time
+              leveltime: Math.min(existing.leveltime, level.leveltime),
+              skill: level.skill,
             });
           }
         }
@@ -111,13 +126,15 @@ export function useSaves() {
       }
     }
 
-    // Sort levels by name (MAP01, MAP02, etc.)
-    return Array.from(levelMap.values()).sort((a, b) =>
-      a.levelname.localeCompare(b.levelname, undefined, { numeric: true })
-    );
+    // Sort by level name, then by skill
+    return Array.from(levelMap.values()).sort((a, b) => {
+      const nameCompare = a.levelname.localeCompare(b.levelname, undefined, { numeric: true });
+      if (nameCompare !== 0) return nameCompare;
+      return a.skill - b.skill;
+    });
   }
 
-  async function parseSaveFile(path: string): Promise<LevelStats[]> {
+  async function parseSaveFile(path: string): Promise<{ levels: LevelStats[]; skill: number }> {
     const data = await readFile(path);
     const uint8 = new Uint8Array(data);
 
@@ -128,19 +145,22 @@ export function useSaves() {
       // Look for globals.json which contains statistics
       const globalsEntry = unzipped["globals.json"];
       if (!globalsEntry) {
-        return [];
+        return { levels: [], skill: 2 };
       }
 
       const globalsJson = strFromU8(globalsEntry);
       const globals = JSON.parse(globalsJson);
 
+      // Extract skill level from servercvars.skill
+      const skill = Number(globals?.servercvars?.skill ?? 2);
+
       // Extract level stats from statistics.levels
-      const levels = globals?.statistics?.levels;
-      if (!Array.isArray(levels)) {
-        return [];
+      const statsLevels = globals?.statistics?.levels;
+      if (!Array.isArray(statsLevels)) {
+        return { levels: [], skill };
       }
 
-      return levels.map((level: Record<string, unknown>) => ({
+      const levels = statsLevels.map((level: Record<string, unknown>) => ({
         levelname: String(level.levelname || ""),
         killcount: Number(level.killcount || 0),
         totalkills: Number(level.totalkills || 0),
@@ -149,10 +169,13 @@ export function useSaves() {
         itemcount: Number(level.itemcount || 0),
         totalitems: Number(level.totalitems || 0),
         leveltime: Number(level.leveltime || 0),
+        skill,
       }));
+
+      return { levels, skill };
     } catch {
       // Not a valid ZIP or JSON - might be old binary format
-      return [];
+      return { levels: [], skill: 2 };
     }
   }
 

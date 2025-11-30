@@ -246,13 +246,14 @@ function handleVideoClick(e: MouseEvent) {
                 <th class="pb-2 pr-4 text-center">Kills</th>
                 <th class="pb-2 pr-4 text-center">Items</th>
                 <th class="pb-2 pr-4 text-center">Secrets</th>
+                <th class="pb-2 pr-4 text-center">Skill</th>
                 <th class="pb-2 text-right">Time</th>
               </tr>
             </thead>
             <tbody>
               <tr
-                v-for="level in saveInfo.levels"
-                :key="level.levelname"
+                v-for="(level, idx) in saveInfo.levels"
+                :key="`${level.levelname}-${level.skill}-${idx}`"
                 class="border-b border-zinc-700/50 text-zinc-300"
               >
                 <td class="py-2 pr-4 font-medium">{{ getLevelDisplayName(wad.slug, level.levelname) }}</td>
@@ -271,6 +272,11 @@ function handleVideoClick(e: MouseEvent) {
                     {{ level.secretcount }}/{{ level.totalsecrets }}
                   </span>
                 </td>
+                <td class="py-2 pr-4 text-center text-xs">
+                  <span :class="level.skill >= 3 ? 'text-red-400' : level.skill >= 2 ? 'text-yellow-400' : 'text-zinc-400'">
+                    {{ ['ITYTD', 'HNTR', 'HMP', 'UV', 'NM'][level.skill] }}
+                  </span>
+                </td>
                 <td class="py-2 text-right font-mono">{{ formatTime(level.leveltime) }}</td>
               </tr>
             </tbody>
@@ -279,7 +285,7 @@ function handleVideoClick(e: MouseEvent) {
 
         <!-- Footer with totals -->
         <div class="p-4 border-t border-zinc-700 text-sm text-zinc-400">
-          {{ saveInfo.levels.length }} levels played • {{ saveInfo.saveCount }} saves
+          {{ saveInfo.mapsPlayed }} maps played • {{ saveInfo.saveCount }} saves
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ declare const window: Window & typeof globalThis & { __TAURI_INTERNALS__?: unkno
 
 const { wads, loading, error } = useWads();
 const { detectIwads, availableIwads, launch, isRunning, isGZDoomFound, gzdoomDetectedPath } = useGZDoom();
-const { loadState: loadDownloadState, isDownloaded, isDownloading, downloadWithDeps, deleteWad } = useDownload();
+const { loadState: loadDownloadState, isDownloaded, isDownloading, getDownloadProgress, downloadWithDeps, deleteWad } = useDownload();
 const { loadSettings, setGZDoomPath, setLibraryPath, getLibraryPath } = useSettings();
 const { loadAllSaveInfo, getCachedSaveInfo, refreshSaveInfo } = useSaves();
 
@@ -196,6 +196,7 @@ function shortenPath(path: string | null): string {
           :wads="wads"
           :is-downloaded="isDownloaded"
           :is-downloading="isDownloading"
+          :get-download-progress="getDownloadProgress"
           :get-save-info="getCachedSaveInfo"
           @play="handlePlay"
           @delete="handleDelete"

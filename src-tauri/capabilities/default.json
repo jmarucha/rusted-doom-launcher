@@ -17,6 +17,7 @@
     "fs:allow-write-file",
     "fs:allow-remove",
     "fs:allow-stat",
+    "fs:allow-rename",
     {
       "identifier": "fs:scope",
       "allow": [
@@ -31,6 +32,13 @@
       ]
     },
     "http:default",
+    "upload:default",
+    {
+      "identifier": "upload:allow-download",
+      "allow": [
+        { "path": "$HOME/Library/Application Support/gzdoom/**" }
+      ]
+    },
     {
       "identifier": "http:allow-fetch",
       "allow": [

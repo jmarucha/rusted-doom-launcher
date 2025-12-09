@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import type { WadEntry } from "../lib/schema";
 import type { WadSaveInfo } from "../composables/useSaves";
+import type { DownloadProgress } from "../composables/useDownload";
 import WadCard from "./WadCard.vue";
 
 defineProps<{
   wads: WadEntry[];
   isDownloaded: (slug: string) => boolean;
   isDownloading: (slug: string) => boolean;
+  getDownloadProgress: (slug: string) => DownloadProgress | undefined;
   getSaveInfo: (slug: string) => WadSaveInfo | null;
 }>();
 
@@ -23,6 +25,7 @@ defineEmits<{
     :wad="wad"
     :is-downloaded="isDownloaded(wad.slug)"
     :is-downloading="isDownloading(wad.slug)"
+    :download-progress="getDownloadProgress(wad.slug)"
     :save-info="getSaveInfo(wad.slug)"
     @play="$emit('play', wad)"
     @delete="$emit('delete', wad)"

@@ -4,7 +4,8 @@ pub fn run() {
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_shell::init())
         .plugin(tauri_plugin_http::init())
-        .plugin(tauri_plugin_dialog::init());
+        .plugin(tauri_plugin_dialog::init())
+        .plugin(tauri_plugin_upload::init());
 
     // Enable MCP plugin for AI debugging in development builds
     #[cfg(debug_assertions)]

@@ -1,14 +1,21 @@
-import { ref } from "vue";
-import { exists, mkdir, writeFile, remove, readTextFile, writeTextFile, readFile } from "@tauri-apps/plugin-fs";
-import { fetch as tauriFetch } from "@tauri-apps/plugin-http";
+import { ref, reactive } from "vue";
+import { exists, mkdir, remove, readTextFile, writeTextFile, readFile, rename, stat } from "@tauri-apps/plugin-fs";
+import { download as tauriDownload } from "@tauri-apps/plugin-upload";
 import type { WadEntry } from "../lib/schema";
 import { LauncherDownloadsSchema, type LauncherDownloads } from "../lib/schema";
 import { useSettings } from "./useSettings";
 import { isNotFoundError } from "../lib/errors";
 
+// Progress info for a download
+export interface DownloadProgress {
+  progress: number;  // bytes downloaded
+  total: number;     // total bytes (0 if unknown)
+}
+
 // Singleton state
 const downloads = ref<LauncherDownloads>({ version: 1, downloads: {} });
 const downloading = ref<Set<string>>(new Set());
+const downloadProgress = reactive<Map<string, DownloadProgress>>(new Map());
 
 /**
  * Validate downloaded file has correct format (ZIP/WAD magic bytes).
@@ -70,45 +77,61 @@ export function useDownload() {
     return downloading.value.has(slug);
   }
 
+  function getDownloadProgress(slug: string): DownloadProgress | undefined {
+    return downloadProgress.get(slug);
+  }
+
   async function downloadWad(wad: WadEntry): Promise<string> {
     const dir = await getLibraryPath();
     const { url, filename } = wad.downloads[0];
     const path = `${dir}/${filename}`;
+    const partPath = `${path}.part`;  // Atomic download: write to .part file first
 
     if (await exists(path)) {
       // File exists - validate it before marking as downloaded
       await validateDownload(path, filename);
       if (!isDownloaded(wad.slug)) {
-        const data = await readFile(path);
-        downloads.value.downloads[wad.slug] = { filename, downloadedAt: new Date().toISOString(), size: data.byteLength };
+        const fileStat = await stat(path);
+        downloads.value.downloads[wad.slug] = { filename, downloadedAt: new Date().toISOString(), size: fileStat.size };
         await saveState();
       }
       return path;
     }
 
     downloading.value.add(wad.slug);
+    downloadProgress.set(wad.slug, { progress: 0, total: 0 });
     try {
       await mkdir(dir, { recursive: true });
-      const response = await tauriFetch(url);
-      if (!response.ok) throw new Error(`Download failed: ${response.status} ${response.statusText}`);
 
-      const data = new Uint8Array(await response.arrayBuffer());
-      await writeFile(path, data);
+      // Use tauri-plugin-upload for streaming download with progress
+      // ProgressPayload: { progress, progressTotal, total, transferSpeed }
+      await tauriDownload(
+        url,
+        partPath,
+        (payload) => {
+          downloadProgress.set(wad.slug, { progress: payload.progress, total: payload.total });
+        }
+      );
 
       // Validate the downloaded file before marking as complete
       try {
-        await validateDownload(path, filename);
+        await validateDownload(partPath, filename);
       } catch (validationError) {
         // Delete corrupt file and re-throw
-        await remove(path);
+        await remove(partPath);
         throw validationError;
       }
 
-      downloads.value.downloads[wad.slug] = { filename, downloadedAt: new Date().toISOString(), size: data.length };
+      // Atomic rename: .part -> final filename
+      await rename(partPath, path);
+
+      const fileStat = await stat(path);
+      downloads.value.downloads[wad.slug] = { filename, downloadedAt: new Date().toISOString(), size: fileStat.size };
       await saveState();
       return path;
     } finally {
       downloading.value.delete(wad.slug);
+      downloadProgress.delete(wad.slug);
     }
   }
 
@@ -135,5 +158,5 @@ export function useDownload() {
     await saveState();
   }
 
-  return { loadState, isDownloaded, isDownloading, downloadWad, downloadWithDeps, deleteWad, getLibraryPath };
+  return { loadState, isDownloaded, isDownloading, getDownloadProgress, downloadWad, downloadWithDeps, deleteWad, getLibraryPath };
 }

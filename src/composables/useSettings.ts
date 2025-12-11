@@ -8,18 +8,17 @@ interface Settings {
   libraryPath: string | null; // null = default location
 }
 
-// GZDoom auto-detect locations with their Tauri command names
+// GZDoom auto-detect locations
 const GZDOOM_LOCATIONS = [
-  { path: "/Applications/GZDoom.app/Contents/MacOS/gzdoom", cmd: "gzdoom" },
-  { path: "/opt/homebrew/bin/gzdoom", cmd: "gzdoom-homebrew-arm" },
-  { path: "/usr/local/bin/gzdoom", cmd: "gzdoom-homebrew-intel" },
+  "/Applications/GZDoom.app/Contents/MacOS/gzdoom",
+  "/opt/homebrew/bin/gzdoom",
+  "/usr/local/bin/gzdoom",
   // Note: $HOME paths need to be resolved at runtime
 ];
 
 // Singleton state
 const settings = ref<Settings>({ gzdoomPath: null, libraryPath: null });
 const gzdoomDetectedPath = ref<string | null>(null);
-const gzdoomCommandName = ref<string>("gzdoom");
 const settingsLoaded = ref(false);
 let home: string | null = null;
 
@@ -65,7 +64,7 @@ export function useSettings() {
     // Add user home paths
     const allLocations = [
       ...GZDOOM_LOCATIONS,
-      { path: `${h}/Applications/GZDoom.app/Contents/MacOS/gzdoom`, cmd: "gzdoom-user-apps" },
+      `${h}/Applications/GZDoom.app/Contents/MacOS/gzdoom`,
     ];
 
     // If user has set a custom path, validate it looks like gzdoom before trusting
@@ -73,7 +72,6 @@ export function useSettings() {
       const pathLower = settings.value.gzdoomPath.toLowerCase();
       if (pathLower.includes("gzdoom")) {
         gzdoomDetectedPath.value = settings.value.gzdoomPath;
-        gzdoomCommandName.value = "gzdoom"; // Custom paths use default command
         return;
       }
       // Invalid saved path - clear it and fall through to auto-detect
@@ -81,16 +79,15 @@ export function useSettings() {
     }
 
     // Auto-detect from known locations (these are in fs:scope)
-    for (const loc of allLocations) {
+    for (const path of allLocations) {
       try {
-        if (await exists(loc.path)) {
-          gzdoomDetectedPath.value = loc.path;
-          gzdoomCommandName.value = loc.cmd;
+        if (await exists(path)) {
+          gzdoomDetectedPath.value = path;
           return;
         }
       } catch (e) {
         if (!isNotFoundError(e)) {
-          console.error(`Error checking GZDoom at ${loc.path}:`, e);
+          console.error(`Error checking GZDoom at ${path}:`, e);
         }
         // File doesn't exist or permission denied - continue to next location
       }
@@ -98,7 +95,6 @@ export function useSettings() {
 
     // Not found
     gzdoomDetectedPath.value = null;
-    gzdoomCommandName.value = "gzdoom";
   }
 
   async function setGZDoomPath(path: string | null): Promise<void> {
@@ -122,10 +118,6 @@ export function useSettings() {
     return gzdoomDetectedPath.value;
   }
 
-  function getGZDoomCommandName(): string {
-    return gzdoomCommandName.value;
-  }
-
   function isGZDoomFound(): boolean {
     return gzdoomDetectedPath.value !== null;
   }
@@ -140,7 +132,6 @@ export function useSettings() {
     setLibraryPath,
     getLibraryPath,
     getGZDoomPath,
-    getGZDoomCommandName,
     isGZDoomFound,
   };
 }

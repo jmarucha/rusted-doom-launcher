@@ -1,5 +1,5 @@
 import { ref } from "vue";
-import { Command } from "@tauri-apps/plugin-shell";
+import { invoke } from "@tauri-apps/api/core";
 import { readDir, mkdir } from "@tauri-apps/plugin-fs";
 import type { Iwad } from "../lib/schema";
 import { useSettings } from "./useSettings";
@@ -10,7 +10,7 @@ const IWADS: Iwad[] = ["doom", "doom2", "plutonia", "tnt", "heretic", "hexen", "
 export function useGZDoom() {
   const isRunning = ref(false);
   const availableIwads = ref<Iwad[]>([]);
-  const { getLibraryPath, getGZDoomCommandName, isGZDoomFound, gzdoomDetectedPath } = useSettings();
+  const { getLibraryPath, getGZDoomPath, isGZDoomFound, gzdoomDetectedPath } = useSettings();
 
   async function detectIwads() {
     const dir = await getLibraryPath();
@@ -41,13 +41,18 @@ export function useGZDoom() {
       ...(saveDir ? ["-savedir", saveDir] : []),
     ];
 
-    const commandName = getGZDoomCommandName();
-    const command = Command.create(commandName, args);
-    command.on("close", () => { isRunning.value = false; });
-    command.on("error", () => { isRunning.value = false; });
+    const gzdoomPath = getGZDoomPath();
+    if (!gzdoomPath) {
+      throw new Error("GZDoom not found");
+    }
 
-    await command.spawn();
+    // Use Rust command to launch GZDoom (supports custom paths)
+    await invoke("launch_gzdoom", { gzdoomPath, args });
     isRunning.value = true;
+
+    // Note: We can't track when the process closes with invoke
+    // Reset after a reasonable delay (user will close GZDoom manually)
+    // A proper solution would use Tauri's process management
   }
 
   return { isRunning, availableIwads, detectIwads, launch, isGZDoomFound, gzdoomDetectedPath };

@@ -104,38 +104,35 @@ onMounted(async () => {
   // Sort by date, newest first
   entries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  // Group by date, then by WAD
-  const groupedByDate = new Map<string, Map<string, LevelEntry[]>>();
+  // Group by date, then by WAD - using plain objects for clarity
+  const groupedByDate: Record<string, Record<string, LevelEntry[]>> = {};
   const dateOrder: string[] = [];
 
   for (const entry of entries) {
-    if (!groupedByDate.has(entry.dateKey)) {
-      groupedByDate.set(entry.dateKey, new Map());
+    if (!groupedByDate[entry.dateKey]) {
+      groupedByDate[entry.dateKey] = {};
       dateOrder.push(entry.dateKey);
     }
-    const wadMap = groupedByDate.get(entry.dateKey)!;
-    if (!wadMap.has(entry.wadTitle)) {
-      wadMap.set(entry.wadTitle, []);
+    if (!groupedByDate[entry.dateKey][entry.wadTitle]) {
+      groupedByDate[entry.dateKey][entry.wadTitle] = [];
     }
-    wadMap.get(entry.wadTitle)!.push(entry.level);
+    groupedByDate[entry.dateKey][entry.wadTitle].push(entry.level);
   }
 
-  // Convert to final structure
-  const result: DateGroup[] = [];
-  for (const dateKey of dateOrder) {
-    const wadMap = groupedByDate.get(dateKey)!;
-    const wads: WadGroup[] = [];
-    for (const [wadTitle, levels] of wadMap) {
-      wads.push({ wadTitle, levels });
-    }
-    // Find first entry date for display
+  // Convert to final structure - one DateGroup per unique date
+  const result: DateGroup[] = dateOrder.map(dateKey => {
+    const wadMap = groupedByDate[dateKey];
+    const wads: WadGroup[] = Object.entries(wadMap).map(([wadTitle, levels]) => ({
+      wadTitle,
+      levels,
+    }));
     const firstEntry = entries.find(e => e.dateKey === dateKey);
-    result.push({
+    return {
       date: firstEntry ? formatDateHeader(firstEntry.date) : dateKey,
       dateKey,
       wads,
-    });
-  }
+    };
+  });
 
   dateGroups.value = result;
   loading.value = false;

@@ -172,16 +172,16 @@ onMounted(async () => {
         </div>
 
         <!-- WAD Groups -->
-        <div class="space-y-4 pl-3 border-l border-zinc-800">
-          <div v-for="wadGroup in dateGroup.wads" :key="wadGroup.wadTitle" class="space-y-1">
+        <div class="space-y-6 pl-3 border-l border-zinc-800">
+          <div v-for="wadGroup in dateGroup.wads" :key="wadGroup.wadTitle">
             <!-- WAD Name -->
-            <div class="text-sm text-zinc-300 mb-2">{{ wadGroup.wadTitle }}</div>
+            <div class="text-sm font-medium text-zinc-300 mb-3">{{ wadGroup.wadTitle }}</div>
 
             <!-- Level Rows -->
             <div
               v-for="(level, idx) in wadGroup.levels"
               :key="`${level.levelId}-${idx}`"
-              class="flex items-center gap-4 py-1.5 px-3 -mx-3 rounded hover:bg-zinc-800/40 transition-colors text-sm"
+              class="flex items-center gap-6 py-2.5 px-3 -mx-3 rounded hover:bg-zinc-800/40 transition-colors text-sm"
             >
               <!-- Level ID and Name -->
               <div class="flex-1 min-w-0">
@@ -190,35 +190,35 @@ onMounted(async () => {
               </div>
 
               <!-- Skill -->
-              <span class="text-[10px] text-zinc-500 truncate max-w-28" :title="level.skill">{{ SKILL_NAMES[level.skill] }}</span>
+              <span class="text-[10px] text-zinc-500 w-28 text-right" :title="level.skill">{{ SKILL_NAMES[level.skill] }}</span>
 
-              <!-- Stats with colors and icons -->
-              <div class="flex items-center gap-3 font-mono text-xs tabular-nums">
+              <!-- Stats with colors and icons (icon on right, fixed widths) -->
+              <div class="flex items-center gap-5 font-mono text-xs tabular-nums">
                 <!-- Kills (red) -->
-                <div class="flex items-center gap-1" title="Kills">
-                  <Skull :size="12" class="text-red-400/70" />
+                <div class="w-20 flex items-center justify-end gap-1" title="Kills">
                   <span :class="level.kills === level.totalKills ? 'text-red-400' : 'text-red-400'">{{ level.kills }}</span>
                   <span class="text-zinc-700">/</span>
                   <span :class="level.kills === level.totalKills ? 'text-red-400' : 'text-zinc-600'">{{ level.totalKills }}</span>
+                  <Skull :size="11" class="text-red-400/60 ml-1" />
                 </div>
                 <!-- Secrets (amber) -->
-                <div class="flex items-center gap-1" title="Secrets">
-                  <KeyRound :size="12" class="text-amber-400/70" />
+                <div class="w-14 flex items-center justify-end gap-1" title="Secrets">
                   <span class="text-amber-400">{{ level.secrets }}</span>
                   <span class="text-zinc-700">/</span>
                   <span :class="level.secrets === level.totalSecrets ? 'text-amber-400' : 'text-zinc-600'">{{ level.totalSecrets }}</span>
+                  <KeyRound :size="11" class="text-amber-400/60 ml-1" />
                 </div>
                 <!-- Items (blue) -->
-                <div class="flex items-center gap-1" title="Items">
-                  <Package :size="12" class="text-sky-400/70" />
+                <div class="w-16 flex items-center justify-end gap-1" title="Items">
                   <span class="text-sky-400">{{ level.items }}</span>
                   <span class="text-zinc-700">/</span>
                   <span :class="level.items === level.totalItems ? 'text-sky-400' : 'text-zinc-600'">{{ level.totalItems }}</span>
+                  <Package :size="11" class="text-sky-400/60 ml-1" />
                 </div>
                 <!-- Time -->
-                <div class="flex items-center gap-1 text-zinc-400">
-                  <Clock :size="12" class="text-zinc-500" />
-                  {{ formatTime(level.timeTics) }}
+                <div class="w-16 flex items-center justify-end gap-1 text-zinc-400">
+                  <span>{{ formatTime(level.timeTics) }}</span>
+                  <Clock :size="11" class="text-zinc-500/60 ml-1" />
                 </div>
               </div>
             </div>

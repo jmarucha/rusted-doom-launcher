@@ -50,16 +50,20 @@ function formatTime(tics: number): string {
   return `${mins}:${secs.toString().padStart(2, "0")}`;
 }
 
-// Format date as "18 Dec 2025"
-function formatDateHeader(isoString: string): string {
+// Get local date key for grouping (YYYY-MM-DD in local timezone)
+function getDateKey(isoString: string): string {
   const date = new Date(isoString);
-  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 }
 
-// Get date key for grouping (YYYY-MM-DD)
-function getDateKey(isoString: string): string {
-  return isoString.slice(0, 10);
+// Format date key as "18 Dec 2025"
+function formatDateHeader(dateKey: string): string {
+  const [year, month, day] = dateKey.split("-").map(Number);
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return `${day} ${months[month - 1]} ${year}`;
 }
 
 onMounted(async () => {
@@ -126,9 +130,8 @@ onMounted(async () => {
       wadTitle,
       levels,
     }));
-    const firstEntry = entries.find(e => e.dateKey === dateKey);
     return {
-      date: firstEntry ? formatDateHeader(firstEntry.date) : dateKey,
+      date: formatDateHeader(dateKey),
       dateKey,
       wads,
     };

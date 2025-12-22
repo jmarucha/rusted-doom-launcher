@@ -50,9 +50,25 @@ export function useGZDoom() {
     await invoke("launch_gzdoom", { gzdoomPath, args });
     isRunning.value = true;
 
-    // Note: We can't track when the process closes with invoke
-    // Reset after a reasonable delay (user will close GZDoom manually)
-    // A proper solution would use Tauri's process management
+    // Poll to detect when GZDoom exits
+    pollForExit();
+  }
+
+  function pollForExit() {
+    const pollInterval = setInterval(async () => {
+      try {
+        // Check if gzdoom process is still running via Rust
+        const running = await invoke<boolean>("is_process_running", { processName: "gzdoom" });
+        if (!running) {
+          clearInterval(pollInterval);
+          isRunning.value = false;
+        }
+      } catch {
+        // If check fails, assume not running
+        clearInterval(pollInterval);
+        isRunning.value = false;
+      }
+    }, 2000); // Check every 2 seconds
   }
 
   return { isRunning, availableIwads, detectIwads, launch, isGZDoomFound, gzdoomDetectedPath };

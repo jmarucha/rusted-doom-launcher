@@ -7,6 +7,7 @@ import { useGZDoom } from "./composables/useGZDoom";
 import { useDownload } from "./composables/useDownload";
 import { useSettings } from "./composables/useSettings";
 import { useSaves } from "./composables/useSaves";
+import { useStats } from "./composables/useStats";
 import type { WadEntry } from "./lib/schema";
 
 declare const window: Window & typeof globalThis & { __TAURI_INTERNALS__?: unknown };
@@ -16,6 +17,7 @@ const { detectIwads, availableIwads, launch, isRunning, isGZDoomFound, gzdoomDet
 const { loadState: loadDownloadState, isDownloaded, isDownloading, getDownloadProgress, downloadWithDeps, deleteWad } = useDownload();
 const { loadSettings, setGZDoomPath, setLibraryPath, getLibraryPath } = useSettings();
 const { loadAllSaveInfo, getCachedSaveInfo, refreshSaveInfo } = useSaves();
+const { captureStats } = useStats();
 
 const settingsOpen = ref(false);
 const errorMsg = ref("");
@@ -46,10 +48,11 @@ watch(wads, async (newWads) => {
   }
 }, { immediate: true });
 
-// Refresh save info for the played WAD when game closes
+// Refresh save info and capture stats when game closes
 watch(isRunning, async (running, wasRunning) => {
   if (wasRunning && !running && lastPlayedSlug.value) {
     await refreshSaveInfo(lastPlayedSlug.value);
+    await captureStats(lastPlayedSlug.value);
   }
 });
 

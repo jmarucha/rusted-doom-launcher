@@ -1,5 +1,17 @@
 use std::process::Command;
 
+/// Check if a process with the given name is running.
+#[tauri::command]
+async fn is_process_running(process_name: String) -> Result<bool, String> {
+    let output = Command::new("pgrep")
+        .arg("-x")
+        .arg(&process_name)
+        .output()
+        .map_err(|e| format!("Failed to run pgrep: {}", e))?;
+
+    Ok(output.status.success())
+}
+
 /// Launch GZDoom with the specified executable path and arguments.
 /// This bypasses shell plugin limitations for custom GZDoom paths.
 #[tauri::command]
@@ -30,7 +42,7 @@ pub fn run() {
         .plugin(tauri_plugin_http::init())
         .plugin(tauri_plugin_dialog::init())
         .plugin(tauri_plugin_upload::init())
-        .invoke_handler(tauri::generate_handler![launch_gzdoom]);
+        .invoke_handler(tauri::generate_handler![launch_gzdoom, is_process_running]);
 
     // Enable MCP plugin for AI debugging in development builds
     #[cfg(debug_assertions)]

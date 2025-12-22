@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import { History } from "lucide-vue-next";
 import { useStats } from "../composables/useStats";
+import { useLevelNames } from "../composables/useLevelNames";
 import type { SkillLevel } from "../lib/statsSchema";
 import type { WadEntry } from "../lib/schema";
 
@@ -34,6 +35,7 @@ const props = defineProps<{
 }>();
 
 const { loadAllSessions } = useStats();
+const { loadLevelNames } = useLevelNames();
 
 const dateGroups = ref<DateGroup[]>([]);
 const loading = ref(true);
@@ -67,17 +69,24 @@ onMounted(async () => {
   const entries: { dateKey: string; date: string; wadTitle: string; level: LevelEntry }[] = [];
 
   for (const wad of props.wads) {
+    // Load level names from WAD file (cached/persisted)
+    const levelNamesMap = await loadLevelNames(wad.slug);
+
     const sessions = await loadAllSessions(wad.slug);
     for (const session of sessions) {
       const dateKey = getDateKey(session.capturedAt);
       for (const level of session.levels) {
+        // Get level name from parsed WAD data (empty string if not defined)
+        const levelIdUpper = level.id.toUpperCase();
+        const parsedName = levelNamesMap?.get(levelIdUpper) ?? "";
+
         entries.push({
           dateKey,
           date: session.capturedAt,
           wadTitle: wad.title,
           level: {
             levelId: level.id,
-            levelName: level.name,
+            levelName: parsedName,
             skill: session.skill,
             kills: level.kills,
             totalKills: level.totalKills,
@@ -165,11 +174,10 @@ onMounted(async () => {
               :key="`${level.levelId}-${idx}`"
               class="flex items-center gap-4 py-1.5 px-3 -mx-3 rounded hover:bg-zinc-800/40 transition-colors text-sm"
             >
-              <!-- Level Name -->
+              <!-- Level ID and Name -->
               <div class="flex-1 min-w-0">
                 <span class="font-mono text-zinc-500 text-xs">{{ level.levelId }}</span>
-                <span v-if="level.levelName !== level.levelId" class="ml-1.5 text-zinc-300">{{ level.levelName }}</span>
-                <span v-else class="ml-1.5 text-zinc-500">—</span>
+                <span v-if="level.levelName" class="ml-1.5 text-zinc-300">{{ level.levelName }}</span>
               </div>
 
               <!-- Skill -->

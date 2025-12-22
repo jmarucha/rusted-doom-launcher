@@ -1,5 +1,5 @@
 import { ref } from "vue";
-import { readFile, readTextFile } from "@tauri-apps/plugin-fs";
+import { readFile, readTextFile, writeTextFile, exists, mkdir } from "@tauri-apps/plugin-fs";
 import { unzipSync, strFromU8 } from "fflate";
 import { extractLevelNames, extractLevelNamesFromData } from "../lib/wadParser";
 import { useSettings } from "./useSettings";
@@ -11,6 +11,51 @@ const levelNamesCache = ref<Map<string, Map<string, string>>>(new Map());
 
 export function useLevelNames() {
   const { getLibraryPath } = useSettings();
+
+  /**
+   * Get the path to the level names JSON file for a slug.
+   */
+  async function getLevelNamesPath(slug: string): Promise<string> {
+    const libraryPath = await getLibraryPath();
+    return `${libraryPath}/level-names/${slug}.json`;
+  }
+
+  /**
+   * Load level names from persistent storage.
+   */
+  async function loadFromStorage(slug: string): Promise<Map<string, string> | null> {
+    try {
+      const path = await getLevelNamesPath(slug);
+      if (await exists(path)) {
+        const content = await readTextFile(path);
+        const data = JSON.parse(content) as Record<string, string>;
+        return new Map(Object.entries(data));
+      }
+    } catch (e) {
+      if (!isNotFoundError(e)) {
+        console.warn(`Failed to load stored level names for ${slug}:`, e);
+      }
+    }
+    return null;
+  }
+
+  /**
+   * Save level names to persistent storage.
+   */
+  async function saveToStorage(slug: string, levels: Map<string, string>): Promise<void> {
+    try {
+      const libraryPath = await getLibraryPath();
+      const dir = `${libraryPath}/level-names`;
+      await mkdir(dir, { recursive: true });
+
+      const path = await getLevelNamesPath(slug);
+      const data = Object.fromEntries(levels);
+      await writeTextFile(path, JSON.stringify(data, null, 2));
+      console.log(`[LevelNames] Saved ${levels.size} level names for ${slug}`);
+    } catch (e) {
+      console.error(`Failed to save level names for ${slug}:`, e);
+    }
+  }
 
   /**
    * Get download info for a slug from launcher-downloads.json
@@ -32,15 +77,25 @@ export function useLevelNames() {
   }
 
   /**
-   * Load level names for a WAD from its downloaded files.
-   * Handles both ZIP archives and direct WAD files.
+   * Load level names for a WAD.
+   * 1. Check memory cache
+   * 2. Check persistent storage
+   * 3. Parse WAD file and persist
    */
   async function loadLevelNames(slug: string): Promise<Map<string, string> | null> {
-    // Check cache first
+    // 1. Check memory cache
     if (levelNamesCache.value.has(slug)) {
       return levelNamesCache.value.get(slug)!;
     }
 
+    // 2. Check persistent storage
+    const stored = await loadFromStorage(slug);
+    if (stored && stored.size > 0) {
+      levelNamesCache.value.set(slug, stored);
+      return stored;
+    }
+
+    // 3. Parse WAD file
     try {
       const downloadInfo = await getDownloadInfo(slug);
       if (!downloadInfo) {
@@ -105,6 +160,8 @@ export function useLevelNames() {
 
       if (allLevels.size > 0) {
         levelNamesCache.value.set(slug, allLevels);
+        // Persist to storage
+        await saveToStorage(slug, allLevels);
         return allLevels;
       }
 
@@ -143,11 +200,45 @@ export function useLevelNames() {
     }
   }
 
+  /**
+   * Rescan all downloaded WADs and extract level names.
+   * Use this to populate level names for already-installed WADs.
+   */
+  async function rescanAllWads(): Promise<number> {
+    try {
+      const libraryPath = await getLibraryPath();
+      const content = await readTextFile(`${libraryPath}/launcher-downloads.json`);
+      const parsed = LauncherDownloadsSchema.safeParse(JSON.parse(content));
+
+      if (!parsed.success) {
+        console.error("Failed to parse launcher-downloads.json");
+        return 0;
+      }
+
+      let count = 0;
+      for (const slug of Object.keys(parsed.data.downloads)) {
+        // Clear cache to force re-parse
+        levelNamesCache.value.delete(slug);
+        const levels = await loadLevelNames(slug);
+        if (levels && levels.size > 0) {
+          count++;
+        }
+      }
+
+      console.log(`[LevelNames] Rescanned ${count} WADs`);
+      return count;
+    } catch (e) {
+      console.error("Failed to rescan WADs:", e);
+      return 0;
+    }
+  }
+
   return {
     loadLevelNames,
     getCachedLevelNames,
     getLevelDisplayName,
     clearCache,
+    rescanAllWads,
   };
 }
 

@@ -854,6 +854,7 @@ name = "doom-launcher"
 version = "0.1.0"
 dependencies = [
  "log",
+ "regex",
  "serde",
  "serde_json",
  "tauri",

@@ -4,6 +4,7 @@ import { download as tauriDownload } from "@tauri-apps/plugin-upload";
 import type { WadEntry } from "../lib/schema";
 import { LauncherDownloadsSchema, type LauncherDownloads } from "../lib/schema";
 import { useSettings } from "./useSettings";
+import { useLevelNames } from "./useLevelNames";
 import { isNotFoundError } from "../lib/errors";
 
 // Progress info for a download
@@ -47,6 +48,7 @@ async function validateDownload(path: string, filename: string): Promise<void> {
 
 export function useDownload() {
   const { getLibraryPath } = useSettings();
+  const { loadLevelNames } = useLevelNames();
 
   async function loadState() {
     const dir = await getLibraryPath();
@@ -128,6 +130,10 @@ export function useDownload() {
       const fileStat = await stat(path);
       downloads.value.downloads[wad.slug] = { filename, downloadedAt: new Date().toISOString(), size: fileStat.size };
       await saveState();
+
+      // Extract and persist level names from the WAD
+      await loadLevelNames(wad.slug);
+
       return path;
     } finally {
       downloading.value.delete(wad.slug);

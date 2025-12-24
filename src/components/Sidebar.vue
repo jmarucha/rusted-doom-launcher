@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Gamepad2, HardDrive, Compass, History, Settings2, Info } from "lucide-vue-next";
+import { Gamepad2, HardDrive, Compass, History, ScrollText, Settings2, Info } from "lucide-vue-next";
 
-type View = "main" | "library" | "explore" | "runs" | "settings" | "about";
+type View = "main" | "library" | "explore" | "runs" | "logs" | "settings" | "about";
 
 defineProps<{
   activeView: View;
@@ -16,6 +16,7 @@ const topNav: { view: View; icon: typeof Gamepad2; label: string }[] = [
   { view: "library", icon: HardDrive, label: "Library" },
   { view: "explore", icon: Compass, label: "Explore" },
   { view: "runs", icon: History, label: "Runs" },
+  { view: "logs", icon: ScrollText, label: "Logs" },
 ];
 
 const bottomNav: { view: View; icon: typeof Settings2; label: string }[] = [

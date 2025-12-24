@@ -1,0 +1,36 @@
+{
+  "slug": "nihility-infinite-teeth",
+  "title": "Nihility: Infinite Teeth",
+  "authors": [
+    {
+      "name": "Years"
+    }
+  ],
+  "year": 2016,
+  "description": "Nihility: Infinite Teeth - Cacoward winner 2016",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/nihility-infinite-teeth.zip",
+      "filename": "nihility-infinite-teeth.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "fractured-worlds",
+  "title": "Fractured Worlds",
+  "authors": [
+    {
+      "name": "Nirvana"
+    }
+  ],
+  "year": 2021,
+  "description": "Fractured Worlds is a collection of 8 blue/cyan Boom compatible (cl9) maps, spanning a wide variety of themes and presenting some challenging set piece encounters and incidental combat. There are some large and small maps, and each one contains a secret fight, accessible by finding the hidden purple keycard in each level. There are 6 maps by me (7 including the anti-Underhalls map at the end) and 2 secret maps by Scotty and Insane Gazebo, taking the map 31 and 32 slots respectively. Maps jump...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/fw.zip",
+      "filename": "fw.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

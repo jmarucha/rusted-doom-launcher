@@ -1,0 +1,36 @@
+{
+  "slug": "shotgun-symphony",
+  "title": "Shotgun Symphony",
+  "authors": [
+    {
+      "name": "Steve Duff"
+    }
+  ],
+  "year": 2019,
+  "description": "An oldschool mapset for E1 of Ultimate Doom, in the combined E1/E2 style of Fava Beans, but much more violent. Mapset is optimized for pistol start, though there are occasional goodies for continuous players. Every map exits directly into the next, creating a single, giant facility.",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/s-u/sgnsym.zip",
+      "filename": "sgnsym.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2019
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

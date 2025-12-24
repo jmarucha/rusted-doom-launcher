@@ -1,0 +1,36 @@
+{
+  "slug": "reverie",
+  "title": "Reverie",
+  "authors": [
+    {
+      "name": "Michael Jan Krizik"
+    }
+  ],
+  "year": 2011,
+  "description": "A brand new, 32-level megawad for Vanilla Doom 2.exe. Inspired from and made in the style of 90's megawads.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/megawads/reverie.zip",
+      "filename": "reverie.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2011
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

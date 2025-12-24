@@ -1,0 +1,36 @@
+{
+  "slug": "the-zdoom-community-map-project-take-2",
+  "title": "The ZDoom Community Map Project \"Take 2\"",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2013,
+  "description": "The ZDoom Community Map Project \"Take 2\" - Cacoward winner 2013",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/the-zdoom-community-map-project-take-2.zip",
+      "filename": "the-zdoom-community-map-project-take-2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2013
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "the-10x10-project",
+  "title": "The 10x10 Project",
+  "authors": [
+    {
+      "name": "LunchLunch"
+    }
+  ],
+  "year": 2022,
+  "description": "10x10.wad is a modest set of 10 BOOM-compatible maps made as mapping exercises in which I restricted myself to using ten stock textures and ten stock FLATs in each (with some universal textures such as switches, doors, DOORTRAK, lights, etc.)* Pistol starts are intended but I won't put a gun to your head. In addition, there is a secret map that will probably be unpopular. *An out of bounds area in MAP01 showcases this universal texturebank for any nerd interested. Also, I cheated with ALLBLK ...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/0-9/10x10.zip",
+      "filename": "10x10.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2022
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

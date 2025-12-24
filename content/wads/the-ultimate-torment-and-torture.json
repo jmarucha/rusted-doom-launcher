@@ -1,0 +1,36 @@
+{
+  "slug": "the-ultimate-torment-and-torture",
+  "title": "The Ultimate Torment and Torture",
+  "authors": [
+    {
+      "name": "Daniel Gimmer"
+    }
+  ],
+  "year": 2007,
+  "description": "The Ultimate Torment and Torture - Cacoward winner 2007",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/the-ultimate-torment-and-torture.zip",
+      "filename": "the-ultimate-torment-and-torture.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2007
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

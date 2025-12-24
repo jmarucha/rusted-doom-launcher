@@ -1,0 +1,36 @@
+{
+  "slug": "antaresian-reliquary",
+  "title": "Antaresian Reliquary",
+  "authors": [
+    {
+      "name": "Seongbae Park"
+    }
+  ],
+  "year": 2020,
+  "description": "Antaresian Reliquary is a compilation of levels, designed for various community projects for the last 4 years. Seven levels with different themes and limitations were selected for this compilation, and the wad is designed as boom-compatible with some custom gameplay elements, such as new enemies and weapons. It is recommended to read the details about the gameplay changes, before you start playing this wad. Also, each level has a death exit, making every level starts with forced pistol start....",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/anta_req.zip",
+      "filename": "anta_req.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2020
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

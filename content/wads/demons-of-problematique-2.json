@@ -1,0 +1,36 @@
+{
+  "slug": "demons-of-problematique-2",
+  "title": "Demons of Problematique 2",
+  "authors": [
+    {
+      "name": "Dennis Meuwissen"
+    }
+  ],
+  "year": 2009,
+  "description": "An obvious sequel to Demons of Problematique. No cutscenes (aside from the ending), no new weapons, no new monsters, just Doom. With some fancy effects. Be sure to turn up the music volume to above the SFX volume. Music is used sparingly but serves a purpose other than just background noise. There are plenty of ambient sounds to provide atmosphere during regular play. If you are masochistic enough to want to subject yourself to the Nightmare! difficulty level, you can do so by entering the Ha...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/dop2.zip",
+      "filename": "dop2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2009
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

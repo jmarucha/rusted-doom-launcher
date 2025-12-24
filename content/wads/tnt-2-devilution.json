@@ -1,0 +1,36 @@
+{
+  "slug": "tnt-2-devilution",
+  "title": "TNT 2: Devilution",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2022,
+  "description": "Devilution is a what-if-sequel to TNT's Evilution as crafted by an enthusiastic team comprising various backgrounds and styles. This megawad has been tested in and is compatible with the following source ports: Chocolate Doom, Crispy Doom, Prboom+, DSDA Doom, and Gzdoom. NOTE: Bonus map MAP36 is an exception that requires at least limit-removing ports. Version 1.1 updates textures and textfile/WADINFO",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/megawads/tnt2_1_1.zip",
+      "filename": "tnt2_1_1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

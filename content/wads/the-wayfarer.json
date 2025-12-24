@@ -1,0 +1,36 @@
+{
+  "slug": "the-wayfarer",
+  "title": "The Wayfarer",
+  "authors": [
+    {
+      "name": "Not Jabba"
+    }
+  ],
+  "year": 2019,
+  "description": "The Wayfarer is a full 9-map episode for Heretic that includes two new enemies, two new artifacts, a new weapon, plenty of custom decorations and textures, custom bosses, and more. The episode includes a built-in gameplay mod that rebalances Heretic in ways that are mostly subtle but make the game a lot more engaging to play. Many enemy attacks are more dangerous, and most of the player's weapons are more powerful, allowing certain weapons to have more useful combat niches and eliminating the...",
+  "iwad": "heretic",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/heretic/Ports/wayfarer.zip",
+      "filename": "wayfarer.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2019
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

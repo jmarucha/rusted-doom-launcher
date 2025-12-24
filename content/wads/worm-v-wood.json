@@ -1,0 +1,39 @@
+{
+  "slug": "worm-v-wood",
+  "title": "worm\\V/wood",
+  "authors": [
+    {
+      "name": "Zachary Stephens"
+    },
+    {
+      "name": "Grain of Salt"
+    }
+  ],
+  "year": 2023,
+  "description": "worm\\V/wood - Cacoward winner 2023",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/worm-v-wood.zip",
+      "filename": "worm-v-wood.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

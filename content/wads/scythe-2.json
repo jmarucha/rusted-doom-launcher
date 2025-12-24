@@ -1,0 +1,36 @@
+{
+  "slug": "scythe-2",
+  "title": "Scythe 2",
+  "authors": [
+    {
+      "name": "Erik Alm"
+    }
+  ],
+  "year": 2005,
+  "description": "This is the sequel to my old megawad \"Scythe\". Expect better looking and bigger levels. unfortunately, the last 3 levels are missing, because I am so lazy and I haven't been satisfied with my attempts at making map28. I _might_ release the last 3 maps some time in the future, but do not count on it. (Update: the last 3 maps are now completed!)",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/scythe2.zip",
+      "filename": "scythe2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

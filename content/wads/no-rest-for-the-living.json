@@ -1,0 +1,36 @@
+{
+  "slug": "no-rest-for-the-living",
+  "title": "No Rest for the Living",
+  "authors": [
+    {
+      "name": "Nerve Software"
+    }
+  ],
+  "year": 2010,
+  "description": "No Rest for the Living - Cacoward winner 2010",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/no-rest-for-the-living.zip",
+      "filename": "no-rest-for-the-living.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2010
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

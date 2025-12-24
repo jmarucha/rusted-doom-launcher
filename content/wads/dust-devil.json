@@ -1,0 +1,36 @@
+{
+  "slug": "dust-devil",
+  "title": "Dust Devil",
+  "authors": [
+    {
+      "name": "Captain Toenail"
+    }
+  ],
+  "year": 2022,
+  "description": "Dust Devil is a single player mission for GZDoom spread across two intertwined maps. You have been sent to a UAC outpost on a desert world to recover a mysterious artefact. Expect heavy resistance and some new surprises. Featuring new textures by Ukiro and music by Jimmy. GAMEPLAY INFO - This map used Hardware mode only features (3D Models, flatsprites) and cannot be played in Software mode - ensure video mode is set to Hardware before loading map or it may crash. This is a singleplayer map. ...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/dustdevil.zip",
+      "filename": "dustdevil.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2022
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "the-magenta-spire",
+  "title": "The Magenta Spire",
+  "authors": [
+    {
+      "name": "Cole Bryden"
+    }
+  ],
+  "year": 2022,
+  "description": "A high ranking UAC communications technician travels to a",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/magspire.zip",
+      "filename": "magspire.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2022
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "preacher",
+  "title": "Preacher",
+  "authors": [
+    {
+      "name": "Darch"
+    }
+  ],
+  "year": 2018,
+  "description": "Preacher is a 9 map boom compatible episode. You play as a mad preacher who hears a voice in his head impelling him to take down all evil in the World. Layouts are open and non linear, and start spots are randomized. There are graphic and sound replacements, but weapon and enemy behaviours are untouched.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/p-r/preacher.zip",
+      "filename": "preacher.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

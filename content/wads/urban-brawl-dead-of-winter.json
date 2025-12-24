@@ -1,0 +1,36 @@
+{
+  "slug": "urban-brawl-dead-of-winter",
+  "title": "Urban Brawl: Dead of Winter",
+  "authors": [
+    {
+      "name": "Stephen Browning"
+    }
+  ],
+  "year": 2008,
+  "description": "Urban Brawl is the prequel to Scuba Steve's: Action Doom, telling your character's history before those events. Urban Brawl embodies a comic book look and feel with cell shaded graphics and story sequences. All of this is fused with a gameplay that is reminicent of an old beat-em up game.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/action2.zip",
+      "filename": "action2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2014
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

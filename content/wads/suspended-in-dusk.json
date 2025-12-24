@@ -1,0 +1,36 @@
+{
+  "slug": "suspended-in-dusk",
+  "title": "Suspended in Dusk",
+  "authors": [
+    {
+      "name": "Esa Repo"
+    }
+  ],
+  "year": 2005,
+  "description": "A set of four levels, which all push the limits of the good ol' vanilla Doom. If your computer refuses to cooperate with doom2.exe, I recommend Chocolate Doom: http://chocolate-doom.sourceforge.net/ Has also been tested and found functional on ZDoom. Other ports may or may not break some effects. I really don't recommend playing this on a 3D-accelerated port.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/s-u/sid.zip",
+      "filename": "sid.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

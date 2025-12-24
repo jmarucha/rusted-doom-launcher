@@ -1,0 +1,36 @@
+{
+  "slug": "community-chest-3",
+  "title": "Community Chest 3",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2007,
+  "description": "The third installment of the series, Community Chest 3 boasts 32 maps made by 20 different authors from the Doom community. After one year of work, they have been made available for your enjoyment.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/cchest3.zip",
+      "filename": "cchest3.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2007
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

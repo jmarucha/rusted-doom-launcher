@@ -1,0 +1,36 @@
+{
+  "slug": "the-eye",
+  "title": "The Eye",
+  "authors": [
+    {
+      "name": "Cyriak Harris"
+    }
+  ],
+  "year": 2012,
+  "description": "A fairly tough single map with a circular layout and moments of mild carnage",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/eye.zip",
+      "filename": "eye.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2012
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

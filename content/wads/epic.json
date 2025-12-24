@@ -1,0 +1,36 @@
+{
+  "slug": "epic",
+  "title": "Epic",
+  "authors": [
+    {
+      "name": "Alexander S. (Eternal)"
+    }
+  ],
+  "year": 2007,
+  "description": "One level for any boom compatible and limit removing ports. PrBoom-Plus or GZDoom are recommended. To play this PWAD file, unzip it into the directory with your PWADs then start: glboom-plus.exe -file epic.wad -complevel 9 (g)zdoom.exe -file epic.wad Important: Do not play map05 in the current prboom (up to 2.4.8 for now), because of: a) All existing versions of prboom are buggy on levels with big open areas - precision problems. The latest Eternity release (3.33.33) also can't handle map05 c...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/epic.zip",
+      "filename": "epic.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2007
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

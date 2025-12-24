@@ -1,0 +1,36 @@
+{
+  "slug": "bgpa-missions-liberation",
+  "title": "BGPA Missions: Liberation",
+  "authors": [
+    {
+      "name": "Nigel Rowand"
+    }
+  ],
+  "year": 2008,
+  "description": "A (very) mini TC consisting of 5 maps comprising one mission",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/m-o/njbgpabh.zip",
+      "filename": "njbgpabh.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2008
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

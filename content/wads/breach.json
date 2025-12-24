@@ -1,0 +1,36 @@
+{
+  "slug": "breach",
+  "title": "Breach",
+  "authors": [
+    {
+      "name": "Aline Bee"
+    }
+  ],
+  "year": 2015,
+  "description": "Sprawling techbase medley with surreal interludes in hell. Assume the usual twaddle about teleportation research gone awry. This was an exercise in using the original Doom 2 textures and specials to build something very modern: with intricate spaces, long vistas and a bunch of half-assed environmental storytelling. Inspired by No Rest for the Living, Visions of Eternity, Vaporware Demo and Metroid Prime. (This represents about half of the map I had planned before I hit the seg limit; I may fi...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/breach.zip",
+      "filename": "breach.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2015
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

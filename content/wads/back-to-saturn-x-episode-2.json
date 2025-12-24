@@ -1,0 +1,36 @@
+{
+  "slug": "back-to-saturn-x-episode-2",
+  "title": "Back to Saturn X: Episode 2",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2012,
+  "description": "Back to Saturn X: Episode 2 - Cacoward winner 2014",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/back-to-saturn-x-episode-2.zip",
+      "filename": "back-to-saturn-x-episode-2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2014
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

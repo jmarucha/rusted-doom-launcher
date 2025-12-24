@@ -1,0 +1,36 @@
+{
+  "slug": "paradise",
+  "title": "Paradise",
+  "authors": [
+    {
+      "name": "Tango"
+    }
+  ],
+  "year": 2019,
+  "description": "NOTE- I designed this with -ALTDEATH in mind, but it should still be fun in normal mode. This WAD is the culmination of everything that my victims .. uh, I mean my friends and I wanted to see in a DEATHMATCH level. Lots of running room, large open circular rooms with wide twisty halls connecting them. Great sniping positions, and many LURKING spots. (I am a lurker at heart) There are no \"safe\" spots, no matter where you are you can be snuck up on. Everyone gets the shotgun and chaingun right ...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/deathmatch/j-l/lurker.zip",
+      "filename": "lurker.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2019
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "plasmaplant",
+  "title": "Plasmaplant",
+  "authors": [
+    {
+      "name": "Sverre Andr\u00e9 Kvernmo"
+    }
+  ],
+  "year": 2013,
+  "description": "Plasmaplant was originally a \"plasma and pistol only\" idea for my now venerable Cabal series, and so the map is based off an almost 20 years old paper sketch. I changed the layout and style but kept the central gameplay ideas.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/p-r/plasmap.zip",
+      "filename": "plasmap.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2014
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

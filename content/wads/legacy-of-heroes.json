@@ -1,0 +1,36 @@
+{
+  "slug": "legacy-of-heroes",
+  "title": "Legacy of Heroes",
+  "authors": [
+    {
+      "name": "gaspe"
+    }
+  ],
+  "year": 2016,
+  "description": "Legacy of Heroes is a Boom compatible episode for Doom 2 with 11 levels. The maps use the textures from Eternal Doom and the themes for the most are fantasy oriented. The maps also feature a more adventurous style and the level progression was made to make feel the episode like a continuous journey. Some levels are very long and all of them were desgned with pistol starts in mind. The last level has a custom dehacked boss. This is the first wad I started to work on it, the development started...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/j-l/legher.zip",
+      "filename": "legher.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

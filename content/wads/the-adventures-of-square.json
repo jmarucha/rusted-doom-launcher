@@ -1,0 +1,36 @@
+{
+  "slug": "the-adventures-of-square",
+  "title": "The Adventures of Square",
+  "authors": [
+    {
+      "name": "BigBrik Games"
+    }
+  ],
+  "year": 2014,
+  "description": "The Adventures of Square - Cacoward winner 2014",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/the-adventures-of-square.zip",
+      "filename": "the-adventures-of-square.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2014
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

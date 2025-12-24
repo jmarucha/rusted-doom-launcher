@@ -1,0 +1,36 @@
+{
+  "slug": "stardate-20x7",
+  "title": "Stardate 20X7",
+  "authors": [
+    {
+      "name": "Zachary Stephens"
+    }
+  ],
+  "year": 2017,
+  "description": "*** PLAY ON HMP/HNTR *** 9 Boom-compatible maps (i.e. prb+ cl9). Explore a mostly-purple world of villages, space bases, temples, and beyond!! These maps are really god damn hard. I put most of my time and effort into making HMP the intended difficulty setting, it's by far the most fun and balanced. Think of Stardate20x7's HMP as everyone else's UV. Similarly, HNTR was balanced to be comparable to other challenging mapsets on HMP. UV is NOT the intended way to play the levels on a first playt...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/sd20x7.zip",
+      "filename": "sd20x7.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

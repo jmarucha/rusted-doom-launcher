@@ -1,0 +1,36 @@
+{
+  "slug": "community-chest-2",
+  "title": "Community Chest 2",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2004,
+  "description": "Following the success of the original Community Chest, Community Chest 2 is a 32 map megawad including levels made by 26 different authors from the Doom Community. Originally announced almost one year ago in December 2003, it is now complete and ready for your enjoyment.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/cchest2.zip",
+      "filename": "cchest2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

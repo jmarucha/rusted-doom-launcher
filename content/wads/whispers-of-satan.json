@@ -1,0 +1,39 @@
+{
+  "slug": "whispers-of-satan",
+  "title": "Whispers of Satan",
+  "authors": [
+    {
+      "name": "Paul Corfiatis"
+    },
+    {
+      "name": "Kristian Aro"
+    }
+  ],
+  "year": 2009,
+  "description": "Whispers of Satan is a 30 level add-on for id software's game Doom 2: Hell on Earth requiring a Boom compatible source port.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/wos.zip",
+      "filename": "wos.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2009
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

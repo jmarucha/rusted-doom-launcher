@@ -1,0 +1,36 @@
+{
+  "slug": "phobia-the-age",
+  "title": "Phobia: The Age",
+  "authors": [
+    {
+      "name": "Kristian K\u00e4ll"
+    }
+  ],
+  "year": 2006,
+  "description": "Phobia: The Age - Cacoward winner 2006",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/p-r/phobiata.zip",
+      "filename": "phobiata.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2006
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

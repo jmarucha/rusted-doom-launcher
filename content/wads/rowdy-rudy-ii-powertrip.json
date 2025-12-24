@@ -1,0 +1,36 @@
+{
+  "slug": "rowdy-rudy-ii-powertrip",
+  "title": "Rowdy Rudy II: POWERTRIP",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2020,
+  "description": "Rowdy Rudy is back and he's madder than ever! THE BACKSTORY: 8 months have passed since Rudy took out the evil cult known as the Protectors, avenged his brother and saved his home city. Impressed by his efforts, many different entities reached out to him and offered him money for mercenary work. Rudy was not interested, he just wanted to live a somewhat normal life and continually refused offers. Having realized it wouldn't stop and could potentially lead to confrontation, Rudy decided to rel...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/megawads/rudy2.zip",
+      "filename": "rudy2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2020
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

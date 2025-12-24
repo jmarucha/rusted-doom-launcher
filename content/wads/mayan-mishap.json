@@ -1,0 +1,36 @@
+{
+  "slug": "mayan-mishap",
+  "title": "Mayan Mishap",
+  "authors": [
+    {
+      "name": "Tango"
+    }
+  ],
+  "year": 2014,
+  "description": "Five maps, loosely Mayan in setting, with an assortment of DeHacked changes to alter monster behavior and a few other things. Notably, some monsters and projectiles are faster than their vanilla counterparts. If you typically play maps on UV, I would definitely recommend HMP for your first playthrough to avoid any potential frustration. Similarly, if you usually play on HMP by default, dropping the difficulty down to HNTR would probably be a good idea. UV is certainly doable on a first playth...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/t-maya.zip",
+      "filename": "t-maya.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2014
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

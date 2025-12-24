@@ -1,0 +1,36 @@
+{
+  "slug": "osterity",
+  "title": "Osterity",
+  "authors": [
+    {
+      "name": "Big Ol' Billy"
+    }
+  ],
+  "year": 2024,
+  "description": "\"Burdensome regulations have long stymied the United Aerospace Corporation's ability to innovate in the energy sector. However, recent pro-business rulings represent a welcome change of pace, clearing the way for us to open an exciting new facility in the Lone Star State. Come on down 'n' see us sometime, y'all!\"",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/m-o/osterity.zip",
+      "filename": "osterity.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "crucified-dreams",
+  "title": "Crucified Dreams",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2006,
+  "description": "41 Doom II deathmatch-only maps for Boom-compatible engines, in the spirit of the Gothic Deathmatches series. Respect.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/deathmatch/Ports/megawads/crudream.zip",
+      "filename": "crudream.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2006
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

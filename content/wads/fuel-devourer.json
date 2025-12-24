@@ -1,0 +1,36 @@
+{
+  "slug": "fuel-devourer",
+  "title": "Fuel Devourer",
+  "authors": [
+    {
+      "name": "C4tnt and Arthur O."
+    }
+  ],
+  "year": 2013,
+  "description": "Large fuel base full of monsters - go and kill them! Made for FDC#11.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/fueldevr.zip",
+      "filename": "fueldevr.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2013
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

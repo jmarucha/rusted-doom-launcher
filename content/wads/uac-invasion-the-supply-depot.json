@@ -1,0 +1,36 @@
+{
+  "slug": "uac-invasion-the-supply-depot",
+  "title": "UAC Invasion: The Supply Depot",
+  "authors": [
+    {
+      "name": "DooMknight"
+    }
+  ],
+  "year": 2018,
+  "description": "The map is about a marine who must infiltrate a UAC Corporation large base because there are indications that dangerous secret experiments related to portals and Satanism are taking place. The protagonist is hidden in a truck of the UAC that goes to the complex getting to enter without major problems. But once inside the facilities he realizes that something terrible has happened there, it seems that he is not the only unexpected visitor...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/supplydp.zip",
+      "filename": "supplydp.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

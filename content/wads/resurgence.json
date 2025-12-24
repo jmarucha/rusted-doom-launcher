@@ -1,0 +1,36 @@
+{
+  "slug": "resurgence",
+  "title": "Resurgence",
+  "authors": [
+    {
+      "name": "Josh Sealy"
+    }
+  ],
+  "year": 2014,
+  "description": "Resurgence is a 32 maps megawad project, an upgrade from the unfinished Surge project. The maps are similar to Speed of Doom, ranging from Scythe/Plutonia-like maps to Speed of Doom to Resurgence-unique. The difficulty is considerably less in places but there are several challenging maps to plow through with the occasional slaughtermaps. (For those who don't like slaughter, avoid Map11,25,27,28,30) Sizes vary greatly (for the sake of variety), ranging from quick paced maps lasting 5 minutes t...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/resurge.zip",
+      "filename": "resurge.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2014
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

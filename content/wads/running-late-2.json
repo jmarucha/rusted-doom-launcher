@@ -1,0 +1,36 @@
+{
+  "slug": "running-late-2",
+  "title": "Running Late 2",
+  "authors": [
+    {
+      "name": "A2Rob"
+    }
+  ],
+  "year": 2020,
+  "description": "16-ish Boom compatible levels. ZDoom based ports will have to level warp in order to access the secret levels, since Map14 sends you to the EndDoom screen. BOOM ports can access these maps regularly from Map15.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/rl2.zip",
+      "filename": "rl2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2020
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

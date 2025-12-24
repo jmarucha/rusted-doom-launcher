@@ -1,0 +1,36 @@
+{
+  "slug": "dead-air",
+  "title": "dead.air",
+  "authors": [
+    {
+      "name": "Xaser Acheron"
+    }
+  ],
+  "year": 2016,
+  "description": "dead.air - Cacoward winner 2017",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/dead-air.zip",
+      "filename": "dead-air.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

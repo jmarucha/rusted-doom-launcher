@@ -1,0 +1,36 @@
+{
+  "slug": "50-shades-of-graytall",
+  "title": "50 Shades of Graytall",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2015,
+  "description": "50 Shades of Graytall is a project designed around creating maps with interesting architecture and gameplay despite being limited to a selection of arguably hideous textures. Started in response to a silly post made in the Editing forum which led I and several others to attempt maps using the (slightly edited) rules in the post, hoping the result would be decent. Eventually opened up to the community and here we are! Hope you enjoy the maps and if you don't hey Doom projects cant be graytall ...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/50shades.zip",
+      "filename": "50shades.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2015
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

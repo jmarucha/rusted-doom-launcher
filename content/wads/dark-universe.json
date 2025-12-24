@@ -1,0 +1,36 @@
+{
+  "slug": "dark-universe",
+  "title": "Dark Universe",
+  "authors": [
+    {
+      "name": "Paul Dechene"
+    }
+  ],
+  "year": 2018,
+  "description": "6 map pack for GZdoom/Doom2. Small to Medium sized maps. Maps can be completed rather quickly (just find the switch that opens the exit and then find the exit), with lots of secrets, switches, scripted events, and hidden areas full of the stuff you might need to survive the next map. HMP and UV difficulties available. MOUSE LOOK REQUIRED. NO JUMPING/ CROUCHING. Intended for vanilla monsters and weapons but works well with most mods.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/dupart1.zip",
+      "filename": "dupart1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

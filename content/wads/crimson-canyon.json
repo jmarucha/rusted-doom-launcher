@@ -1,0 +1,36 @@
+{
+  "slug": "crimson-canyon",
+  "title": "Crimson Canyon",
+  "authors": [
+    {
+      "name": "Jeffrey Graham"
+    }
+  ],
+  "year": 2005,
+  "description": "A themed map series intended for single player exploration and conquest. Designed to be visually exciting, different and fun, as well as provide intense combat situations with as many enemies as could be packed in and survived. This set is NOT at all meant to kill the player in 60 seconds.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/crmsn37.zip",
+      "filename": "crmsn37.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

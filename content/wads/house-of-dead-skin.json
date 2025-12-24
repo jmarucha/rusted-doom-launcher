@@ -1,0 +1,36 @@
+{
+  "slug": "house-of-dead-skin",
+  "title": "House of Dead Skin",
+  "authors": [
+    {
+      "name": "ivymagnapinna"
+    }
+  ],
+  "year": 2024,
+  "description": "Large single map with a predominantly beige texture theme, set in an abstract beige facility built into abstract beige caves. There's a mix of incidental/ambush combat, exploration, and larger setpiece fights some of which are infighting-based. Much of the map is optional if you're not going for completion and there's plenty of content to be found in the secrets. 10X10 and Stardate 20X6 were my main inspirations.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/deadskin.zip",
+      "filename": "deadskin.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

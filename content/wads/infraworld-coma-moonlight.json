@@ -1,0 +1,36 @@
+{
+  "slug": "infraworld-coma-moonlight",
+  "title": "Infraworld - Coma Moonlight",
+  "authors": [
+    {
+      "name": "StormCatcher.77"
+    }
+  ],
+  "year": 2021,
+  "description": "Infraworld - Coma Moonlight - Cacoward winner 2021",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/g-i/infra02.zip",
+      "filename": "infra02.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

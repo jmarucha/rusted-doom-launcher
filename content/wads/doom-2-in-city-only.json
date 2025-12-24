@@ -1,0 +1,36 @@
+{
+  "slug": "doom-2-in-city-only",
+  "title": "Doom 2 In City Only",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2024,
+  "description": "Doom 2 In City Only is a 36 map megawad in MBF21 format featuring nothing but city maps. Some of these maps are very large, so it is recommended you play with OpenGL. The set was primarily tested in dsda-doom. There are 6 secret maps (one per episode) with the secret exit being in the middle map of each episode. Jumping and freelook are not intended for this set and will break some maps.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/d2ico.zip",
+      "filename": "d2ico.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

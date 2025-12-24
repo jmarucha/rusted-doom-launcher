@@ -1,0 +1,36 @@
+{
+  "slug": "1000-lines-3-community-project",
+  "title": "1000 Lines 3: Community Project",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2021,
+  "description": "A 32 map (with 2 bonus levels) megawad made for vanilla Doom 2, made by the community with a strict line limit of 1000 lines. Using the power of Votex, a vanilla version of the OTEX v1.1 texture pack by Ola Bj\u00c3\u00b6rling (ukiro). 1k3 also features a near totally original soundtrack by AD_79, Psyrus, Dragonfly and Tristan Clark. We also have 4 new monsters and a whole heap of new scenery, some of which was made just for 1k3.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/megawads/1k3v1a.zip",
+      "filename": "1k3v1a.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

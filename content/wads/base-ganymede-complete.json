@@ -1,0 +1,36 @@
+{
+  "slug": "base-ganymede-complete",
+  "title": "Base Ganymede: Complete",
+  "authors": [
+    {
+      "name": "Adam Woodmansey"
+    }
+  ],
+  "year": 2012,
+  "description": "A 3 episode vanilla megawad for Doom 1 containing a total of 27 maps. Set on one of Jupiter's moons called Ganymede, this wad should provide a challenge for a wide variety of skill levels ranging from the humble newbie to veteran speedrunner. Each episode has it's own progression rather than the usual base -> hellbase -> hell.",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/megawads/bgcomp.zip",
+      "filename": "bgcomp.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2012
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

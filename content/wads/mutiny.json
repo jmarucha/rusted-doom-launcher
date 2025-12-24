@@ -1,0 +1,36 @@
+{
+  "slug": "mutiny",
+  "title": "Mutiny",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2016,
+  "description": "Make sure you are using the LATEST version of GZDoom (1.0.29) or a recent SVN build of ZDoom. Older GZDoom releases and official ZDoom releases will not work! You will get a fatal syntax error in MAPINFO when trying to start the game.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/combos/mutiny.zip",
+      "filename": "mutiny.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

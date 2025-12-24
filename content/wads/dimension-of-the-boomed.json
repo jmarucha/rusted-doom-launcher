@@ -1,0 +1,36 @@
+{
+  "slug": "dimension-of-the-boomed",
+  "title": "Dimension of the Boomed",
+  "authors": [
+    {
+      "name": "Stephen Wadsworth"
+    }
+  ],
+  "year": 2018,
+  "description": "Dimension of the Boomed - Cacoward winner 2018",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/dimension-of-the-boomed.zip",
+      "filename": "dimension-of-the-boomed.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

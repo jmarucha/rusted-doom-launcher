@@ -1,0 +1,36 @@
+{
+  "slug": "hedrox",
+  "title": "HeDRoX",
+  "authors": [
+    {
+      "name": "Rodrigo Acevedo"
+    }
+  ],
+  "year": 2005,
+  "description": "A really short but very intense single player map.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/g-i/hedrox.zip",
+      "filename": "hedrox.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

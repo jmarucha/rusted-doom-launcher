@@ -1,0 +1,36 @@
+{
+  "slug": "heartland",
+  "title": "Heartland",
+  "authors": [
+    {
+      "name": "Paul DeBruyne"
+    }
+  ],
+  "year": 2021,
+  "description": "Heartland is a 7 map episode set in the nation's decaying industrial heartland, developed exclusively for the Eternity Engine (4.02.00 or later). There are three main guiding principles in Heartland's design. 1. Heartland was created to be a technical demonstration of the capabilities of Eternity's advanced mapping featureset. 2. Heartland was created to be used as a reference for others who want to learn to make their own Eternity maps. 3. Heartland aspires to have the feeling of a 2010s blo...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/g-i/heartland.zip",
+      "filename": "heartland.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

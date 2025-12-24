@@ -1,0 +1,36 @@
+{
+  "slug": "struggle-antaresian-legacy",
+  "title": "Struggle - Antaresian Legacy",
+  "authors": [
+    {
+      "name": "Seongbae Park"
+    }
+  ],
+  "year": 2018,
+  "description": "Struggle - Antaresian Legacy is a single-player mod for Doom 2 with limit removing compatibility. It features new weapons and monsters replacement with DeHacked patch. Some of original monsters are also slightly changed, so it's recommended to check out the info below, before you play this one. Thanks, and have fun. :) [IMPORTANT] This wad uses heavily modified DeHacked patch. So it is recommended not to use other custom gameplay patches. P.S.: Par time is based on UV-MAX, not UV-Speed P.P.S....",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/strg.zip",
+      "filename": "strg.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "hell-revealed-ii",
+  "title": "Hell Revealed II",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2003,
+  "description": "The long-awaited sequel to Yonatan Donner & Haggay Niv's \"Hell Revealed\".",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/themes/hr/hr2final.zip",
+      "filename": "hr2final.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

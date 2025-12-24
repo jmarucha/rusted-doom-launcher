@@ -1,0 +1,36 @@
+{
+  "slug": "hi-tech-hell-2-alien-tech",
+  "title": "Hi-Tech Hell 2 - Alien Tech",
+  "authors": [
+    {
+      "name": "Simo Malinen"
+    }
+  ],
+  "year": 2005,
+  "description": "Hi-Tech Hell 2 - Alien Tech - Cacoward winner 2005",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/hi-tech-hell-2-alien-tech.zip",
+      "filename": "hi-tech-hell-2-alien-tech.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

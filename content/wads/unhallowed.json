@@ -1,0 +1,36 @@
+{
+  "slug": "unhallowed",
+  "title": "Unhallowed",
+  "authors": [
+    {
+      "name": "Cyano Blugron"
+    }
+  ],
+  "year": 2020,
+  "description": "A short Map with lots of action",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/g-i/hotu.zip",
+      "filename": "hotu.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

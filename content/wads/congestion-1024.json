@@ -1,0 +1,36 @@
+{
+  "slug": "congestion-1024",
+  "title": "Congestion 1024",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2005,
+  "description": "32 maps no bigger than 1024 X 1024. Some maps have areas outside the 1024 X 1024 block but they are not part of the playing area. The idea was to focus on quick and fun gameplay.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/1024.zip",
+      "filename": "1024.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

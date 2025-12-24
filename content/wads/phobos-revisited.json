@@ -1,0 +1,36 @@
+{
+  "slug": "phobos-revisited",
+  "title": "Phobos Revisited",
+  "authors": [
+    {
+      "name": "Rex Claussen"
+    }
+  ],
+  "year": 2004,
+  "description": "Phobos Revisited - Cacoward winner 2004",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/p-r/phobos-v.zip",
+      "filename": "phobos-v.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

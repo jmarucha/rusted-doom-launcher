@@ -1,0 +1,36 @@
+{
+  "slug": "the-zdoom-community-map-project",
+  "title": "The ZDoom Community Map Project",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2004,
+  "description": "One evening, just about 2 months ago, I had this idea of creating just one ZDoom map together with some other mappers and friends. Well, who else could be mor qualified as the ZDoom.org community itself? :) That was the day, when I opened a new thread over at the ZDoom forums and telling those people my plans, and the rest is just history which can be read over at: http://forum.zdoom.org/viewtopic.php?t=2935 By the way, this is the longest thread ever in the history of Forums@ZDoom.org with o...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/v-z/zdmcmp1.zip",
+      "filename": "zdmcmp1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

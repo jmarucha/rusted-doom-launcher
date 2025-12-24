@@ -1,0 +1,36 @@
+{
+  "slug": "brigandine",
+  "title": "Brigandine",
+  "authors": [
+    {
+      "name": "Aline Bee"
+    }
+  ],
+  "year": 2017,
+  "description": "A running battle through a twisty terraced city of brick, iron and skin. A well-meaning attempt to make a singleplayer map that would flow like a deathmatch one. Secretly just a love letter to BRWINDOW. Inspired by Crucified Dreams, BTSX Episode 2, Gravity Rush, Doom 2016 and Kowloon Walled City.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/brigandine.zip",
+      "filename": "brigandine.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

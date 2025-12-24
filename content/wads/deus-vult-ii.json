@@ -1,0 +1,36 @@
+{
+  "slug": "deus-vult-ii",
+  "title": "Deus Vult II",
+  "authors": [
+    {
+      "name": "Huy Pham"
+    }
+  ],
+  "year": 2008,
+  "description": "The first edition of the sequel to the original Deus Vult. Heavily emphasizes co-op play and demo recording. Offers a wide variety of gameplay spanning nine levels, including gun n' run maps, slaughterfests, and tight survival maps. From small techbases to hellish cathedrals, Deus Vult II's levels are diverse in architecture as they are in gameplay, and offer a little bit of everything for the entire family.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/dvii-1i.zip",
+      "filename": "dvii-1i.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2008
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

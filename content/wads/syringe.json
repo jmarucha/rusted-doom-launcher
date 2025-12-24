@@ -1,0 +1,45 @@
+{
+  "slug": "syringe",
+  "title": "Syringe",
+  "authors": [
+    {
+      "name": "Walker Wright"
+    },
+    {
+      "name": "Richard Frei"
+    },
+    {
+      "name": "Michael Fraize"
+    },
+    {
+      "name": "Xaser"
+    }
+  ],
+  "year": 2019,
+  "description": "6+1 action-packed maps about reviving a dying universe using guns and large pointy things.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/syringe.zip",
+      "filename": "syringe.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2020
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

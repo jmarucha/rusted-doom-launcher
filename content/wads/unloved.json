@@ -1,0 +1,36 @@
+{
+  "slug": "unloved",
+  "title": "Unloved",
+  "authors": [
+    {
+      "name": "Paul Schneider"
+    }
+  ],
+  "year": 2010,
+  "description": "You wake up in your house. And you're all alone. The only thing that is with you, is your sanity. Or is it?",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/unloved.zip",
+      "filename": "unloved.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2010
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "tech-gone-bad",
+  "title": "Tech Gone Bad",
+  "authors": [
+    {
+      "name": "John Romero"
+    }
+  ],
+  "year": 2016,
+  "description": "My Boss level replacement for e1m8...22 years later After exiting the Computer Station you knew the worst was up ahead. You still hadn't reached the place where the demons were coming from. The steel door shuts behind you as you realize you're there; you're at the Phobos Anomaly. Cracks from hell are all over the place as seepage from the portal invades the entire installation. Now it's time to find the portal and stop the demons from coming through. You know UAC had hundreds of scientists wo...",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/d-f/e1m8b.zip",
+      "filename": "e1m8b.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

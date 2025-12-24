@@ -1,0 +1,36 @@
+{
+  "slug": "chosen",
+  "title": "Chosen",
+  "authors": [
+    {
+      "name": "Lil' White Mouse"
+    }
+  ],
+  "year": 2004,
+  "description": "In an attempt to destroy this world from within, Apophis has created Uraeusis to achieve that goal. Chosen by Seth, you must battle your way through the Underworld and defeat Uraeusis. **IMPORTANT** Disable \"Scale Text in High Res\" if you have it enabled, as this will crash the game.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/ch133.zip",
+      "filename": "ch133.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

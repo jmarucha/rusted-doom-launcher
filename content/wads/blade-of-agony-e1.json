@@ -1,0 +1,36 @@
+{
+  "slug": "blade-of-agony-e1",
+  "title": "Blade of Agony E1",
+  "authors": [
+    {
+      "name": "Daniel Gimmer"
+    }
+  ],
+  "year": 2016,
+  "description": "Blade of Agony E1 - Cacoward winner 2016",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/blade-of-agony-e1.zip",
+      "filename": "blade-of-agony-e1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

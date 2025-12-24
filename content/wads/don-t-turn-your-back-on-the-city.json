@@ -1,0 +1,36 @@
+{
+  "slug": "don-t-turn-your-back-on-the-city",
+  "title": "Don't Turn Your Back on the City",
+  "authors": [
+    {
+      "name": "Suzanne Will"
+    }
+  ],
+  "year": 2021,
+  "description": "Don't Turn Your Back on the City - Cacoward winner 2022",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/don-t-turn-your-back-on-the-city.zip",
+      "filename": "don-t-turn-your-back-on-the-city.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2022
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

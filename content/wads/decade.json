@@ -1,0 +1,36 @@
+{
+  "slug": "decade",
+  "title": "Decade",
+  "authors": [
+    {
+      "name": "Russell Pearson"
+    }
+  ],
+  "year": 2004,
+  "description": "A single player level for ZDoom.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/decade.zip",
+      "filename": "decade.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

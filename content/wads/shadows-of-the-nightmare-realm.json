@@ -1,0 +1,36 @@
+{
+  "slug": "shadows-of-the-nightmare-realm",
+  "title": "Shadows of the Nightmare Realm",
+  "authors": [
+    {
+      "name": "Remilia Scarlet"
+    }
+  ],
+  "year": 2017,
+  "description": "Hell was defeated by a lone marine. But what no one knew was that there was a far greater and nigh inconceivable evil lurking beyond our realm: the Elder Gods. They saw how Hell had failed and felt it was now their time to succeed. They knew of the Doomguy's strength, and decided to attack him in the one place he's vulnerable: in his nightmares. Shadows of The Nightmare Realm takes place within the dreams of the Doomguy, each one manipulated by the Elder Gods.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/sotnr.zip",
+      "filename": "sotnr.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

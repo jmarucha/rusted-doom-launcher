@@ -1,0 +1,36 @@
+{
+  "slug": "avactor-end-of-the-fifth-circle",
+  "title": "Avactor: End of the Fifth Circle",
+  "authors": [
+    {
+      "name": "Eradrop"
+    }
+  ],
+  "year": 2018,
+  "description": "Avactor: End of the Fifth Circle - Cacoward winner 2018",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/avactor-end-of-the-fifth-circle.zip",
+      "filename": "avactor-end-of-the-fifth-circle.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

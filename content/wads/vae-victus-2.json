@@ -1,0 +1,36 @@
+{
+  "slug": "vae-victus-2",
+  "title": "Vae Victus 2",
+  "authors": [
+    {
+      "name": "Derek Braun"
+    }
+  ],
+  "year": 2006,
+  "description": "Vae Victus II is an all new level set for Doom 2 utilizing new graphics and music. The episode consists of 7 levels of varying themes and difficulty. The first Vae Victus was an attempt to honor the traditional gameplay of Alien Vendetta and other classic megawads; however, VV2 is a more balanced approach that provides challenging battles without the swarms of roaming enemies. The architecture is improved over last year's offering, and is more refined in it's concept and design. I am a classi...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/v-z/vv2.zip",
+      "filename": "vv2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2006
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

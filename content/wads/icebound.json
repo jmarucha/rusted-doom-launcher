@@ -1,0 +1,36 @@
+{
+  "slug": "icebound",
+  "title": "Icebound",
+  "authors": [
+    {
+      "name": "Christopher Lutz"
+    }
+  ],
+  "year": 2011,
+  "description": "Clear the heretical forces from the frozen caverns",
+  "iwad": "heretic",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/heretic/Ports/ice-lutz.zip",
+      "filename": "ice-lutz.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2011
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

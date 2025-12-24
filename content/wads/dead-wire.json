@@ -1,0 +1,36 @@
+{
+  "slug": "dead-wire",
+  "title": "dead.wire",
+  "authors": [
+    {
+      "name": "Xaser Acheron"
+    }
+  ],
+  "year": 2015,
+  "description": "dead.wire - Cacoward winner 2015",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/dead-wire.zip",
+      "filename": "dead-wire.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2015
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

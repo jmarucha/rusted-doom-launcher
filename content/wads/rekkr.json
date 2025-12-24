@@ -1,0 +1,36 @@
+{
+  "slug": "rekkr",
+  "title": "REKKR",
+  "authors": [
+    {
+      "name": "Revae"
+    }
+  ],
+  "year": 2018,
+  "description": "REKKR is a total conversion for Ultimate Doom v1.9",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/megawads/rekkr.zip",
+      "filename": "rekkr.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

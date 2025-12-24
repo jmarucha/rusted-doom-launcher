@@ -1,0 +1,36 @@
+{
+  "slug": "erkatt-e",
+  "title": "Erkatt\u00e4\u00f1\u00f1e",
+  "authors": [
+    {
+      "name": "Nicol\u00e1s Monti"
+    }
+  ],
+  "year": 2015,
+  "description": "Erkatt\u00e4\u00f1\u00f1e - Cacoward winner 2015",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/erkatt-e.zip",
+      "filename": "erkatt-e.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2015
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "elementalism-phase-1",
+  "title": "Elementalism: Phase 1",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2022,
+  "description": "Elementalism: Phase 1 - Cacoward winner 2022",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/elementalism-phase-1.zip",
+      "filename": "elementalism-phase-1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2022
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "forsaken-overlook",
+  "title": "Forsaken Overlook",
+  "authors": [
+    {
+      "name": "Matt Tropiano"
+    }
+  ],
+  "year": 2013,
+  "description": "This map is one of the many parts of the Secret Santa Imitation Project, led by Brian \"Snakes\" Knox. It was meant to imitate the style of Chris \"lupinx-Kassman\" Kassap, and is designed for Single Player, Co-op, and Deathmatch play. A lonely medieval outpost overlooking a large sea sits on the edge of the world. In it lies a magical sword of power, waiting to be taken by a brave adventurer. But be warned - rumor has it that the sword was sealed away in order to keep an alleged curse placed on ...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/d-f/fsknovlk.zip",
+      "filename": "fsknovlk.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2013
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

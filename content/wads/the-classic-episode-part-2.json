@@ -1,0 +1,36 @@
+{
+  "slug": "the-classic-episode-part-2",
+  "title": "The Classic Episode, Part 2",
+  "authors": [
+    {
+      "name": "Jan Van der Veken"
+    }
+  ],
+  "year": 2005,
+  "description": "The Classic Episode, Part 2 - Cacoward winner 2006",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/the-classic-episode-part-2.zip",
+      "filename": "the-classic-episode-part-2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2006
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

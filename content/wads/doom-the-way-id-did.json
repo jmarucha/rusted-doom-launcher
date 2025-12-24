@@ -1,0 +1,36 @@
+{
+  "slug": "doom-the-way-id-did",
+  "title": "Doom the Way id Did",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2011,
+  "description": "\"At some point in time I got the idea that it would be really fun if John Romero dusted off the ol' doom editor and made another map for Doom episode 1 for old time's sake. He once replied to an email saying 'maybe I will!' but never did get around to it as far as I know. This project asks the contributors to carefully study the original maps and try to make them as John Romero and Sandy Petersen did. The guiding principle in the project is to pretend that id Software initially intended to re...",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/megawads/dtwid.zip",
+      "filename": "dtwid.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2012
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

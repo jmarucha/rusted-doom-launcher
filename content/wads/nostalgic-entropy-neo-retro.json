@@ -1,0 +1,36 @@
+{
+  "slug": "nostalgic-entropy-neo-retro",
+  "title": "Nostalgic Entropy: Neo Retro",
+  "authors": [
+    {
+      "name": "AshtralFiend"
+    }
+  ],
+  "year": 2024,
+  "description": "Nostalgic Entropy: Neo Retro - Cacoward winner 2024",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/nostalgic-entropy-neo-retro.zip",
+      "filename": "nostalgic-entropy-neo-retro.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

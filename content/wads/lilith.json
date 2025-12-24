@@ -1,0 +1,36 @@
+{
+  "slug": "lilith",
+  "title": "lilith",
+  "authors": [
+    {
+      "name": "anotak"
+    }
+  ],
+  "year": 2017,
+  "description": "i like to keep my doom 2 installation floppies attached to my computer with magnets so i don't lose them some can experience seizures when exposed to flashing lights or other visual stimuli. even if you've never been diagnosed, please be stop playing this wad if you encounter disorientation, lightheadedness, altered vision, involuntary twitching/jerking movements, or momentary loss of awareness/consciousness. i tried very hard to avoid anything that would cause physical discomfort but everyon...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/j-l/lilith.zip",
+      "filename": "lilith.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

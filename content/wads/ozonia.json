@@ -1,0 +1,36 @@
+{
+  "slug": "ozonia",
+  "title": "Ozonia",
+  "authors": [
+    {
+      "name": "Tom\u00e1s Soares"
+    }
+  ],
+  "year": 2021,
+  "description": "Ozonia is the third mapset of the Moonblood series, containing 32 carefully designed short maps with compatibility level 9. It's my most ambitious project by far and hopefully the most refined of the trilogy! It's heavily inspired by Plutonia, but it has its own flavor to create a refreshing and unique classic Doom experience! Eviternity, Ancient Aliens, BTSX series and Monti's work are also other big influences. The levels are as difficult as Eviternity with very low enemy count and strategi...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/ozonia.zip",
+      "filename": "ozonia.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2022
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

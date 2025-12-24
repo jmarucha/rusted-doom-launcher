@@ -1,0 +1,36 @@
+{
+  "slug": "winter-s-fury",
+  "title": "Winter's Fury",
+  "authors": [
+    {
+      "name": "Pyroscourge"
+    }
+  ],
+  "year": 2012,
+  "description": "Winter's Fury - Cacoward winner 2012",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/winter-s-fury.zip",
+      "filename": "winter-s-fury.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2012
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

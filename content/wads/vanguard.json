@@ -1,0 +1,36 @@
+{
+  "slug": "vanguard",
+  "title": "Vanguard",
+  "authors": [
+    {
+      "name": "Paul DeBruyne"
+    }
+  ],
+  "year": 2011,
+  "description": "12 Boom format levels for PrBoom+, ZDoom, or Eternity. A bonus 13th level is included for laughs. Inspired by Speed of Doom, Scythe 2, Alien Vendetta, and Plutonia. Originally Vanguard was intended to be a 32-level speedmapped megawad inspired by Speed of Doom's development cycle and Scythe 2's episodic structure.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/v-z/vanguard.zip",
+      "filename": "vanguard.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2011
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

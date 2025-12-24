@@ -1,0 +1,36 @@
+{
+  "slug": "arrival",
+  "title": "Arrival",
+  "authors": [
+    {
+      "name": "Walker Wright"
+    }
+  ],
+  "year": 2021,
+  "description": "9 + 1 (+ 1?) limit-removing levels for Doom II. Designed with stock Doom II resources in mind, utilizing the lovely skies provided by Mek's \"box o' skies\". You may see a familiar space or two I implore you treat them as if they were new For the love from which these lands are derived Has been waiting patiently for you to arrive May your heart's true will Be ultimately fulfilled For eternity",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/arrival.zip",
+      "filename": "arrival.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

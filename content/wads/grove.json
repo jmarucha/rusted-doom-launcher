@@ -1,0 +1,36 @@
+{
+  "slug": "grove",
+  "title": "Grove",
+  "authors": [
+    {
+      "name": "Bernard De Windt"
+    }
+  ],
+  "year": 2004,
+  "description": "GROVE- THE STORY CONTINUES (...from where?)- In your garden, you can sometimes see an angry looking fat dude steal your mushrooms. He's Smugla. Whenever he takes them, he leaps into a deep hole in the floor like a rabbit. You've never catched him. One day you think \"Gee- I wonder why he lives in the ground?\" So one day, taking your pistol to blow that mushroom stealer to bits, you jump down the hole. \"Lets see how he enjoys my mushrooms now!\"... Whatever that means. You hit the bottom of the ...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/g-i/grove.zip",
+      "filename": "grove.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

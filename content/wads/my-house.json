@@ -1,0 +1,36 @@
+{
+  "slug": "my-house",
+  "title": "My House",
+  "authors": [
+    {
+      "name": "Steve Nelson"
+    }
+  ],
+  "year": 2023,
+  "description": "This is basically my house with the pool (grin) and an extra bit, there are no fancy trimmings to this level, just a shit load of bad guys in my house for those trigger happy maniacs. Blow them away !! Version 1.1, fixed some textures!",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/m-o/marc1_1.zip",
+      "filename": "marc1_1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

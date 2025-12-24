@@ -1,0 +1,36 @@
+{
+  "slug": "community-chest-4",
+  "title": "Community Chest 4",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2012,
+  "description": "The fourth installment of the series, Community Chest 4 boasts 32 maps made by 20 different authors from the Doom community. After four years of work, they have been made available for your enjoyment. Included in this package is the base resource WAD compiled for the project, which can be found in cc4-tex.zip. It may be a good starting point if you need a large, varied, and meticulously organized texture WAD for your project!",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/cchest4.zip",
+      "filename": "cchest4.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2012
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

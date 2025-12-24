@@ -1,0 +1,36 @@
+{
+  "slug": "pirate-doom",
+  "title": "Pirate Doom",
+  "authors": [
+    {
+      "name": "Arch"
+    }
+  ],
+  "year": 2013,
+  "description": "Pirate Doom! A GZDoom TC with: - 18 maps of good old runnin' and gunnin' action; - eye patches, bandannas, beards and mustaches for all Doom monsters; - cutlass, flintlock, cannons and other rusty weapons; - cool caribbean music; - compatible with any mapset; - cooperative and deathmatch modes fully implemented; - Ships, islands, treasures and rum.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/p-r/pirates.zip",
+      "filename": "pirates.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2013
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

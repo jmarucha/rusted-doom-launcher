@@ -1,0 +1,36 @@
+{
+  "slug": "japanese-community-project",
+  "title": "Japanese Community Project",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2016,
+  "description": "Japanese Community Project is a 32 level megawad made by Japanese Doomers. Doom is a minor game in Japan, so Doom community in Japan is very small. The community having been weakening year by year, we started this project for strengthening our solidarity, improving mapping skill, and so on. We aimed a low-threshold project which anyone could participate. Some doomers were inexperience mappers or beginners, so Tatsurd-Cacocaco, a project leader, supported map's detail and port compatibility. W...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/jpcp.zip",
+      "filename": "jpcp.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

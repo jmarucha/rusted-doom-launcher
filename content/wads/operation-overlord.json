@@ -1,0 +1,36 @@
+{
+  "slug": "operation-overlord",
+  "title": "Operation Overlord",
+  "authors": [
+    {
+      "name": "Nigel Rowand"
+    }
+  ],
+  "year": 2006,
+  "description": "A level with a different take on Doom engine gameplay.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/m-o/njol.zip",
+      "filename": "njol.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2006
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

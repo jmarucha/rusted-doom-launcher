@@ -1,0 +1,36 @@
+{
+  "slug": "counterattack",
+  "title": "Counterattack",
+  "authors": [
+    {
+      "name": "Brett Harrell"
+    }
+  ],
+  "year": 2017,
+  "description": "Counterattack is a 7-map mini episode for Doom II. Each map was designed to be played from pistol-start; continuous play is fine but will make the play through much easier. This map set originally started out as a single map contribution to the Vinesauce map contest held in 2016 by Joel \"Vargskelethor\". The map in question (MAP02) was started on in early September, and finished on September 9th. Afterwards, I officially started the project on October 10th (shortly after finishing MAP04). My g...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/m-o/mek-catk.zip",
+      "filename": "mek-catk.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

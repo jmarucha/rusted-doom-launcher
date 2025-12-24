@@ -1,0 +1,36 @@
+{
+  "slug": "elf-gets-pissed",
+  "title": "Elf Gets Pissed",
+  "authors": [
+    {
+      "name": "Matt Cibulas"
+    }
+  ],
+  "year": 2016,
+  "description": "An episode 1 replacement for Heretic.",
+  "iwad": "heretic",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/heretic/Ports/elfgp.zip",
+      "filename": "elfgp.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

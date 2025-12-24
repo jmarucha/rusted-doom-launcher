@@ -1,0 +1,36 @@
+{
+  "slug": "thy-flesh-turned-into-a-draft-excluder",
+  "title": "Thy Flesh turned into a draft-excluder",
+  "authors": [
+    {
+      "name": "Matt Powell"
+    }
+  ],
+  "year": 2014,
+  "description": "Thy Flesh turned into a draft-excluder - Cacoward winner 2014",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/thy-flesh-turned-into-a-draft-excluder.zip",
+      "filename": "thy-flesh-turned-into-a-draft-excluder.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2014
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

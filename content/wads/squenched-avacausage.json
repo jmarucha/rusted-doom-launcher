@@ -1,0 +1,36 @@
+{
+  "slug": "squenched-avacausage",
+  "title": "Squenched Avacausage",
+  "authors": [
+    {
+      "name": "nova++"
+    }
+  ],
+  "year": 2024,
+  "description": "It's 5 A.M., cloudy and threatening to rain as you drive down the desert highway, your ancient, beloved truck's engine furious about how long it's been driven. You aren't looking forward to going back to work after a time away from the big city, but this might just give you an excuse to put it off. And then with a final wail and muffled thud, it gives up, and streaks of flame flash through the gaps in the hood. You didn't know it was even possible for an engine to fail like that. Extended vac...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/squench.zip",
+      "filename": "squench.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "bastion-of-chaos",
+  "title": "Bastion of Chaos",
+  "authors": [
+    {
+      "name": "Bridgeburner56"
+    }
+  ],
+  "year": 2020,
+  "description": "My first HeXen level. This level's concept will probably be incorperated into one of the levels in my other current DOOM ][ project (as yet unnamed). This is the first time I've designed a level with both Single Player and Co-op / Deathmatch in mind, and I think that it will be pretty good for all types of play. There are alot of bad guys tho' so it would be a good idea to use -nomonsters on Deathmatch. I haven't polished it as much as I'd like to. If I get some feedback (hint), then I'll pro...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/hexen/a-c/bast_cha.zip",
+      "filename": "bast_cha.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2020
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "the-outer-darkness",
+  "title": "The Outer Darkness",
+  "authors": [
+    {
+      "name": "Varun Abhirama Krishna"
+    }
+  ],
+  "year": 2007,
+  "description": "This map is heavily inspired by Episode 4 of The Ultimate Doom, especially E4M1 and E4M6. It was originally made for a project called The Ninth Gate that never saw the light of day. Most of it was made (on and off) during 2001-03 using DoomCAD (the exit area was built using Doom Builder though). I didn't know you could select multiple linedefs in DoomCAD back then, so I was actually insane enough to manually select each and every linedef, apply the texture and align it. If only I had that kin...",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/m-o/odark.zip",
+      "filename": "odark.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2007
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

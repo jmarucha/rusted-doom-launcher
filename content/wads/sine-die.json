@@ -1,0 +1,36 @@
+{
+  "slug": "sine-die",
+  "title": "Sine Die",
+  "authors": [
+    {
+      "name": "Didy"
+    }
+  ],
+  "year": 2007,
+  "description": "map01: mainly rusty metal, tech; map02: clean tech base, a bit hellish; --------------------------------------------------- Your mission: Seek three mystical skulls. Use their collective power to destroy the Source of Evil. --------------------------------------------------- Notes: I recommend to play map02 from pistol start. No jumping.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/sinedie.zip",
+      "filename": "sinedie.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2007
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

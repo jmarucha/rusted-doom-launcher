@@ -1,0 +1,36 @@
+{
+  "slug": "austrian-avian-association",
+  "title": "Austrian Avian Association",
+  "authors": [
+    {
+      "name": "MundyC"
+    }
+  ],
+  "year": 2023,
+  "description": "Austrian Avian Association is a 18-level total conversion for Doom II, taking place in a 1800s Austrian alps setting. Play as Schnabelperchten doctor Katharina Berger as she has to fend off a sudden invasion of strange creatures! Then, journey to an excavated temple in the mountains of Croatia in search of a baetylus, which can revive the innocent lives that were lost during the invasion! This WAD contains three episodes, easily seen with a source port that supports UMAPINFO: -Frozen Hell: St...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/auavian.zip",
+      "filename": "auavian.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

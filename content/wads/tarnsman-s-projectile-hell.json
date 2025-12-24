@@ -1,0 +1,36 @@
+{
+  "slug": "tarnsman-s-projectile-hell",
+  "title": "Tarnsman's Projectile Hell",
+  "authors": [
+    {
+      "name": "Tarnsman"
+    }
+  ],
+  "year": 2021,
+  "description": "Tarnsman's Projectile Hell - Cacoward winner 2021",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/tarnsman-s-projectile-hell.zip",
+      "filename": "tarnsman-s-projectile-hell.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

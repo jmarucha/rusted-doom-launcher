@@ -1,0 +1,36 @@
+{
+  "slug": "plutonia-revisited",
+  "title": "Plutonia Revisited",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2011,
+  "description": "32 community maps inspired by plutonia.",
+  "iwad": "plutonia",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/prcp.zip",
+      "filename": "prcp.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2011
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

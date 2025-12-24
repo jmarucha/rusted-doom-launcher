@@ -1,0 +1,36 @@
+{
+  "slug": "genesis-of-descent",
+  "title": "Genesis of Descent",
+  "authors": [
+    {
+      "name": "Nick Laurent"
+    }
+  ],
+  "year": 2007,
+  "description": "A large map for the original Doom that uses a huge amount of scripting and ZDoom features while attemptimg to retain classic and fast paced Doom action.",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/g-i/god_.zip",
+      "filename": "god_.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2007
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -23,7 +23,7 @@ export const WadEntrySchema = z.object({
   description: z.string().min(1),
   iwad: IwadEnum,
   type: z.enum(["single-level", "episode", "megawad", "gameplay-mod", "total-conversion", "resource-pack"]),
-  sourcePort: z.enum(["vanilla", "boom", "mbf21", "gzdoom"]),
+  sourcePort: z.enum(["vanilla", "limit_removing", "boom", "mbf21", "gzdoom"]),
   requires: z.array(z.object({
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     name: z.string().min(1),

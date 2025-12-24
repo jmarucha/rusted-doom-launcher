@@ -1,0 +1,36 @@
+{
+  "slug": "comatose",
+  "title": "Comatose",
+  "authors": [
+    {
+      "name": "Lainos"
+    }
+  ],
+  "year": 2015,
+  "description": "This map originally has been made for \"Pain\" project, but in the result I decided to cut it from there because of some reasons (which I cannot say yet). It is a continuation of the idea of \"Overdose\", but it's not related in terms of the story. A limit of sidedefs in LR format is achieved here, so it is not possible to draw at least one new line at all. Because of this, as well as the abundance of large open spaces with lots of sectors, map may slow down in complex sourceports like ZDoom and ...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/comatose.zip",
+      "filename": "comatose.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

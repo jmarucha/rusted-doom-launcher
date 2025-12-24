@@ -1,0 +1,36 @@
+{
+  "slug": "strife-absolute-order",
+  "title": "Strife: Absolute Order",
+  "authors": [
+    {
+      "name": "Adam Woodmansey"
+    }
+  ],
+  "year": 2012,
+  "description": "You wanted it, now you've got it, a 6 map hub for Strife. Requires a Zdoom compatible source port. A rough story? Well ok. Despite the main threat of the order being defeated, there are many other towns still under their fragmented rule. The front now has the resources to send agents to these outward places and attempt to destroy what's left of the tyranny. You have arrived in the small town of Sweetwater, where what few people survive live a near meaningless life that is under constant threat.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/strife/sabord.zip",
+      "filename": "sabord.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2012
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

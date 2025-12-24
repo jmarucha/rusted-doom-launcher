@@ -1,0 +1,36 @@
+{
+  "slug": "gravity",
+  "title": "Gravity",
+  "authors": [
+    {
+      "name": "Alexander S. (Eternal)"
+    }
+  ],
+  "year": 2008,
+  "description": "Two levels for any limit removing port. PrBoom-Plus with gamma 1 or GZDoom are recommended.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/g-i/gravity.zip",
+      "filename": "gravity.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2008
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

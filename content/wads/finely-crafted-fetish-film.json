@@ -1,0 +1,36 @@
+{
+  "slug": "finely-crafted-fetish-film",
+  "title": "Finely Crafted Fetish Film",
+  "authors": [
+    {
+      "name": "Zachary Stephens"
+    }
+  ],
+  "year": 2019,
+  "description": "Finely Crafted Fetish Film - Cacoward winner 2019",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/finely-crafted-fetish-film.zip",
+      "filename": "finely-crafted-fetish-film.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2019
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

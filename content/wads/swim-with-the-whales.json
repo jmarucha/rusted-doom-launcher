@@ -1,0 +1,36 @@
+{
+  "slug": "swim-with-the-whales",
+  "title": "Swim With The Whales",
+  "authors": [
+    {
+      "name": "Zachary Stephens"
+    }
+  ],
+  "year": 2013,
+  "description": "\"Swim With The Whales\" is a set of 3 boom- compatible levels featuring abstract environments, very challenging gameplay, and elaborate secret areas. I spun the color wheel and landed on blue this time around, so expect plenty of it! The dynamic range of the difficulty is wider than my previous releases. That is, UV is harder and HMP / HNTR are both a bit easier. So I encourage even skilled players to start off on HMP.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/swtw.zip",
+      "filename": "swtw.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2013
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

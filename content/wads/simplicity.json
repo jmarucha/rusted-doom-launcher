@@ -1,0 +1,36 @@
+{
+  "slug": "simplicity",
+  "title": "Simplicity",
+  "authors": [
+    {
+      "name": "Melissa McGee"
+    }
+  ],
+  "year": 2005,
+  "description": "Ultimate Simplicity is a megawad comprised of 3 episodes, including 30 maps. It is essentially an overhauled version of the original Simplicity, with vast improvements made overall. See the NOTES section for more detailed information.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/sp_usimp.zip",
+      "filename": "sp_usimp.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

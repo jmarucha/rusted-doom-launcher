@@ -1,0 +1,36 @@
+{
+  "slug": "necromantic-thirst",
+  "title": "Necromantic Thirst",
+  "authors": [
+    {
+      "name": "French Doom Community"
+    }
+  ],
+  "year": 2024,
+  "description": "Necromantic Thirst is a Boom compatible (-complevel 9) 32-map megawad developed by the French Doom Community (and friends), inspired by some well-known classic wads of yesteryear, and featuring a new take on the standard progression classic UAC techbases slowly but surely blend into a new, twisted, green and black hellish world. Beware of the evil spirit that inhabits these industrial and medieval worlds, or you might end up losing your sanity.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/nt.zip",
+      "filename": "nt.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "temple-of-chaos-2-warped-reality",
+  "title": "Temple of Chaos 2 - Warped Reality",
+  "authors": [
+    {
+      "name": "Melissa McGee"
+    }
+  ],
+  "year": 2005,
+  "description": "\"The last thing you remember is trying to leave this god-forsaken temple of evil and chaos, only to find yourself being blown to bits by several large, hulking CyberDemons toting Rocket Launchers. So, how is it that you ended up here? You are in what appears to be the UAC base on Phobos, but, why? Something is wrong, however. The base has been overrun by hellspawn and you keep having strange visions of demonic evil flashing before your eyes. This cannot possibly be the base, but rather.. a wa...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/s-u/sp_chao2.zip",
+      "filename": "sp_chao2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

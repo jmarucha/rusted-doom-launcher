@@ -1,0 +1,36 @@
+{
+  "slug": "hardfest-2",
+  "title": "Hardfest 2",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2023,
+  "description": "Are you sick and tired of not having the shit kicked out of you when playing doom? Try Hardfest 2 today! It's apparently quite good! Featuring 40 maps by 24 designers in a variety of styles, there's surely something for even the most picky of doom enthusiast here! Unless you only like boring maps. Have a look somewhere else for that.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/hardfest2.zip",
+      "filename": "hardfest2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

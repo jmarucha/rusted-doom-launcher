@@ -1,0 +1,36 @@
+{
+  "slug": "back-to-saturn-x",
+  "title": "Back to Saturn X",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2012,
+  "description": "Get Out Of My Stations is the first episode of Back to Saturn X, a three-episode partial conversion for Doom II. Back to Saturn X is fully compatible with Doom2.exe and Chocolate Doom. It has also been tested with Eternity Engine, PrBoom-Plus, ZDoom, GZDoom, and Risen3D.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/megawads/btsx_e1.zip",
+      "filename": "btsx_e1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2013
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

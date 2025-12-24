@@ -1,0 +1,36 @@
+{
+  "slug": "knee-deep-in-zdoom",
+  "title": "Knee-Deep in ZDoom",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2007,
+  "description": "Knee-Deep in ZDoom - Cacoward winner 2007",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/knee-deep-in-zdoom.zip",
+      "filename": "knee-deep-in-zdoom.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2007
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "tremor",
+  "title": "Tremor",
+  "authors": [
+    {
+      "name": "Ross Mathieson"
+    }
+  ],
+  "year": 2004,
+  "description": "Tremor is a medium-sized techbase map, fairly open-plan but cramped in some areas. This is my first proper released map but I think I've definetly come a long way.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/tremor.zip",
+      "filename": "tremor.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

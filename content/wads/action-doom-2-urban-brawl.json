@@ -1,0 +1,36 @@
+{
+  "slug": "action-doom-2-urban-brawl",
+  "title": "Action Doom 2: Urban Brawl",
+  "authors": [
+    {
+      "name": "Stephen Browning"
+    }
+  ],
+  "year": 2008,
+  "description": "Action Doom 2: Urban Brawl - Cacoward winner 2008",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/action-doom-2-urban-brawl.zip",
+      "filename": "action-doom-2-urban-brawl.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2008
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

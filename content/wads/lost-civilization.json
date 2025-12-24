@@ -1,0 +1,36 @@
+{
+  "slug": "lost-civilization",
+  "title": "Lost Civilization",
+  "authors": [
+    {
+      "name": "Jaakko Impola"
+    }
+  ],
+  "year": 2019,
+  "description": "22 map megawad.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/joi_lstcv15.zip",
+      "filename": "joi_lstcv15.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2019
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

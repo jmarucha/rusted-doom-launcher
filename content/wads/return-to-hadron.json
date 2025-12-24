@@ -1,0 +1,36 @@
+{
+  "slug": "return-to-hadron",
+  "title": "Return to Hadron",
+  "authors": [
+    {
+      "name": "Matt Powell"
+    }
+  ],
+  "year": 2015,
+  "description": "Another hero visits the ground zero site in Switzerland, a few changes have occured.",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/g-i/hadron.zip",
+      "filename": "hadron.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2015
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

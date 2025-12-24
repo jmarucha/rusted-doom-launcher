@@ -1,0 +1,36 @@
+{
+  "slug": "eviternity-ii",
+  "title": "Eviternity II",
+  "authors": [
+    {
+      "name": "Joshua O'Sullivan"
+    }
+  ],
+  "year": 2023,
+  "description": "Eviternity II is a full 36-map megawad sequel to Eviternity; comprised of six 5-map Chapters, each with an additional secret level. Making extensive use of a newly updated build of the OTEX texture pack (to be released as a standalone texture pack in the future), Eviternity II's six chapters explore a series of unique and varied themes, continuing on from where you left off after the Archangelus' defeat! Eviternity II is a sequel not only in name, but difficulty and scale too! But don't let t...",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/eviternityii.zip",
+      "filename": "eviternityii.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

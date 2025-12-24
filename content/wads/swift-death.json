@@ -1,0 +1,36 @@
+{
+  "slug": "swift-death",
+  "title": "Swift Death",
+  "authors": [
+    {
+      "name": "Franck Livolant"
+    }
+  ],
+  "year": 2015,
+  "description": "Swift Death is an extremely hard megawad, calibrated for speedrunners. I recommanded for novice players to play in \"easy\" (\"Toilet Break\", or \"Soft Event\"). SD is realized in speedmapping sessions, for the most parts of maps. These maps are generally small, and contain on average 75 monsters. They are also compatible for the duel / deathmatch.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/swideath.zip",
+      "filename": "swideath.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2015
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

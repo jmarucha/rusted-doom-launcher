@@ -1,0 +1,36 @@
+{
+  "slug": "pirate-doom-ii",
+  "title": "Pirate Doom II",
+  "authors": [
+    {
+      "name": "Darch"
+    }
+  ],
+  "year": 2024,
+  "description": "A sequel to the 2014 swashbuckling adventure, Pirate Doom. More maps, more hats, more moustaches, more beards!",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/pd2.zip",
+      "filename": "pd2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "newdoom-community-project-ii",
+  "title": "NewDoom Community Project II",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2009,
+  "description": "This project started on January 10, 2006. The first NDCP had been completed and released. Towards the end of that project talk had been going on about a sequel, and thus this project was formed. PumpkinSmasher took the reigns as project leader and started map sign-ups. The goal was not to take near as long as is took to finish the first NDCP. This goal was not achieved.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/ndcp2.zip",
+      "filename": "ndcp2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2009
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

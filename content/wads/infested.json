@@ -1,0 +1,36 @@
+{
+  "slug": "infested",
+  "title": "Infested",
+  "authors": [
+    {
+      "name": "ginc"
+    }
+  ],
+  "year": 2021,
+  "description": "A map originaly made for the Plutonia Revisited",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/p-r/philplu.zip",
+      "filename": "philplu.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2021
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "kama-sutra",
+  "title": "Kama Sutra",
+  "authors": [
+    {
+      "name": "Adolf Vojta"
+    },
+    {
+      "name": "Jakub Razak"
+    }
+  ],
+  "year": 2005,
+  "description": "Heh..we made 32 maps, finally, so you all \"HR-skilled\" players let's go and beat them :-)",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/megawads/ksutra.zip",
+      "filename": "ksutra.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2005
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

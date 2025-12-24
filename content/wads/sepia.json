@@ -1,0 +1,36 @@
+{
+  "slug": "sepia",
+  "title": "Sepia",
+  "authors": [
+    {
+      "name": "Petyan"
+    }
+  ],
+  "year": 2022,
+  "description": "34 brown colored maps that range from lighter shade of brown to darker shade of brown. Includes conventional and unconventional gameplay, slaughter, platforming, all that. Themes range from WW1 trenches to minimalistic abstraction.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/sepia.zip",
+      "filename": "sepia.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

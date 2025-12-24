@@ -1,0 +1,36 @@
+{
+  "slug": "ultimate-doom-in-name-only",
+  "title": "Ultimate Doom In Name Only",
+  "authors": [
+    {
+      "name": "Various"
+    }
+  ],
+  "year": 2023,
+  "description": "Ultimate Doom In Name Only tasks its authors with creating levels based solely off of the map titles from id's 1995 classic, Ultimate Doom. A priority of the project was to be equal parts fun, challenging, and creative.",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/megawads/udino.zip",
+      "filename": "udino.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

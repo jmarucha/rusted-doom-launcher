@@ -1,0 +1,36 @@
+{
+  "slug": "chex-quest-3",
+  "title": "Chex Quest 3",
+  "authors": [
+    {
+      "name": "Charles Jacobi"
+    }
+  ],
+  "year": 2008,
+  "description": "Chex Quest 3 - Cacoward winner 2008",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/chex-quest-3.zip",
+      "filename": "chex-quest-3.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2008
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "maskim-xul",
+  "title": "Maskim Xul",
+  "authors": [
+    {
+      "name": "James Caldwell"
+    }
+  ],
+  "year": 2017,
+  "description": "A set of 3 Boom-compatible maps for Doom II (with a decidedly Lovecraftian theme to the second and third), with epilogue maps on MAP04 and MAP30.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/m-o/maskimxul.zip",
+      "filename": "maskimxul.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2018
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

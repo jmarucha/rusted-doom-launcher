@@ -1,0 +1,36 @@
+{
+  "slug": "no-end-in-sight",
+  "title": "No End In Sight",
+  "authors": [
+    {
+      "name": "Emil Brundage"
+    }
+  ],
+  "year": 2016,
+  "description": "Oldschool 4-episode adventure for The Ultimate Doom, featuring some of the most devilish map design this side of 1994. 'Nuff said... ish. Similar to DTWID, the spirit of id is ever-present, albeit cranked up to 11 with a devious new spin on the classic episodes' themes. Along the way, you'll enter parallel worlds, explore derelict spaceships still floating in the sky, and return to some eerily familiar locales on the far side of Phobos and beyond.",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/megawads/neis.zip",
+      "filename": "neis.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2017
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

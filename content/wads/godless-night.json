@@ -1,0 +1,36 @@
+{
+  "slug": "godless-night",
+  "title": "Godless Night",
+  "authors": [
+    {
+      "name": "Tango"
+    }
+  ],
+  "year": 2023,
+  "description": "Godless Night - Cacoward winner 2023",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/godless-night.zip",
+      "filename": "godless-night.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2023
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

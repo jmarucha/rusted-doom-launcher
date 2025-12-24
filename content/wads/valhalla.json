@@ -1,0 +1,36 @@
+{
+  "slug": "valhalla",
+  "title": "Valhalla",
+  "authors": [
+    {
+      "name": "Edward Cripps"
+    }
+  ],
+  "year": 2010,
+  "description": "An absolute pain in the ( enter word of your choice here ) to finish due to the savegame memory limit in the doom2.exe file. I did this on a p120 with 32 meg and just got it within the limit but 50% of the time it still hangs the command.com when you exit the game so you will probably have to reboot. When playing the level, there are some parts that may seem hard to get to. They CAN be done. It is not a result of duff level design.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/v-z/valhalla.zip",
+      "filename": "valhalla.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2010
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "rtc-3057",
+  "title": "RTC-3057",
+  "authors": [
+    {
+      "name": "Team Future"
+    }
+  ],
+  "year": 2004,
+  "description": "RTC-3057 - Cacoward winner 2004",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "gzdoom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/rtc-3057.zip",
+      "filename": "rtc-3057.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2004
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

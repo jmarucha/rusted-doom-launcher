@@ -1,0 +1,36 @@
+{
+  "slug": "ghouls-vs-humans",
+  "title": "Ghouls vs Humans",
+  "authors": [
+    {
+      "name": "Mike Hill"
+    }
+  ],
+  "year": 2009,
+  "description": "Ghouls versus Humans is a class based deathmatch Wad which will bring the horrors of The Ghoul\u0092s Forest to the deathmatch arena! Players will be able to choose from the three main ghouls from Ghoul 3 or three different types of humans. Each human and ghoul has it\u0092s own unique abilities, strengths and weaknesses. Whether it be team based deathmatch or team last man standing, Ghoul vs Humans is a game mode that is not to be missed even if you hate the ghoul series!",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/deathmatch/skulltag/gvh.zip",
+      "filename": "gvh.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2009
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

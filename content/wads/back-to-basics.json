@@ -1,0 +1,36 @@
+{
+  "slug": "back-to-basics",
+  "title": "Back to Basics",
+  "authors": [
+    {
+      "name": "Esa Repo"
+    }
+  ],
+  "year": 2007,
+  "description": "After making a large map with slopes, scripts, all new resources and whatnot, I felt like making something very basic. Also used this opportunity to get some maps that were gathering dust finished and released; a very old episode 2 project (although I have released e2m1 of that project before as e2m1er.wad), and a project for EDGE that got to 1\u00bd levels (Rust). The maps were converted to use vanilla resources only (except for the sky). E2M5-E2M9 however are brand new levels for this release. T...",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/a-c/b2b.zip",
+      "filename": "b2b.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2008
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

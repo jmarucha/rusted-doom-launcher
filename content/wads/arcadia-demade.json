@@ -1,0 +1,36 @@
+{
+  "slug": "arcadia-demade",
+  "title": "Arcadia Demade",
+  "authors": [
+    {
+      "name": "Jean-Paul LeBreton"
+    }
+  ],
+  "year": 2010,
+  "description": "Rapture's vacationland. Side order of hellspawn.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/arcadia.zip",
+      "filename": "arcadia.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2010
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

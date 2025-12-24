@@ -1,0 +1,39 @@
+{
+  "slug": "knee-deep-in-knee-deep-in-zdoom",
+  "title": "Knee-Deep in Knee-Deep in ZDoom",
+  "authors": [
+    {
+      "name": "esselfortium"
+    },
+    {
+      "name": "KDiKDiZD team"
+    }
+  ],
+  "year": 2022,
+  "description": "Knee-Deep in Knee-Deep in ZDoom - Cacoward winner 2022",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/knee-deep-in-knee-deep-in-zdoom.zip",
+      "filename": "knee-deep-in-knee-deep-in-zdoom.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2022
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

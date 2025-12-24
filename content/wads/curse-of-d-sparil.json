@@ -1,0 +1,36 @@
+{
+  "slug": "curse-of-d-sparil",
+  "title": "Curse of D'Sparil",
+  "authors": [
+    {
+      "name": "Kristian K\u00e4ll"
+    }
+  ],
+  "year": 2010,
+  "description": "Curse of D'Sparil - Cacoward winner 2010",
+  "iwad": "heretic",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "direct",
+      "url": "https://example.com/curse-of-d-sparil.zip",
+      "filename": "curse-of-d-sparil.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2010
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "combat-shock-2",
+  "title": "Combat Shock 2",
+  "authors": [
+    {
+      "name": "Daniel Jakobsson"
+    }
+  ],
+  "year": 2012,
+  "description": "7 new slaughtermaps. Hard enough to turn you into a combat wounded veteran. Use pr/gl-boom+ for best performance. Complevel 9 or die!",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/a-c/c-shock2.zip",
+      "filename": "c-shock2.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2012
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

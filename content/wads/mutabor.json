@@ -1,0 +1,36 @@
+{
+  "slug": "mutabor",
+  "title": "Mutabor",
+  "authors": [
+    {
+      "name": "Thomas Seifert"
+    }
+  ],
+  "year": 2020,
+  "description": "One large and complex vanilla compatible map. Difficulty-wise this should be a bit less demanding than some of my previous works. Map 2 and 3 are just bonus stuff",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "vanilla",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/m-o/mutabor.zip",
+      "filename": "mutabor.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2020
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

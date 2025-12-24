@@ -1,0 +1,36 @@
+{
+  "slug": "tribute-this-is-not-the-best-wad-in-the-world",
+  "title": "Tribute - this is not the best wad in the world",
+  "authors": [
+    {
+      "name": "Zalewa"
+    }
+  ],
+  "year": 2009,
+  "description": "World War III ended with massive use of biological weaponry. 99% of Earth population died almost immediately. Remaining people who were immune hid themselves in underground shelters escaping from the individuals who also survived but went completely insane. 50 years later your \"family\" received an unreadable radio transmission from a nearby town. You were sent to investigate... (see docs/author.notes.txt for techincal info)",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/s-u/tribute.zip",
+      "filename": "tribute.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2009
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "alpha-accident-terra-nova",
+  "title": "Alpha Accident: Terra Nova",
+  "authors": [
+    {
+      "name": "Eugene Guschin"
+    }
+  ],
+  "year": 2016,
+  "description": "I always wanted to make something classic but with a new content. This wad has not only new maps, textures and music but also new things. Also there are new monsters (boss included), and a new (barely) map hazard - voltage... Maps in this episode are quite large and more of an andventure sort than anything else, but there's enough monsters to shoot at. I hope this will not end being a cliffhanger, because there are lot of things saved for later episodes which I'd like to implement.",
+  "iwad": "doom",
+  "type": "megawad",
+  "sourcePort": "limit_removing",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom/Ports/a-c/aa_e1.zip",
+      "filename": "aa_e1.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2016
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

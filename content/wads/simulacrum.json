@@ -1,0 +1,39 @@
+{
+  "slug": "simulacrum",
+  "title": "Simulacrum",
+  "authors": [
+    {
+      "name": "Muumi"
+    },
+    {
+      "name": "Alex Decker"
+    }
+  ],
+  "year": 2024,
+  "description": "Simulacrum is a set of 32 maps in MBF21 format by muumi and myolden. This set starts modestly but steadily climbs into challenge and slaughter territory in the later maps. Difficulties and Coop are implemented. Target source port is DSDA-Doom, your mileage may vary in other ports. No jumping/crouching.",
+  "iwad": "doom2",
+  "type": "megawad",
+  "sourcePort": "boom",
+  "requires": [],
+  "downloads": [
+    {
+      "type": "idgames",
+      "url": "https://youfailit.net/pub/idgames/levels/doom2/Ports/megawads/simulacrum.zip",
+      "filename": "simulacrum.zip"
+    }
+  ],
+  "thumbnail": "",
+  "screenshots": [],
+  "youtubeVideos": [],
+  "awards": [
+    {
+      "type": "cacoward",
+      "year": 2024
+    }
+  ],
+  "tags": [],
+  "difficulty": "unknown",
+  "notes": "",
+  "_schemaVersion": 1,
+  "_source": "cacowards-scraper"
+}

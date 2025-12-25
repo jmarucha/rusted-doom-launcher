@@ -58,3 +58,8 @@ The app has `tauri-plugin-mcp` integrated for AI debugging via Claude Code.
 
 ### Scripts
 Python exploration scripts live in `scripts/`. Run with `uv run scripts/<script>.py`.
+
+### Gemini API
+**NEVER use Gemini 2.0 Flash or Gemini 2.5 Flash.** These are outdated models.
+
+Always use **Gemini 3 Flash** (`gemini-3-flash-preview`) or newer. Model config is in `scripts/config.json`.

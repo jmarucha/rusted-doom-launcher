@@ -77,7 +77,14 @@ async function handlePlay(wad: WadEntry) {
     lastPlayedSlug.value = wad.slug;
     await launch(wadPath, wad.iwad, depPaths, wad.slug);
   } catch (e) {
-    errorMsg.value = e instanceof Error ? e.message : "Failed to launch";
+    console.error(`[Play] Error launching ${wad.slug}:`, e);
+    if (e instanceof Error) {
+      errorMsg.value = e.message;
+    } else if (typeof e === "string") {
+      errorMsg.value = e;
+    } else {
+      errorMsg.value = `Failed to launch: ${JSON.stringify(e)}`;
+    }
   }
 }
 

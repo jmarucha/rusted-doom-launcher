@@ -85,7 +85,18 @@ export function useDownload() {
 
   async function downloadWad(wad: WadEntry): Promise<string> {
     const dir = await getLibraryPath();
+
+    if (!wad.downloads || wad.downloads.length === 0) {
+      throw new Error(`No download URL configured for "${wad.title}"`);
+    }
+
     const { url, filename } = wad.downloads[0];
+
+    // Check for placeholder/invalid URLs
+    if (url.includes("example.com") || url.includes("placeholder")) {
+      throw new Error(`Download not available for "${wad.title}" - URL not configured`);
+    }
+
     const path = `${dir}/${filename}`;
     const partPath = `${path}.part`;  // Atomic download: write to .part file first
 

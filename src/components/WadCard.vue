@@ -10,6 +10,7 @@ const { loadLevelNames, getLevelDisplayName } = useLevelNames();
 const TYPE_LABELS: Record<WadEntry["type"], string> = {
   "single-level": "Level", episode: "Episode", megawad: "Megawad",
   "gameplay-mod": "Mod", "total-conversion": "TC", "resource-pack": "Resources",
+  deathmatch: "Deathmatch",
 };
 
 const DIFFICULTY_CONFIG: Record<WadEntry["difficulty"], { label: string; color: string }> = {

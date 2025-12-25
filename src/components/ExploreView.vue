@@ -89,6 +89,7 @@ function formatType(type: string): string {
     "gameplay-mod": "Mod",
     "total-conversion": "TC",
     "resource-pack": "Resource",
+    deathmatch: "Deathmatch",
   };
   return names[type] ?? type;
 }

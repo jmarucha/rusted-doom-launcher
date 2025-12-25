@@ -192,17 +192,17 @@ function handleVideoClick(e: MouseEvent) {
       />
 
       
-      <!-- Thumbnail image for WADs without video -->
+      <!-- Thumbnail/screenshot image for WADs without video -->
       <img
-        v-if="!hasVideo && wad.thumbnail"
-        :src="wad.thumbnail"
+        v-if="!hasVideo && (wad.thumbnail || wad.screenshots.length)"
+        :src="wad.thumbnail || wad.screenshots[0]?.url"
         :alt="wad.title"
         class="absolute inset-0 w-full h-full object-cover"
       />
 
-      <!-- Fallback for WADs without video or thumbnail -->
+      <!-- Fallback for WADs without video, thumbnail, or screenshots -->
       <div
-        v-if="!hasVideo && !wad.thumbnail"
+        v-if="!hasVideo && !wad.thumbnail && !wad.screenshots.length"
         class="absolute inset-0 flex items-center justify-center bg-red-900"
       >
         <span class="text-2xl text-red-300 font-bold">DOOM</span>

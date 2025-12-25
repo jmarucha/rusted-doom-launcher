@@ -1,0 +1,51 @@
+DOOM WAD DIFFICULTY SCALE (1-10)
+
+Rate difficulty as a decimal (e.g., 3.7, 6.2). NEVER use integers.
+
+1 - "Kindergarten Trip to Hell"
+    Baby's first demons. You could win with a trackpad. Meant for total
+    beginners or relaxation. Easier than Doom 1 Episode 1 on ITYTD.
+
+2 - "Sunday Stroll Through Gore"
+    Minimal challenge. You might die if you go AFK. Good for chilling
+    or showing the game to your grandma. Think Doom 1 on HMP.
+
+3 - "The Way id Did It"  [BASELINE]
+    Original Doom 1 & Doom 2 on Ultra-Violence. The sacred baseline.
+    Challenging but fair. You'll die sometimes. This is the anchor.
+    Benchmarks: Doom II UV, Memento Mori, Doom the Way id Did.
+
+4 - "Romero's Revenge"
+    Tougher than vanilla. Tighter ammo, meaner traps. You'll restart
+    some maps. Good mappers making you work for it.
+    Benchmarks: TNT Evilution, SIGIL, Jenesis.
+
+5 - "Plutonia's Playground"
+    The Casali brothers send their regards. Archviles in closets,
+    chaingunners on ledges, and you're always low on shells.
+    Benchmarks: Plutonia Experiment, Valiant, Going Down.
+
+6 - "Welcome to the Slaughterhouse"
+    Hordes appear. You need to learn crowd control. Maps start
+    requiring strategy, not just reflexes. Adventure meets carnage.
+    Benchmarks: Alien Vendetta, Ancient Aliens, Eviternity late maps.
+
+7 - "Hell Revealed Your Weakness"
+    Brutal. Long maps, high monster counts, unforgiving design.
+    You will memorize these maps. Patience is mandatory.
+    Benchmarks: Hell Revealed, Scythe maps 26-30, Speed of Doom.
+
+8 - "Ribbiks Sends His Regards"
+    Peak slaughter. Every inch of space matters. Combat puzzles
+    where there's one way to survive and you must find it.
+    Benchmarks: Sunlust, Stardate 20X6, Sunder early maps.
+
+9 - "Dante's Reject Pile"
+    For the 1%. Hours of practice for a single map. You are dodging
+    walls of revenant missiles while juggling cyberdemons.
+    Benchmarks: Sunder late maps, Dimensions, Italo Doom.
+
+10 - "Only Decino Wins"
+    Theoretical human limits. Often considered impossible until
+    someone proves otherwise. May require TAS or divine intervention.
+    Benchmarks: Okuplok, Nuts.wad, the maps speedrunners cry about.

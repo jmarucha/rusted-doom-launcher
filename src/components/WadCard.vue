@@ -192,10 +192,10 @@ function handleVideoClick(e: MouseEvent) {
       />
 
       
-      <!-- Thumbnail/screenshot image for WADs without video -->
+      <!-- Screenshot/thumbnail image for WADs without video -->
       <img
-        v-if="!hasVideo && (wad.thumbnail || wad.screenshots.length)"
-        :src="wad.thumbnail || wad.screenshots[0]?.url"
+        v-if="!hasVideo && (wad.screenshots.length || wad.thumbnail)"
+        :src="wad.screenshots[0]?.url || wad.thumbnail"
         :alt="wad.title"
         class="absolute inset-0 w-full h-full object-cover"
       />

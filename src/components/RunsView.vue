@@ -79,7 +79,7 @@ onMounted(async () => {
   loading.value = true;
 
   // Collect all level entries with metadata
-  const entries: { dateKey: string; date: string; wadTitle: string; level: LevelEntry }[] = [];
+  const entries: { dateKey: string; date: string; wadSlug: string; wadTitle: string; level: LevelEntry }[] = [];
 
   for (const wad of props.wads) {
     // Load level names from WAD file (cached/persisted)
@@ -96,6 +96,7 @@ onMounted(async () => {
         entries.push({
           dateKey,
           date: session.capturedAt,
+          wadSlug: wad.slug,
           wadTitle: wad.title,
           level: {
             levelId: level.id,
@@ -114,14 +115,30 @@ onMounted(async () => {
     }
   }
 
-  // Sort by date, newest first
-  entries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  // Sort by date, OLDEST first (so we can track first occurrence)
+  entries.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
-  // Group by date, then by WAD - using plain objects for clarity
+  // Deduplicate: track which levels we've seen per WAD+skill
+  // Only show each level the FIRST time it appears (when first completed)
+  const seenLevels = new Set<string>();
+  const uniqueEntries: typeof entries = [];
+
+  for (const entry of entries) {
+    const key = `${entry.wadSlug}:${entry.level.levelId}:${entry.level.skill}`;
+    if (!seenLevels.has(key)) {
+      seenLevels.add(key);
+      uniqueEntries.push(entry);
+    }
+  }
+
+  // Now sort by date, NEWEST first for display
+  uniqueEntries.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  // Group by date, then by WAD
   const groupedByDate: Record<string, Record<string, LevelEntry[]>> = {};
   const dateOrder: string[] = [];
 
-  for (const entry of entries) {
+  for (const entry of uniqueEntries) {
     if (!groupedByDate[entry.dateKey]) {
       groupedByDate[entry.dateKey] = {};
       dateOrder.push(entry.dateKey);

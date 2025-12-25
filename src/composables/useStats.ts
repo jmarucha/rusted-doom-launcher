@@ -20,9 +20,35 @@ export function parseLevelNameFromComment(comment: string): { id: string; name: 
   return null;
 }
 
-// Sanitize ISO timestamp for use as filename (replace colons)
-function sanitizeTimestamp(isoString: string): string {
-  return isoString.replace(/:/g, "-");
+// Generate a content-based hash for session deduplication
+// This identifies unique gameplay states regardless of which save file they came from
+function generateSessionHash(session: Omit<PlaySession, "capturedAt">): string {
+  // Create a deterministic string from gameplay data only
+  const payload = {
+    wad: session.wadSlug,
+    skill: session.skill,
+    start: session.startLevel,
+    // Include all level stats that define the gameplay state
+    levels: session.levels.map(l => ({
+      id: l.id,
+      k: l.kills,
+      tk: l.totalKills,
+      i: l.items,
+      ti: l.totalItems,
+      s: l.secrets,
+      ts: l.totalSecrets,
+      t: l.timeTics,
+    })),
+  };
+
+  // Simple hash function (djb2)
+  const str = JSON.stringify(payload);
+  let hash = 5381;
+  for (let i = 0; i < str.length; i++) {
+    hash = ((hash << 5) + hash) + str.charCodeAt(i);
+    hash = hash >>> 0; // Convert to unsigned 32-bit
+  }
+  return hash.toString(16).padStart(8, "0");
 }
 
 export function useStats() {
@@ -137,28 +163,11 @@ export function useStats() {
     }
   }
 
-  // Check if a session file with similar content already exists
-  async function sessionExists(
-    statsDir: string,
-    session: Omit<PlaySession, "capturedAt">,
-    timestamp: string
-  ): Promise<boolean> {
-    const filename = `${sanitizeTimestamp(timestamp)}.json`;
-    const filepath = `${statsDir}/${filename}`;
-
+  // Check if a session with this content hash already exists
+  async function sessionHashExists(statsDir: string, hash: string): Promise<boolean> {
+    const filepath = `${statsDir}/${hash}.json`;
     try {
-      if (!(await exists(filepath))) return false;
-
-      const content = await readTextFile(filepath);
-      const existing = JSON.parse(content);
-
-      // Compare key fields to detect duplicates
-      return (
-        existing.sourceFile === session.sourceFile &&
-        existing.levels?.length === session.levels.length &&
-        existing.startLevel === session.startLevel &&
-        existing.skill === session.skill
-      );
+      return await exists(filepath);
     } catch {
       return false;
     }
@@ -241,21 +250,24 @@ export function useStats() {
         }
       }
 
-      // Use save file mtime as timestamp
-      const timestamp = save.mtime.toISOString();
+      // Generate content-based hash for deduplication
+      const hash = generateSessionHash(session);
 
-      // Check if we already have this session
-      if (await sessionExists(statsDir, session, timestamp)) {
+      // Check if we already have a session with identical content
+      if (await sessionHashExists(statsDir, hash)) {
         continue;
       }
 
-      // Write new session file
+      // Use save file mtime as timestamp for display
+      const timestamp = save.mtime.toISOString();
+
+      // Write new session file using hash as filename
       const fullSession: PlaySession = {
         ...session,
         capturedAt: timestamp,
       };
 
-      const filename = `${sanitizeTimestamp(timestamp)}.json`;
+      const filename = `${hash}.json`;
       const filepath = `${statsDir}/${filename}`;
 
       try {

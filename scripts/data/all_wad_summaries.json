@@ -1,0 +1,2207 @@
+[
+  {
+    "slug": "1000-lines-3-community-project",
+    "title": "1000 Lines 3: Community Project",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Martian urban centers transition into the stone-hewn halls of a lost Tudor era before dissolving into a humid, vine-choked tropical nightmare.",
+    "praise": "Philip Brown\u2019s curated OTEX textures and a driving soundtrack by AD_79, Dragonfly, and Psyrus elevate these compact, highly detailed environments."
+  },
+  {
+    "slug": "50-shades-of-graytall",
+    "title": "50 Shades of Graytall",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 6.7,
+    "vibe": "A monochromatic concrete expanse fractured by pulsating veins of red-and-blue static and endless vertical columns of industrial metal tracking.",
+    "praise": "The creative constraints led Marcaek and designers like Ribbiks and Xaser to craft surprisingly beautiful environments from Doom\u2019s ugliest assets."
+  },
+  {
+    "slug": "5till-l1-complex",
+    "title": "5till L1 Complex",
+    "authors": [
+      "Lainos"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A massive, desolate industrial labyrinth where cold concrete corridors lead to abandoned cafeterias and silent, monitor-lined libraries.",
+    "praise": "The meticulous architectural detail and somber atmosphere crafted by Lainos transform a standard base into a hauntingly realistic and immersive exploration."
+  },
+  {
+    "slug": "abandon",
+    "title": "Abandon",
+    "authors": [
+      "Bemused",
+      "Benjogami and Scotty"
+    ],
+    "difficulty_rating": 8.9,
+    "vibe": "Stark, monochromatic monoliths and massive geometric shapes float within an infinite, silent void, creating a cold and imposing architectural hallucination.",
+    "praise": "Massive, abstract landscapes crafted by Bemused, Benjogami, and Scotty push the Boom engine to its visual and technical limits."
+  },
+  {
+    "slug": "absolutely-killed",
+    "title": "Absolutely Killed",
+    "authors": [
+      "scwiba"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "Dense industrial complexes and lunar outposts sprawl across the Phobos landscape, filled with intricate machinery, flickering computer banks, and expansive outdoor vistas.",
+    "praise": "The classic Phobos formula is revitalized by scwiba through meticulous detailing and clever secrets that make every map feel fresh yet familiar."
+  },
+  {
+    "slug": "action-doom-2-urban-brawl",
+    "title": "Action Doom 2: Urban Brawl",
+    "authors": [
+      "Stephen Browning"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A gritty, cel-shaded urban jungle where film noir shadows meet vibrant comic book violence across rain-slicked streets and neon-lit subways.",
+    "praise": "The cel-shaded artistry of Stephen Browning transforms the engine into a gritty comic book world powered by Mike Watson\u2019s complex scripting."
+  },
+  {
+    "slug": "action-doom",
+    "title": "Action Doom",
+    "authors": [
+      "Stephen Browning"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A hyper-stylized 90s arcade world where gritty urban streets collide with secret mushroom kingdoms and pulsating alien motherships.",
+    "praise": "The cinematic arcade atmosphere fueled by Julian Aubourg\u2019s soundtrack and Stephen Browning\u2019s direction proves that Doom can successfully mimic high-octane 2D shooters."
+  },
+  {
+    "slug": "alpha-accident-terra-nova",
+    "title": "Alpha Accident: Terra Nova",
+    "authors": [
+      "Eugene Guschin"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "Clinical medlabs and industrial distilleries sit nestled within a sprawling, high-detail Martian colony undergoing a massive terraforming operation.",
+    "praise": "The custom-coded turrets and robotic drones integrated by Eugene Guschin breathe fresh mechanical life into the classic techbase aesthetic."
+  },
+  {
+    "slug": "ancient-aliens",
+    "title": "Ancient Aliens",
+    "authors": [
+      "skillsaw"
+    ],
+    "difficulty_rating": 6.3,
+    "vibe": "Technicolor Southwestern deserts and neon-soaked space stations collide with Egyptian metaphysics in a vibrant, psychedelic landscape of extraterrestrial conspiracy.",
+    "praise": "The vibrant visual identity forged by skillsaw\u2019s custom textures and stewboy\u2019s infectious soundtrack creates a cohesive, high-energy atmosphere that redefined modern megawads."
+  },
+  {
+    "slug": "antaresian-reliquary",
+    "title": "Antaresian Reliquary",
+    "authors": [
+      "Seongbae Park"
+    ],
+    "difficulty_rating": 5.8,
+    "vibe": "A kaleidoscopic odyssey through gleaming lunar outposts, cosmic superclusters, and frozen boreal forests where the architecture feels as sharp and lethal as the atmosphere.",
+    "praise": "The high-octane weapon modifications and polished map layouts by Seongbae Park transform these disparate community contributions into a cohesive, award-winning showcase."
+  },
+  {
+    "slug": "ar-luminae",
+    "title": "Ar Luminae",
+    "authors": [
+      "Aurelius",
+      "Kaito"
+    ],
+    "difficulty_rating": 7.8,
+    "vibe": "A colossal interstellar voyage bridging the gap between clinical spacecraft corridors and vast, glowing alien vistas where neon-lit geometry floats over rivers of molten rock.",
+    "praise": "The sheer architectural ambition of Aurelius and Kaito transforms this Supercharge-powered epic into a relentless, high-fidelity gauntlet of modern slaughter design."
+  },
+  {
+    "slug": "arcadia-demade",
+    "title": "Arcadia Demade",
+    "authors": [
+      "Jean-Paul LeBreton"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "Lush botanical gardens and damp, rusted marketplaces are submerged in a chilling blue haze, echoing the claustrophobic decay of a crumbling underwater utopia.",
+    "praise": "By translating his own BioShock level design into Doom, Jean-Paul LeBreton creates a hauntingly familiar garden atmosphere elevated by John Weekley\u2019s somber score."
+  },
+  {
+    "slug": "arrival",
+    "title": "Arrival",
+    "authors": [
+      "Walker Wright"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Crumbling saltstone sanctuaries and moss-choked industrial ruins transition into blood-soaked citadels and organic altars beneath a heavy, verdant sky.",
+    "praise": "Walker Wright\u2019s meticulously detailed environments find their perfect rhythmic pulse within the atmospheric, synth-driven soundscapes composed by Brayden Hart."
+  },
+  {
+    "slug": "ashes-afterglow",
+    "title": "Ashes: Afterglow",
+    "authors": [
+      "Vostyok and ReformedJoe"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A rusted post-apocalyptic sprawl where flooded city districts and radioactive badlands are reclaimed by mutant hordes, junk-armored scavengers, and the hum of a modified motorcycle.",
+    "praise": "The immersive hub-based exploration and intricate weapon upgrade systems designed by Vostyok and ReformedJoe transform this sequel into a definitive post-apocalyptic odyssey."
+  },
+  {
+    "slug": "austrian-avian-association",
+    "title": "Austrian Avian Association",
+    "authors": [
+      "MundyC"
+    ],
+    "difficulty_rating": 4.7,
+    "vibe": "Frost-bitten Alpine peaks and rustic villages of the 1898 Austro-Hungarian Empire serve as a backdrop for a folklore-steeped struggle between humanoid birds and skeletal mountain horrors.",
+    "praise": "The meticulous total conversion by MundyC transforms the engine into a folk-horror adventure featuring powerful custom weaponry and a unique Alpine-inspired bestiary."
+  },
+  {
+    "slug": "avactor-end-of-the-fifth-circle",
+    "title": "Avactor: End of the Fifth Circle",
+    "authors": [
+      "Eradrop"
+    ],
+    "difficulty_rating": 6.3,
+    "vibe": "Lush Caribbean jungles swallow massive Mesoamerican pyramids and intricate stone temples where death-cultists perform rituals amidst ancient, overgrown ruins.",
+    "praise": "Massive, hour-long maps showcase Eradrop's talent for blending intricate Mesoamerican architecture with a unique bestiary of custom death-cultist enemies."
+  },
+  {
+    "slug": "back-to-basics",
+    "title": "Back to Basics",
+    "authors": [
+      "Esa Repo"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "Floating fortresses of rusted metal and grey stone drift through a star-flecked void, where sterile tech-base corridors gradually surrender to the corrupted, marble-hewn architecture of a warped moon.",
+    "praise": "The meticulous vanilla craftsmanship of Esa Repo transforms strict technical limitations into a masterclass of atmospheric, old-school level design."
+  },
+  {
+    "slug": "back-to-saturn-x-episode-2",
+    "title": "Back to Saturn X: Episode 2",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "Rusted industrial complexes and subterranean transit hubs give way to overgrown alien jungles and crumbling stone spires, all unified by a moody, atmospheric palette of deep teals and sun-bleached oranges.",
+    "praise": "The intricate, vanilla-compatible layouts of esselfortium and skillsaw harmonize with Jimmy\u2019s original score to set a new gold standard for megawads."
+  },
+  {
+    "slug": "back-to-saturn-x",
+    "title": "Back to Saturn X",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Rusted industrial hubs and derelict train stations transition into overgrown jungle ruins and jagged stone towers, all unified by a distinct palette of deep teals, earthy browns, and muted purples.",
+    "praise": "Meticulous custom textures from esselfortium and Tarnsman create a cohesive industrial aesthetic, perfectly complemented by Jimmy\u2019s original soundtrack and skillsaw\u2019s polished layouts."
+  },
+  {
+    "slug": "base-ganymede-complete",
+    "title": "Base Ganymede: Complete",
+    "authors": [
+      "Adam Woodmansey"
+    ],
+    "difficulty_rating": 4.2,
+    "vibe": "Sterile, low-ceilinged lunar outposts give way to oppressive concrete temples and jagged volcanic rifts as the Jovian moon\u2019s crust splits under demonic influence.",
+    "praise": "The punchy, aggressive level design by Adam Woodmansey revitalizes the classic three-episode structure with a relentless pace and expert resource management."
+  },
+  {
+    "slug": "bastion-of-chaos",
+    "title": "Bastion of Chaos",
+    "authors": [
+      "Bridgeburner56"
+    ],
+    "difficulty_rating": 7.8,
+    "vibe": "Monolithic obsidian spires and jagged crimson architecture loom over vast, shimmering lakes of blood, bathed in the atmospheric glow of advanced dynamic lighting.",
+    "praise": "The architectural grandeur and atmospheric lighting effects crafted by Bridgeburner56 transform this massive arena into a breathtaking, award-winning spectacle."
+  },
+  {
+    "slug": "bgpa-missions-liberation",
+    "title": "BGPA Missions: Liberation",
+    "authors": [
+      "Nigel Rowand"
+    ],
+    "difficulty_rating": 4.2,
+    "vibe": "Humid jungles and sun-bleached beaches give way to cold, fortified Incanese complexes and subterranean bunkers on the rugged landscape of Mons Grampius.",
+    "praise": "The tactical objective-based missions and deep inventory system crafted by Nigel Rowand transform the engine into a sophisticated military simulation."
+  },
+  {
+    "slug": "blade-of-agony-e1",
+    "title": "Blade of Agony E1",
+    "authors": [
+      "Daniel Gimmer"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Gritty European battlefields and rain-slicked Parisian streets collide with occult excavations, desert outposts, and retro-futuristic lunar bases in a cinematic World War II reimagining.",
+    "praise": "The cinematic scope and narrative depth achieved by Daniel Gimmer and his team transform the engine into a high-fidelity historical epic."
+  },
+  {
+    "slug": "breach",
+    "title": "Breach",
+    "authors": [
+      "Aline Bee"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A sprawling, hyper-detailed industrial complex where cold metal silos and flickering blue terminals overlook toxic reservoirs and crumbling concrete walkways.",
+    "praise": "The meticulous sector detailing and atmospheric lighting by Aline Bee transform a standard tech-base into a hauntingly believable industrial nightmare."
+  },
+  {
+    "slug": "brigandine",
+    "title": "Brigandine",
+    "authors": [
+      "Aline Bee"
+    ],
+    "difficulty_rating": 4.7,
+    "vibe": "A monolithic, vine-encrusted cathedral of weathered stone and blood-slicked marble, where towering bookshelves and hidden grottoes overlook a landscape of decaying gothic grandeur.",
+    "praise": "The meticulous detailing and atmospheric depth provided by Aline Bee transform a single map into an expansive, award-winning adventure."
+  },
+  {
+    "slug": "brutal-doom",
+    "title": "Brutal Doom",
+    "authors": [
+      "Sergeant_Mark_IV"
+    ],
+    "difficulty_rating": 4.5,
+    "vibe": "A hyper-violent landscape where every corridor is repainted in thick, dripping arterial spray and shattered bone fragments amidst 'brutalized' architectural enhancements.",
+    "praise": "The visceral combat and elaborate gore systems developed by Marcos Abenante (Sergeant Mark IV) transformed the aging engine into a modern, high-octane bloodbath."
+  },
+  {
+    "slug": "cheogsh",
+    "title": "Cheogsh",
+    "authors": [
+      "Shadowman"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A gothic odyssey through ruined temples and an eerie subterranean city where taverns and catacombs sit beneath a shifting, blood-red sky.",
+    "praise": "Atmospheric GZDoom scripting and unique monsters define Shadowman\u2019s haunting narrative journey dedicated to the memory of a lost friend."
+  },
+  {
+    "slug": "chex-quest-3",
+    "title": "Chex Quest 3",
+    "authors": [
+      "Charles Jacobi"
+    ],
+    "difficulty_rating": 1.5,
+    "vibe": "A vibrant, cereal-themed universe where colorful urban centers and industrial laboratories are overrun by gelatinous, green-skinned invaders from the dimension of Bazoik.",
+    "praise": "This polished, family-friendly expansion by Charles Jacobi perfectly captures the whimsical charm of the original cereal-box classic while adding significant new depth."
+  },
+  {
+    "slug": "chosen",
+    "title": "Chosen",
+    "authors": [
+      "Lil' White Mouse"
+    ],
+    "difficulty_rating": 4.2,
+    "vibe": "Sandstone temples and sphinx-guarded passages descend into a mythological Egyptian underworld where the sun-scorched surface gives way to the shadowy depths of the Duat.",
+    "praise": "The meticulous Egyptian total conversion by Lil' White Mouse transforms the engine into a mythological odyssey featuring unique weapons and atmospheric storytelling."
+  },
+  {
+    "slug": "cold-as-hell",
+    "title": "Cold as Hell",
+    "authors": [
+      "Jonaya Riley"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A frigid 1950s military outpost in Greenland where rusted research stations and isolation complexes are buried under a relentless, blinding blizzard.",
+    "praise": "The immersive survival horror atmosphere crafted by Jonaya Riley and Ben Wachal transforms Doom into a tense, objective-driven military thriller."
+  },
+  {
+    "slug": "comatose",
+    "title": "Comatose",
+    "authors": [
+      "Lainos"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A sprawling, hyper-detailed expanse of rusted industrial railroads and decaying residential blocks frozen in a silent, sun-bleached state of urban decay.",
+    "praise": "The staggering architectural density and somber environmental storytelling achieved by Lainos elevate this single-map release into a hauntingly memorable masterpiece."
+  },
+  {
+    "slug": "combat-shock-2",
+    "title": "Combat Shock 2",
+    "authors": [
+      "Daniel Jakobsson"
+    ],
+    "difficulty_rating": 7.4,
+    "vibe": "Industrial complexes of cold steel and flickering machinery bleed into jagged obsidian fortresses, creating a high-voltage atmosphere of mechanical dread.",
+    "praise": "The relentless pacing and meticulous monster placement from Daniel Jakobsson deliver a high-octane experience that remains a gold standard for slaughter-style design."
+  },
+  {
+    "slug": "community-chest-2",
+    "title": "Community Chest 2",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A sprawling, inconsistent tapestry of industrial decay, where rusted coolant platforms and marble cathedrals are swallowed by vast, slime-choked sewers and impossible geometric voids.",
+    "praise": "The atmospheric dread of Bernard De Windt\u2019s industrial ruins and Erik Alm\u2019s tight layouts cement this collection as a landmark of collaborative design."
+  },
+  {
+    "slug": "community-chest-3",
+    "title": "Community Chest 3",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A sprawling odyssey through subterranean mines, sunken cities, and gargantuan industrial complexes that stretch toward an infinite, oppressive horizon.",
+    "praise": "Andy Leaver\u2019s revival showcases grand architectural scale through Matt Tropiano\u2019s massive layouts and Thomas van der Velden\u2019s distinctively creative environmental detailing."
+  },
+  {
+    "slug": "community-chest-4",
+    "title": "Community Chest 4",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A sprawling, high-fidelity odyssey through decaying industrial installations, subterranean grottos, and suburban nightmares unified by a versatile, era-defining palette of detailed textures.",
+    "praise": "The influential texture resource anchors diverse contributions from mappers like skillsaw and Phobus, while Jimmy and Mechadon deliver standout collaborative architecture."
+  },
+  {
+    "slug": "congestion-1024",
+    "title": "Congestion 1024",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A series of hyper-dense architectural dioramas where sprawling industrial complexes and gothic cathedrals are crushed into suffocatingly small, self-contained cubes of reality.",
+    "praise": "The spatial ingenuity of The Flange Peddler and fellow mappers thrives alongside Rachel Schmitz\u2019s original score, proving massive ambition fits inside tiny boundaries."
+  },
+  {
+    "slug": "counterattack",
+    "title": "Counterattack",
+    "authors": [
+      "Brett Harrell"
+    ],
+    "difficulty_rating": 5.8,
+    "vibe": "Vast, hyper-detailed industrial complexes and monolithic stone citadels rise from desolate plains, blending intricate mechanical conduits with oppressive, ancient geometry.",
+    "praise": "The meticulous sector-detailing and grand architectural scale Brett Harrell achieves makes every environment feel like a massive, lived-in industrial monument."
+  },
+  {
+    "slug": "crimson-canyon",
+    "title": "Crimson Canyon",
+    "authors": [
+      "Jeffrey Graham"
+    ],
+    "difficulty_rating": 4.2,
+    "vibe": "Industrial outposts and high-tech shrines are carved directly into the jagged, rust-colored cliffs of a sprawling desert canyon system.",
+    "praise": "The cohesive red-rock aesthetic crafted by Jeffrey Graham shines alongside Rachel Schmitz\u2019s atmospheric score, earning this episode its well-deserved Cacoward."
+  },
+  {
+    "slug": "crucified-dreams",
+    "title": "Crucified Dreams",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 2.7,
+    "vibe": "Weathered stone arches and verdigris-stained cathedrals stand frozen under a perpetual snowfall, where tattered ruins and jagged geometry bleed into a somber, gothic limbo.",
+    "praise": "Derek MacDonald\u2019s hands-on refinement of Scott Cover\u2019s vision transforms these gothic arenas into a sharp showcase of Lee Szymanski\u2019s tiered layouts."
+  },
+  {
+    "slug": "curse-of-d-sparil",
+    "title": "Curse of D'Sparil",
+    "authors": [
+      "Kristian K\u00e4ll"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "Desolate medieval cities and frozen citadels drift through a haunting dreamscape where the boundaries of reality blur into a cold, ethereal nightmare.",
+    "praise": "The atmospheric level design by Kristian K\u00e4ll, featuring a standout secret map by his brother Karl, revitalizes the Heretic engine with professional-grade architecture."
+  },
+  {
+    "slug": "dark-universe",
+    "title": "Dark Universe",
+    "authors": [
+      "Paul Dechene"
+    ],
+    "difficulty_rating": 3.8,
+    "vibe": "A derelict UAC starship where intricate 3D geometry and atmospheric lighting reveal sprawling mechanical vistas and claustrophobic corridors swallowed by an otherworldly void.",
+    "praise": "The cinematic storytelling and detailed environmental design of Paul Dechene elevate this spaceship crawl through clever use of GZDoom\u2019s 3D capabilities."
+  },
+  {
+    "slug": "dbk03-shrine-of-the-silver-cyberprimate",
+    "title": "DBK03: Shrine of the Silver CyberPrimate",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A humid Mesoamerican jungle where crumbling stone pyramids and vine-choked ruins are retrofitted with high-tech machinery and the kitschy aesthetic of a 90s televised adventure game show.",
+    "praise": "The Mesoamerican adventure crafted by Big Ol' Billy and the Digital Bards Krew excels through inventive ZDoom-powered traps and a nostalgic, genre-bending soundtrack."
+  },
+  {
+    "slug": "dead-air",
+    "title": "dead.air",
+    "authors": [
+      "Xaser Acheron"
+    ],
+    "difficulty_rating": 6.4,
+    "vibe": "A fractured digital metropolis where corporate news architecture dissolves into a surreal broadcast nightmare of neon static and corrupted signal interference.",
+    "praise": "The inventive custom arsenal and glitchy aesthetic crafted by Xaser Acheron transform a routine debugging mission into a visually stunning sensory overload."
+  },
+  {
+    "slug": "dead-wire",
+    "title": "dead.wire",
+    "authors": [
+      "Xaser Acheron"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A glitching, digital purgatory where familiar UAC corridors dissolve into a silent void populated by translucent phantoms and shifting geometric anomalies.",
+    "praise": "The surreal atmosphere and inventive weapon replacements crafted by Xaser Acheron transform a classic layout into a haunting, high-tech fever dream."
+  },
+  {
+    "slug": "decade",
+    "title": "Decade",
+    "authors": [
+      "Russell Pearson"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Industrial corridors and toxic refineries merge with gothic keeps in a hyper-detailed architectural mosaic that reinterprets the most iconic landmarks of the early Martian invasion.",
+    "praise": "The meticulous architectural detailing and scripted sequences by Russell Pearson transform nostalgic layouts into a sophisticated, atmospheric tribute to the series' first decade."
+  },
+  {
+    "slug": "demons-of-problematique-2",
+    "title": "Demons of Problematique 2",
+    "authors": [
+      "Dennis Meuwissen"
+    ],
+    "difficulty_rating": 4.7,
+    "vibe": "Rain-slicked industrial corridors and flooded stone dungeons are swallowed by an oppressive, pitch-black gloom punctuated only by the eerie flicker of colored dynamic lights.",
+    "praise": "The atmospheric lighting and intricate GZDoom architecture crafted by Dennis Meuwissen transform every encounter into a tense, cinematic puzzle."
+  },
+  {
+    "slug": "deus-vult-ii",
+    "title": "Deus Vult II",
+    "authors": [
+      "Huy Pham"
+    ],
+    "difficulty_rating": 6.8,
+    "vibe": "Vast, monolithic fortresses of black stone, sun-scorched desert temples, and shimmering cosmic gateways form a grand-scale architectural odyssey spanning from gothic cathedrals to the stars.",
+    "praise": "The staggering architectural scale and custom monster additions showcase Huy Pham\u2019s talent for crafting a cinematic experience that redefined Boom-compatible visual standards."
+  },
+  {
+    "slug": "dimension-of-the-boomed",
+    "title": "Dimension of the Boomed",
+    "authors": [
+      "Stephen Wadsworth"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A low-fidelity nightmare of rusted industrial slipgates and gothic stone fortresses submerged in murky brown bogs and eldritch shadows.",
+    "praise": "The seamless integration of Quake\u2019s oppressive atmosphere into the Doom engine showcases Stephen Wadsworth\u2019s talent for creating a hauntingly nostalgic crossover."
+  },
+  {
+    "slug": "don-t-turn-your-back-on-the-city",
+    "title": "Don't Turn Your Back on the City",
+    "authors": [
+      "Suzanne Will"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A dense metropolitan labyrinth where grime-streaked alleys and cluttered storefronts sit beneath the oppressive shadow of towering brick architecture.",
+    "praise": "The staggering architectural density achieved by Suzanne Will transforms a single city block into a landmark display of sector-based realism."
+  },
+  {
+    "slug": "doom-2-in-city-only",
+    "title": "Doom 2 In City Only",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A sprawling urban odyssey shifting from contemporary skylines and neon-lit futures to ancient desert metropolises and crumbling hellish suburbs.",
+    "praise": "The diverse urban landscapes curated by Alex Decker showcase a creative range of architecture from Muumi\u2019s transcendence to cannonball\u2019s brutalist hell."
+  },
+  {
+    "slug": "doom-2-in-spain-only",
+    "title": "Doom 2 in Spain Only",
+    "authors": [
+      "Richard Frei"
+    ],
+    "difficulty_rating": 3.3,
+    "vibe": "A garbled, mistranslated landscape where the familiar architecture of Earth and Hell is filtered through the lens of a budget Spanish bootleg, complete with fractured signage and surreal, Google-translated geography.",
+    "praise": "The uncanny mimicry of id Software\u2019s design by Richard Frei and his collaborators creates a hilarious, high-effort parody of bootleg gaming culture."
+  },
+  {
+    "slug": "doom-2-the-way-id-did",
+    "title": "Doom 2 the Way id Did",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 3.1,
+    "vibe": "Industrial shipyards and flooded libraries give way to jagged, nonsensical hellscapes and hidden, cartoonish dimensions of Vorticon technology.",
+    "praise": "Replicating the distinct architectural quirks of the original id team, Tarnsman, esselfortium, and Alfonzo craft a pitch-perfect alternate-history sequel to Doom II."
+  },
+  {
+    "slug": "doom-the-golden-souls-2",
+    "title": "Doom: The Golden Souls 2",
+    "authors": [
+      "Batandy"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "A kaleidoscopic journey through floating grassy plains, sun-drenched tropical ports, and candy-coated skies, all connected by a sprawling overworld map and hidden secret paths.",
+    "praise": "The ambitious platforming mechanics and upgradable arsenal designed by Batandy transform the traditional shooter into a sprawling, coin-collecting adventure."
+  },
+  {
+    "slug": "doom-the-way-id-did",
+    "title": "Doom the Way id Did",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 3.1,
+    "vibe": "Industrial Phobos outposts transition into warped Deimos installations and abstract, jagged marble hellscapes that mirror the specific architectural quirks of 1993.",
+    "praise": "Meticulous design work by Hellbent, ellmo, and esselfortium captures the idiosyncratic mapping quirks of the original id Software team with uncanny precision."
+  },
+  {
+    "slug": "double-impact",
+    "title": "Double Impact",
+    "authors": [
+      "Matt Cibulas and Ralph Vickers"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Cavernous industrial hangars and cramped ventilation ducts form a massive, grime-streaked labyrinth of flickering terminals and exposed machinery.",
+    "praise": "The sprawling, non-linear environments crafted by Matt Cibulas and Ralph Vickers transform the familiar Phobos base into a dense and intimidating tactical challenge."
+  },
+  {
+    "slug": "dreamblood",
+    "title": "Dreamblood",
+    "authors": [
+      "HeadshotTAS"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A surreal odyssey through shifting dreamscapes where lunar electricity, Martian embers, and polluted industrial ruins collide under the eerie, high-contrast glow of the Doom 64 engine.",
+    "praise": "The technical wizardry of HeadshotTAS transforms the engine through complex scripting, while haunting melodies from Proxy-MIDI and Immorpher deepen the surreal atmosphere."
+  },
+  {
+    "slug": "drip-feed",
+    "title": "Drip Feed",
+    "authors": [
+      "Trevor Primmett"
+    ],
+    "difficulty_rating": 5.8,
+    "vibe": "A colossal, monolithic citadel of weathered stone and iron rises from a desolate, rocky expanse, its grand courtyards and imposing battlements radiating an aura of ancient, fortified dread.",
+    "praise": "The grand scale and intricate secret-hunting of Trevor Primmett\u2019s citadel earned its Cacoward by blending epic architecture with rewarding exploration."
+  },
+  {
+    "slug": "dust-devil",
+    "title": "Dust Devil",
+    "authors": [
+      "Captain Toenail"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "An arid, storm-lashed mining world where sleek UAC research facilities collide with the crumbling, sun-bleached stone of an ancient desert civilization.",
+    "praise": "The inventive bestiary and seamless environmental storytelling from Captain Toenail transform a dusty archaeological dig into a polished, award-winning adventure."
+  },
+  {
+    "slug": "elementalism-phase-1",
+    "title": "Elementalism: Phase 1",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 6.2,
+    "vibe": "Primordial realms of overgrown jungle ruins, submerged crystalline temples, and molten industrial forges house the fading power of ancient elemental gods.",
+    "praise": "The ambitious adventure-style mapping of Ben Mansell (Bauul) and Joshua O'Sullivan (Dragonfly) transforms GZDoom\u2019s technical capabilities into a grand elemental odyssey."
+  },
+  {
+    "slug": "elf-gets-pissed",
+    "title": "Elf Gets Pissed",
+    "authors": [
+      "Matt Cibulas"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Damp stone catacombs and sun-scorched canyons collide with surreal occult oddities, where medieval architecture is haunted by massive canine totems and explosive poultry.",
+    "praise": "The punchy level design and creative custom weaponry by Matt Cibulas breathe fresh, chaotic life into the aging Heretic engine."
+  },
+  {
+    "slug": "epic-2",
+    "title": "Epic 2",
+    "authors": [
+      "Alexander S."
+    ],
+    "difficulty_rating": 5.8,
+    "vibe": "Sand-swept Egyptian necropolises and sandstone temples give way to the sterile, high-tech corridors of orbiting alien vessels and shimmering astral landscapes.",
+    "praise": "The grand architectural scale and intricate puzzles crafted by Alexander S. elevate this journey through beautifully textured ancient and alien worlds."
+  },
+  {
+    "slug": "epic",
+    "title": "Epic",
+    "authors": [
+      "Alexander S. (Eternal)"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "Dust-choked sandstone temples and grand citadels rise from sun-scorched Egyptian dunes, where ancient hieroglyphs watch over shifting desert sands and forgotten tombs.",
+    "praise": "The grand Egyptian architecture and atmospheric world-building by Alexander S. (Eternal) create a sense of scale rarely seen in 2007."
+  },
+  {
+    "slug": "erkatt-e",
+    "title": "Erkatt\u00e4\u00f1\u00f1e",
+    "authors": [
+      "Nicol\u00e1s Monti"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "Fluid, organic starport corridors and irregular chambers create a minimalist industrial labyrinth defined by sweeping curves and a restrained, cohesive palette.",
+    "praise": "The nostalgic 1990s aesthetic is elevated by Nicol\u00e1s Monti\u2019s mastery of irregular shapes and a surprisingly catchy pop-infused MIDI soundtrack."
+  },
+  {
+    "slug": "escape-from-castle-chezcrea",
+    "title": "Escape from Castle Chezcrea",
+    "authors": [
+      "Paul Hiebert"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A sprawling stone fortress where industrial conveyor belts and dark, damp caverns hide interactive tools like pickaxes behind crumbling masonry.",
+    "praise": "Paul Hiebert\u2019s inventive use of interactive environment puzzles and custom mechanics transforms a standard castle escape into a highly memorable adventure."
+  },
+  {
+    "slug": "eternal-doom-iv-return-from-oblivion",
+    "title": "Eternal Doom IV: Return from Oblivion",
+    "authors": [
+      "TeamTNT"
+    ],
+    "difficulty_rating": 5.3,
+    "vibe": "Massive medieval fortresses and sprawling stone crypts stand frozen in time, blending ancient gothic masonry with strange, otherworldly technology.",
+    "praise": "The grand architectural scale and atmospheric detailing from Rex Claussen, Chris Couleur, and Espi perfectly capture the legendary TeamTNT sense of adventure."
+  },
+  {
+    "slug": "eviternity-ii",
+    "title": "Eviternity II",
+    "authors": [
+      "Joshua O'Sullivan"
+    ],
+    "difficulty_rating": 6.7,
+    "vibe": "Decaying autumnal ruins and frozen hyperborean wastes give way to a celestial void where feathered wings and cosmic divinity preside over impossible architecture.",
+    "praise": "The ambitious scope of Joshua O'Sullivan's team shines through Tristan Clark's bespoke soundtrack and the devastating Perforator weapon envisioned by ukiro."
+  },
+  {
+    "slug": "eviternity",
+    "title": "Eviternity",
+    "authors": [
+      "Dragonfly"
+    ],
+    "difficulty_rating": 6.3,
+    "vibe": "A journey through shifting realities, transitioning from mossy medieval ruins and frozen wastes into a pristine, celestial afterlife of white marble and gold.",
+    "praise": "Joshua O'Sullivan's meticulous design and ukiro\u2019s bespoke OTEX textures create a polished, multi-themed epic that feels like a professional expansion."
+  },
+  {
+    "slug": "faithless-trilogy",
+    "title": "Faithless: Trilogy",
+    "authors": [
+      "James Paddock"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "Interconnected portals stitch together a decaying fantasy landscape of emerald gardens, iron-clad fortresses, and blood-soaked cloisters where the realms of Parthoris and Cronos collide.",
+    "praise": "The expansive hub-based architecture and bespoke arsenal crafted by James Paddock elevate this Heretic odyssey into a definitive modern dark fantasy experience."
+  },
+  {
+    "slug": "finely-crafted-fetish-film",
+    "title": "Finely Crafted Fetish Film",
+    "authors": [
+      "Zachary Stephens"
+    ],
+    "difficulty_rating": 8.2,
+    "vibe": "Monolithic, abstract structures float within a silent, hazy purgatory where blooming roses and intricate clockwork mechanisms punctuate the lonely, grey architecture.",
+    "praise": "The intricate puzzle-box architecture of Zachary Stephens transforms the traditional shooter into a cerebral, high-stakes gauntlet of environmental navigation."
+  },
+  {
+    "slug": "foreverhood",
+    "title": "Foreverhood",
+    "authors": [
+      "Brian Goodsell"
+    ],
+    "difficulty_rating": 2.4,
+    "vibe": "A melancholic, dreamlike landscape of misty mountains and dense woods where small, childlike beings wander under the watchful eyes of towering, enigmatic guardians.",
+    "praise": "Surreal world-building and experimental storytelling by Brian Goodsell earned this total conversion a Cacoward for its unique, non-traditional vision."
+  },
+  {
+    "slug": "forsaken-overlook",
+    "title": "Forsaken Overlook",
+    "authors": [
+      "Matt Tropiano"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A sprawling stone fortress perched atop jagged cliffs and isolated islands, overlooking a desolate landscape of weathered rock and ancient masonry.",
+    "praise": "Matt Tropiano\u2019s intricate, vertical architecture captures a sense of grand scale, perfectly complemented by the somber melodies of James Paddock."
+  },
+  {
+    "slug": "fractured-worlds",
+    "title": "Fractured Worlds",
+    "authors": [
+      "Nirvana"
+    ],
+    "difficulty_rating": 8.2,
+    "vibe": "Jagged obsidian architecture drifts through a star-flecked void, bathed in a monochromatic teal glow that blurs the line between cosmic and digital.",
+    "praise": "Nirvana crafts a hauntingly beautiful teal odyssey, sharpened by Ribbiks\u2019 technical guidance and punishing guest maps from Scotty and Insane_Gazebo."
+  },
+  {
+    "slug": "fuel-devourer",
+    "title": "Fuel Devourer",
+    "authors": [
+      "C4tnt and Arthur O."
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A sprawling industrial complex of glowing lava pits and metallic rods, where red-lit control rooms overlook vast, toxic-choked cisterns and intricate ventilation networks.",
+    "praise": "The intricate industrial architecture and custom axe-wielding zombies crafted by C4tnt and Arthur O. earned this dense adventure a well-deserved Cacoward."
+  },
+  {
+    "slug": "genesis-of-descent",
+    "title": "Genesis of Descent",
+    "authors": [
+      "Nick Laurent"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Shadow-drenched industrial shafts and subterranean vaults are illuminated by the flickering hum of ancient machinery and eerie, ambient colored lighting.",
+    "praise": "Immersive cinematic scripting and moody lighting allow Nick Laurent to transform a standard tech-base into a haunting, award-winning descent."
+  },
+  {
+    "slug": "ghouls-vs-humans",
+    "title": "Ghouls vs Humans",
+    "authors": [
+      "Mike Hill"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A suffocating, pitch-black woodland where gnarled trees and oppressive shadows conceal pale, distorted entities lurking within the absolute silence.",
+    "praise": "By blending primal fear with sudden lethality, Cutmanmike transformed the engine into a psychological horror playground that remains legendary for its scares."
+  },
+  {
+    "slug": "godless-night",
+    "title": "Godless Night",
+    "authors": [
+      "Tango"
+    ],
+    "difficulty_rating": 6.4,
+    "vibe": "A gothic gallery of haunted portraits serves as a gateway to crumbling chapels, mechanical gardens, and cosmic voids steeped in the atmosphere of a cursed, eternal night.",
+    "praise": "Tango\u2019s seamless integration of Supercharge into a Castlevania-inspired world is bolstered by guest maps from Aurelius, RonnieJamesDiner, and reflex17."
+  },
+  {
+    "slug": "going-down",
+    "title": "Going Down",
+    "authors": [
+      "Cyriak Harris"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A vertical plunge through a corporate monolith where sterile boardrooms and grimy maintenance tunnels give way to a surreal, gore-slicked descent into the building's literal and metaphorical bowels.",
+    "praise": "The frantic, 'chaotic-evil' level design and quirky original soundtrack by Cyriak Harris transform a simple office building into a uniquely hilarious and punishing gauntlet."
+  },
+  {
+    "slug": "gravity",
+    "title": "Gravity",
+    "authors": [
+      "Alexander S. (Eternal)"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "Majestic stone citadels and surreal castles rise with impossible verticality, blending classical masonry with dreamlike, gravity-defying structures.",
+    "praise": "The soaring verticality and intricate masonry crafted by Alexander S. (Eternal) create a sense of architectural grandeur rarely seen in limit-removing maps."
+  },
+  {
+    "slug": "grove",
+    "title": "Grove",
+    "authors": [
+      "Bernard De Windt"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "A nocturnal, suffocating forest where crumbling ruins and eerie stone circles are swallowed by a pervasive darkness that hides giant stone hands and shimmering gemstone skulls.",
+    "praise": "The haunting original compositions and atmospheric environmental storytelling by Bernard De Windt transform a simple forest into a tense, award-winning survival horror masterpiece."
+  },
+  {
+    "slug": "hardfest-2",
+    "title": "Hardfest 2",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 7.8,
+    "vibe": "A kaleidoscopic fever dream where neon-drenched ritual sites and frozen voids collide with unsettling dollhouses and digital mainframes under a shifting, psychedelic sky.",
+    "praise": "The experimental monster variants and high-octane pacing within this finnks13-led project thrive on the eclectic, atmospheric soundscapes provided by LPad."
+  },
+  {
+    "slug": "harmony",
+    "title": "Harmony",
+    "authors": [
+      "Thomas van der Velden"
+    ],
+    "difficulty_rating": 3.6,
+    "vibe": "A vibrant post-apocalyptic wasteland populated by clay-molded mutants and neon-hued ruins, depicting a world where a viral plague has transformed the male population into a monstrous new order.",
+    "praise": "The handcrafted claymation enemies and vibrant color palette designed by Thomas van der Velden transform this total conversion into a distinct, tactile sci-fi odyssey."
+  },
+  {
+    "slug": "haste",
+    "title": "Haste",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 8.2,
+    "vibe": "A surreal odyssey through monolithic stone temples, verdant overgrowths, and sepia-toned voids where ancient architecture floats amidst a diverse, dreamlike soundscape.",
+    "praise": "Scotty\u2019s punchy challenges expand into Insane_Gazebo\u2019s grand-scale architecture, enriched by Ribbiks\u2019 intricate combat puzzles and Nirvana\u2019s atmospheric detail."
+  },
+  {
+    "slug": "heartland",
+    "title": "Heartland",
+    "authors": [
+      "Paul DeBruyne"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Gritty industrial sprawl and urban decay collide within a world of complex machinery, subterranean transit systems, and towering brick-and-steel monoliths.",
+    "praise": "Paul DeBruyne and Xaser deliver a transformative arsenal that pairs perfectly with the smooth, jazzy compositions of Stuart Rynn."
+  },
+  {
+    "slug": "hedrox",
+    "title": "HeDRoX",
+    "authors": [
+      "Rodrigo Acevedo"
+    ],
+    "difficulty_rating": 4.2,
+    "vibe": "A dense, hyper-detailed techbase defined by jagged, intricate geometry and complex machinery that pushes the limits of sector-based construction.",
+    "praise": "The intricate, award-winning architecture crafted by Rodrigo Acevedo transforms a standard techbase into a dense showcase of mid-2000s ZDoom detailing."
+  },
+  {
+    "slug": "hell-forged",
+    "title": "Hell-Forged",
+    "authors": [
+      "Amuscaria"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A crumbling medieval kingdom fueled by forbidden sorcery sinks into a volcanic abyss of obsidian fortresses and blood-slicked catacombs.",
+    "praise": "The intricate custom assets and elemental combat systems designed by Amuscaria transform a standard invasion into a hauntingly detailed dark fantasy epic."
+  },
+  {
+    "slug": "hell-ground",
+    "title": "Hell Ground",
+    "authors": [
+      "Alexander S."
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Twisted Gothic architecture and surreal dreamscapes drift through a somber, melancholic gloom, haunted by the unsettling echoes of a Victorian nightmare.",
+    "praise": "The haunting atmosphere and surreal visual storytelling crafted by Alexander S. elevate these seven maps into a uniquely unsettling masterpiece of Doom modding."
+  },
+  {
+    "slug": "hell-revealed-ii",
+    "title": "Hell Revealed II",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 7.4,
+    "vibe": "A relentless descent through industrial metal complexes and monolithic granite cathedrals that eventually dissolve into vast, scorched hellscapes of brimstone and ancient pyramids.",
+    "praise": "The punishing level design led by Jonas Feragen and Andy Olivera finds its pulse in Sam Woodman\u2019s driving, high-energy industrial soundtrack."
+  },
+  {
+    "slug": "hellcore-2-0",
+    "title": "Hellcore 2.0",
+    "authors": [
+      "Robert Babor",
+      "Devon West"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Rain-slicked urban decay and gothic architecture collide in a cinematic descent through haunted city streets and surreal, Lovecraftian dreamscapes.",
+    "praise": "The meticulous atmospheric detailing and cinematic pacing provided by Robert Babor and Devon West elevate this journey into a haunting, award-winning horror experience."
+  },
+  {
+    "slug": "hi-tech-hell-2-alien-tech",
+    "title": "Hi-Tech Hell 2 - Alien Tech",
+    "authors": [
+      "Simo Malinen"
+    ],
+    "difficulty_rating": 3.8,
+    "vibe": "Sleek, multi-layered research facilities and teleportation laboratories where cold industrial steel meets glowing extraterrestrial machinery beneath the shadow of a waiting transport plane.",
+    "praise": "The cinematic storytelling and advanced 3D architecture crafted by Simo Malinen earned this tech-base adventure a well-deserved Cacoward."
+  },
+  {
+    "slug": "hocus-pocus-doom",
+    "title": "Hocus Pocus Doom",
+    "authors": [
+      "Fletcher`"
+    ],
+    "difficulty_rating": 3.2,
+    "vibe": "A vibrant, storybook realm of oversized mushrooms, crystalline ice palaces, and ancient wizard towers rendered in the saturated palette of a 90s shareware fantasy.",
+    "praise": "The meticulous translation of 2D platforming logic into a 3D space by Fletcher` creates a nostalgic, high-energy tribute to Apogee's golden era."
+  },
+  {
+    "slug": "house-of-dead-skin",
+    "title": "House of Dead Skin",
+    "authors": [
+      "ivymagnapinna"
+    ],
+    "difficulty_rating": 7.8,
+    "vibe": "A sprawling, beige-toned labyrinth where ancient pyramid structures and industrial piping are slowly being consumed by pulsating, organic hellgrowth.",
+    "praise": "The massive scale and intricate sector work of ivymagnapinna's design creates a haunting atmosphere, perfectly complemented by Ribbiks' melancholic musical score."
+  },
+  {
+    "slug": "ic2005",
+    "title": "IC2005",
+    "authors": [
+      "Ian Cunnings"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A sprawling industrial labyrinth of interlocking crate warehouses and high-tech computer cores, submerged in the gritty, mechanical gloom of a deep-space refinery.",
+    "praise": "The intricate architecture and massive scale established by Ian Cunnings earned this map a Cacoward for its ahead-of-its-time technical ambition."
+  },
+  {
+    "slug": "icebound",
+    "title": "Icebound",
+    "authors": [
+      "Christopher Lutz"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A frozen fortress of jagged stone and ancient masonry where icy waterfalls spill into hidden grottoes and lava-filled caverns beneath a docked wooden vessel.",
+    "praise": "The intricate sector detail and atmospheric lighting crafted by Christopher Lutz transform this frozen citadel into a sprawling, award-winning adventure."
+  },
+  {
+    "slug": "infested",
+    "title": "Infested",
+    "authors": [
+      "ginc"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Pulsating, fleshy growths and organic nests anchor themselves to the clean lines of a small-town art gallery, corrupting the local architecture with hellish rot.",
+    "praise": "The inventive Gore Nest mechanics and tactical weapon overhauls by ginc transform routine demon extermination into a polished, award-winning arcade experience."
+  },
+  {
+    "slug": "infraworld-coma-moonlight",
+    "title": "Infraworld - Coma Moonlight",
+    "authors": [
+      "StormCatcher.77"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A sprawling, moonlit fortress of intricate stone and glowing purple energy bridges suspended over a dark, ethereal abyss.",
+    "praise": "The meticulous architectural detail and atmospheric lighting crafted by StormCatcher.77 elevate this surreal fortress into a haunting, award-winning adventure."
+  },
+  {
+    "slug": "insanity-edged",
+    "title": "Insanity Edged",
+    "authors": [
+      "Pieruskwurje"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A frigid, industrial landscape where rusted machinery and glitching reality bleed into a melancholic, snow-dusted void of forgotten memories.",
+    "praise": "The cinematic storytelling and polished GZDoom effects Pieruskwurje employs create a hauntingly atmospheric journey that elevates the standard shooter experience."
+  },
+  {
+    "slug": "japanese-community-project",
+    "title": "Japanese Community Project",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.8,
+    "vibe": "A kaleidoscopic odyssey through rural valleys, magnetic research facilities, and emerald-hued hellscapes, blending traditional industrial grit with surreal, neon-tinged dreamscapes.",
+    "praise": "The eclectic mapping styles of burabojunior and Nanka Kurashiki coalesce under Tatsurd-Cacocaco\u2019s leadership to form a vibrant, award-winning cultural showcase."
+  },
+  {
+    "slug": "jenesis",
+    "title": "Jenesis",
+    "authors": [
+      "James Paddock"
+    ],
+    "difficulty_rating": 4.2,
+    "vibe": "Rusted industrial refineries and radioactive oceans give way to putrid cathedrals and volcanic abysses, blending classic nineties aesthetics with sharp, modern detailing.",
+    "praise": "James Paddock\u2019s speedmapped layouts harmonize with a diverse, award-winning soundtrack from Stuart Rynn and other legendary composers for a cohesive solo experience."
+  },
+  {
+    "slug": "jumpwad",
+    "title": "Jumpwad",
+    "authors": [
+      "Zachary Stephens",
+      "Grain of Salt"
+    ],
+    "difficulty_rating": 8.2,
+    "vibe": "Snowy temples and surreal ice cream factories float amidst a void of falling flakes, punctuated by glowing gems and pulsating fire crystals.",
+    "praise": "The ingenious DeHackEd wizardry of Zachary Stephens and Grain of Salt transforms a classic shooter into a precision platforming masterpiece."
+  },
+  {
+    "slug": "kama-sutra",
+    "title": "Kama Sutra",
+    "authors": [
+      "Adolf Vojta",
+      "Jakub Razak"
+    ],
+    "difficulty_rating": 6.8,
+    "vibe": "Industrial complexes and medieval fortresses give way to surreal, anatomical landscapes where the architecture itself becomes a provocative, flesh-toned hallucination.",
+    "praise": "The speedrunning pedigree of Adolf Vojta and Jakub Razak infuses these maps with an aggressive flow and a playfully irreverent spirit."
+  },
+  {
+    "slug": "khorus-speedy-shit",
+    "title": "Khorus' Speedy Shit",
+    "authors": [
+      "Adam Woodmansey"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A series of compact, abstract fortresses and industrial outposts where the architecture feels jagged, spontaneous, and stripped down to its most primal, utilitarian forms.",
+    "praise": "The raw, high-energy layouts crafted by Adam Woodmansey gain extra depth through the polished, guest-designed secret levels by Brian Knox and Tango."
+  },
+  {
+    "slug": "knee-deep-in-knee-deep-in-zdoom",
+    "title": "Knee-Deep in Knee-Deep in ZDoom",
+    "authors": [
+      "esselfortium",
+      "KDiKDiZD team"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A Phobos soundstage where flickering camera monitors and impossible architectural illusions transform industrial moon-base corridors into a high-budget television reenactment.",
+    "praise": "The technical ingenuity of esselfortium and the KDiKDiZD team pushes vanilla limits to deliver a detailed, feature-rich demake of a modern classic."
+  },
+  {
+    "slug": "knee-deep-in-zdoom",
+    "title": "Knee-Deep in ZDoom",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "Industrial Phobos installations expand into vast, sloped complexes of humming machinery and flickering shadows that bridge the gap between classic Martian outposts and gritty Quake II tech-bases.",
+    "praise": "Cinematic technical wizardry from Graf Zahl and Daniel Gimmer reimagines Phobos through sprawling architecture and Vader\u2019s diverse, meticulously animated monster roster."
+  },
+  {
+    "slug": "kuchitsu",
+    "title": "Kuchitsu",
+    "authors": [
+      "Memfis"
+    ],
+    "difficulty_rating": 3.6,
+    "vibe": "Clean, vanilla-textured vignettes transition from serene islands and leaky industrial corridors to a miniature urban sprawl beneath a quiet sky.",
+    "praise": "The understated elegance of Memfis\u2019s level design shines through these compact maps, earning a well-deserved Cacoward for their refined simplicity."
+  },
+  {
+    "slug": "legacy-of-heroes",
+    "title": "Legacy of Heroes",
+    "authors": [
+      "gaspe"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "Crumbling Mediterranean ruins and perched mountain monasteries give way to vast, silent libraries and subterranean villages steeped in ancient mythological grandeur.",
+    "praise": "The grand adventure-style architecture crafted by gaspe evokes the spirit of Eternal Doom while delivering a polished, modern sense of scale."
+  },
+  {
+    "slug": "legacy-of-suffering",
+    "title": "Legacy of Suffering",
+    "authors": [
+      "Logan MTM"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A sterile, shadow-drenched lunar research facility where flickering emergency lights and industrial monorails give way to a surreal, metal-scored descent into the abyss.",
+    "praise": "The cinematic atmosphere and brutal custom weaponry crafted by Logan MTM transform the engine into a gritty, Doom 3-inspired horror experience."
+  },
+  {
+    "slug": "lilith",
+    "title": "lilith",
+    "authors": [
+      "anotak"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A digital purgatory where the fabric of reality unravels into a jagged mosaic of corrupted textures, flickering sprites, and broken geometry.",
+    "praise": "The way anotak weaponizes technical bugs and engine instability creates a haunting, avant-garde experience that redefines the limits of the software renderer."
+  },
+  {
+    "slug": "liminal-doom-2-crossing-the-threshold",
+    "title": "Liminal Doom 2: Crossing the Threshold",
+    "authors": [
+      "dashlet"
+    ],
+    "difficulty_rating": 5.2,
+    "vibe": "Mundane, everyday environments like empty offices and quiet hallways dissolve into a surreal, dreamlike expanse where the familiar world feels unsettlingly hollow and alien.",
+    "praise": "The haunting atmosphere and clever use of custom soundscapes by dashlet create a uniquely unsettling experience that redefines the liminal space aesthetic."
+  },
+  {
+    "slug": "lost-civilization",
+    "title": "Lost Civilization",
+    "authors": [
+      "Jaakko Impola"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Vast, hyper-detailed landscapes transition from misty mountain passes and sun-drenched farmlands to decaying suburban sprawl and crumbling metropolitan ruins.",
+    "praise": "The sprawling, non-linear environments crafted by Jaakko Impola feel remarkably lived-in, especially when paired with the atmospheric, melodic soundscapes of Bj\u00f8rn Lynne."
+  },
+  {
+    "slug": "lullaby",
+    "title": "Lullaby",
+    "authors": [
+      "Daniel Alexander"
+    ],
+    "difficulty_rating": 6.4,
+    "vibe": "A surreal, violet-hued dreamscape where floating star-shaped islands and impossible libraries drift through a cosmic, starlit abyss.",
+    "praise": "The ethereal atmosphere crafted by Daniel Alexander utilizes GZDoom\u2019s advanced features to create a hauntingly beautiful, award-winning journey through a nightmare."
+  },
+  {
+    "slug": "lunatic",
+    "title": "Lunatic",
+    "authors": [
+      "Paul DeBruyne"
+    ],
+    "difficulty_rating": 5.1,
+    "vibe": "Sleek, silver-plated research labs and humming supercomputers overlook the silent, cratered desolation of a lunar landscape under a star-choked sky.",
+    "praise": "The vibrant lunar aesthetics and lethal custom monster variants crafted by Paul DeBruyne deliver a polished, high-energy experience that feels distinctively modern."
+  },
+  {
+    "slug": "malevolence",
+    "title": "Malevolence",
+    "authors": [
+      "Cheesewheel"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A sprawling lunar terraforming colony where sterile, interconnected tech-bases are being repurposed into cold, industrial cyborg factories by a rogue super-intelligence.",
+    "praise": "The meticulous environmental storytelling and custom cyborg roster crafted by Cheesewheel transform these vanilla-styled tech-bases into a cohesive, atmospheric sci-fi horror experience."
+  },
+  {
+    "slug": "mandrill-ass-project",
+    "title": "Mandrill Ass Project",
+    "authors": [
+      "Aluqah"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A kaleidoscopic journey through digital circuitry, confectionery factories, and neon-drenched virtual realities where tropical surf breaks meet high-altitude aerial dogfights.",
+    "praise": "The bizarre, genre-bending environments crafted by Aluqah utilize GZDoom's features to transform a series of whimsical fever dreams into a Cacoward-winning reality."
+  },
+  {
+    "slug": "mapgame",
+    "title": "Mapgame",
+    "authors": [
+      "Fletcher`"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "A sterile lunar outpost where flickering circuits and chemical decay bleed into a cold, dystopian industrial landscape bathed in an eerie, shifted color palette.",
+    "praise": "The custom palette and inventive flare gun mechanics introduced by Fletcher` elevate this techbase odyssey into a celebrated, award-winning experience."
+  },
+  {
+    "slug": "maskim-xul",
+    "title": "Maskim Xul",
+    "authors": [
+      "James Caldwell"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Ancient Sumerian ruins and eldritch voids bleed into a Lovecraftian nightmare of ritualistic altars, cosmic decay, and mouths embedded in the very walls.",
+    "praise": "James Caldwell\u2019s ambitious DeHackEd modifications reinvent the arsenal and bestiary, turning every encounter into a tense, Lovecraftian puzzle of survival."
+  },
+  {
+    "slug": "mayan-mishap",
+    "title": "Mayan Mishap",
+    "authors": [
+      "Tango"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Lush jungle ruins and ancient stone temples are drenched in a hallucinatory palette of deep purples and vibrant greens, punctuated by the glow of mystical white and light-blue keys.",
+    "praise": "The polished speedmaps of Tango shine through a custom palette and inventive DeHackEd monsters like the flying, tentacled greater mancubus."
+  },
+  {
+    "slug": "miasma",
+    "title": "Miasma",
+    "authors": [
+      "Thomas Seifert"
+    ],
+    "difficulty_rating": 6.4,
+    "vibe": "A sprawling, emerald-hued industrial cathedral choking on toxic sludge and overgrown moss, where jagged rock formations pierce through a thick, suffocating atmosphere of decay.",
+    "praise": "The intricate architecture and oppressive atmosphere crafted by Thomas Seifert transform a single map into a sprawling, award-winning epic of toxic beauty."
+  },
+  {
+    "slug": "monster-hunter-ltd-part-i",
+    "title": "Monster Hunter Ltd. Part I",
+    "authors": [
+      "Didy"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A grimy industrial sprawl where rusted silos and waste-clogged tunnels intersect amidst a dense labyrinth of heavy machinery and scrap.",
+    "praise": "The intricate sector-based detailing by Didy creates a tactile sense of place that earned this industrial hunt its Cacoward."
+  },
+  {
+    "slug": "mutabor",
+    "title": "Mutabor",
+    "authors": [
+      "Thomas Seifert"
+    ],
+    "difficulty_rating": 7.4,
+    "vibe": "A monochromatic emerald fever dream where toxic greens bleed into every texture, illuminating a surreal landscape of mutated guardians and glowing, verdant artifacts.",
+    "praise": "The meticulous visual cohesion and refined combat puzzles crafted by Thomas Seifert earned this emerald-hued masterpiece a well-deserved Cacoward."
+  },
+  {
+    "slug": "mutiny",
+    "title": "Mutiny",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A rain-slicked dystopian sprawl of crumbling slums, high-tech corporate fortresses, and industrial shipyards choked by urban decay.",
+    "praise": "Gritty urban decay and industrial sprawl come alive through Jon Vail's direction and a diverse soundtrack composed primarily by Jimmy."
+  },
+  {
+    "slug": "my-house",
+    "title": "My House",
+    "authors": [
+      "Steve Nelson"
+    ],
+    "difficulty_rating": 3.8,
+    "vibe": "A mundane suburban residence that unravels into a shifting, non-Euclidean nightmare of liminal airports, flooded bathhouses, and infinite concrete labyrinths.",
+    "praise": "The technical wizardry of Steve Nelson transforms a simple domestic map into a haunting, multi-layered exploration of grief and impossible architecture."
+  },
+  {
+    "slug": "necromantic-thirst",
+    "title": "Necromantic Thirst",
+    "authors": [
+      "French Doom Community"
+    ],
+    "difficulty_rating": 6.7,
+    "vibe": "Emerald-tinted mists and jagged stone ruins bleed into toxic industrial complexes, creating a dark, necromantic landscape of gothic decay and high-contrast geometry.",
+    "praise": "The French Doom Community's technical mastery shines through franckFRAG\u2019s leadership, pairing WH-Wilou84\u2019s intricate architecture with a hauntingly eclectic soundtrack."
+  },
+  {
+    "slug": "newdoom-community-project-ii",
+    "title": "NewDoom Community Project II",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Gritty industrial complexes and organic alien hives collide with surreal, crystalline dimensions under a heavy atmosphere of cinematic synth and industrial metal.",
+    "praise": "Ambitious architecture and creative monster replacements from contributors like Ronald Lubbelinkhof and Josh Sealy deliver a memorable, award-winning community odyssey."
+  },
+  {
+    "slug": "newdoom-community-project",
+    "title": "Newdoom Community Project",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A sprawling mosaic of industrial processing plants, decaying urban ruins, and jagged obsidian fortresses that shift from sterile tech-bases to surreal, blood-soaked gothic cathedrals.",
+    "praise": "The architectural precision of Esa Repo and Dennis Meuwissen anchors this diverse collection, showcasing the creative peak of a legendary forum community."
+  },
+  {
+    "slug": "nihility-infinite-teeth",
+    "title": "Nihility: Infinite Teeth",
+    "authors": [
+      "Years"
+    ],
+    "difficulty_rating": 4.2,
+    "vibe": "A cold, industrial purgatory of flickering tech-bases and blood-slicked factories, echoing with the hollow hum of machinery and the ghosts of Doom's early development.",
+    "praise": "The alpha-inspired aesthetics and clever DeHackEd monster variants crafted by Years create a hauntingly unique atmosphere that prioritizes dread over traditional music."
+  },
+  {
+    "slug": "no-end-in-sight",
+    "title": "No End In Sight",
+    "authors": [
+      "Emil Brundage"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "Grime-streaked industrial corridors and decaying lunar outposts gradually dissolve into a jagged, organic nightmare of blood-soaked earth and twisted, non-Euclidean architecture.",
+    "praise": "Meticulous, grime-focused architecture from Emil Brundage, Xaser, and Christopher Lutz transforms the familiar id Software aesthetic into a claustrophobic, weathered masterpiece."
+  },
+  {
+    "slug": "no-rest-for-the-living",
+    "title": "No Rest for the Living",
+    "authors": [
+      "Nerve Software"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Industrial military outposts give way to scorched canyons and ancient, blood-soaked catacombs as the barrier between Earth and Hell begins to fracture once more.",
+    "praise": "The dense, high-pressure level design from Nerve Software\u2019s Arya Iwakura and Russell Meakim revitalizes the classic Doom II aesthetic with modern encounter complexity."
+  },
+  {
+    "slug": "nostalgic-entropy-neo-retro",
+    "title": "Nostalgic Entropy: Neo Retro",
+    "authors": [
+      "AshtralFiend"
+    ],
+    "difficulty_rating": 6.2,
+    "vibe": "A vaporwave shopping mall where neon-drenched corridors give way to warped corporate offices and crystalline pools under a hazy, electronic sky.",
+    "praise": "The meticulous architectural detail and vibrant color palette established by AshtralFiend transform a surreal shopping center into a hauntingly beautiful arena."
+  },
+  {
+    "slug": "operation-overlord",
+    "title": "Operation Overlord",
+    "authors": [
+      "Nigel Rowand"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A gritty, salt-sprayed amphibious assault on a fortified coastline where Incan-inspired military bunkers and mine-choked sands guard a lush South American stronghold.",
+    "praise": "The tactical cover mechanics and detailed military atmosphere crafted by Nigel Rowand transform a standard beach landing into a cinematic total conversion."
+  },
+  {
+    "slug": "osterity",
+    "title": "Osterity",
+    "authors": [
+      "Big Ol' Billy"
+    ],
+    "difficulty_rating": 5.2,
+    "vibe": "A surreal, Texas-tinged frontier where industrial outposts and distorted chapels are overrun by undead cowboys and scientific horrors under a hazy, palette-swapped sky.",
+    "praise": "The inventive DeHackEd monsters and original soundtrack by Big Ol' Billy transform ukiro\u2019s OTEX textures into a quirky, award-winning adventure."
+  },
+  {
+    "slug": "otex",
+    "title": "OTEX Texture Pack",
+    "authors": [
+      "Ola Bj\u00f6rling (ukiro)"
+    ],
+    "difficulty_rating": 6.4,
+    "vibe": "Moss-covered Cambodian ruins, sleek Art Deco corridors, and weathered industrial bunkers converge under high-resolution skies to form a sprawling, multi-era architectural tapestry.",
+    "praise": "The expansive texture library by Ola Bj\u00f6rling provides mappers with a professional-grade palette that elevated the entire community's visual standards."
+  },
+  {
+    "slug": "overboard",
+    "title": "Overboard",
+    "authors": [
+      "Cyriak Harris"
+    ],
+    "difficulty_rating": 5.3,
+    "vibe": "A sun-drenched tropical getaway where luxury cruise liners and white-sand beaches collide with volcanic peaks and palm-fringed archipelagos.",
+    "praise": "The frantic island-hopping mayhem is elevated by Cyriak Harris\u2019s signature quirky soundtrack and a clever New Game Plus mode that reimagines every map."
+  },
+  {
+    "slug": "ozonia",
+    "title": "Ozonia",
+    "authors": [
+      "Tom\u00e1s Soares"
+    ],
+    "difficulty_rating": 6.1,
+    "vibe": "Lush lunar outposts and ancient Inca ruins collide with industrial dams and citadels suspended over a surreal, abyssal void.",
+    "praise": "The atmospheric, custom-composed soundtrack by Tom\u00e1s Soares elevates these strategic setpiece encounters and unique monster additions to award-winning heights."
+  },
+  {
+    "slug": "paradise",
+    "title": "Paradise",
+    "authors": [
+      "Tango"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Lush, verdant jungles and tropical safaris slowly decay into toxic, acid-soaked marshes and scorched hellscapes.",
+    "praise": "The punchy weapon overhauls and deterministic damage systems crafted by Tango transform these tropical vistas into a remarkably consistent and satisfying experience."
+  },
+  {
+    "slug": "phobia-the-age",
+    "title": "Phobia: The Age",
+    "authors": [
+      "Kristian K\u00e4ll"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Desolate badlands and fractured, blood-soaked corridors drift within a surreal void, manifesting a haunting landscape born from deep-seated psychological terrors.",
+    "praise": "The atmospheric architecture of Kristian K\u00e4ll blends seamlessly with Marc Pullen\u2019s haunting score to craft a uniquely cinematic psychological journey."
+  },
+  {
+    "slug": "phobos-revisited",
+    "title": "Phobos Revisited",
+    "authors": [
+      "Rex Claussen"
+    ],
+    "difficulty_rating": 3.2,
+    "vibe": "Flickering fluorescent corridors and toxic green pools of the Martian moon where familiar industrial layouts are sharpened with enhanced architectural depth.",
+    "praise": "The meticulous attention to detail by Rex Claussen breathes new life into iconic layouts while preserving the classic atmosphere that earned it a Cacoward."
+  },
+  {
+    "slug": "phocas-island-2",
+    "title": "Phocas Island 2",
+    "authors": [
+      "Chris Hopkins"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "A lonely, mist-shrouded archipelago where crumbling ruins and dense foliage hide secrets beneath the spray of a restless, gray ocean.",
+    "praise": "The atmospheric world-building and intricate puzzle design of Chris Hopkins transform the engine into a true 90s-style adventure experience."
+  },
+  {
+    "slug": "pi-a-colada",
+    "title": "Pi\u00f1a Colada",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.1,
+    "vibe": "Saturated, tropical vistas and surreal, color-shifted landscapes blend into a punchy, miniature odyssey through neon-soaked archipelagos and crystalline voids.",
+    "praise": "Alex Decker and a talented community ensemble deliver a masterclass in micro-mapping, proving that strict monster limits can yield immense creativity."
+  },
+  {
+    "slug": "pirate-doom-ii",
+    "title": "Pirate Doom II",
+    "authors": [
+      "Darch"
+    ],
+    "difficulty_rating": 5.3,
+    "vibe": "Sun-drenched Caribbean archipelagos and grog-filled shanty towns give way to bioluminescent undersea havens and the spectral, voodoo-haunted fortresses of a zombie pirate lord.",
+    "praise": "The whimsical pirate atmosphere crafted by Darch transforms familiar demon-slaying into a vibrant, Monkey Island-inspired adventure filled with clever custom weaponry."
+  },
+  {
+    "slug": "pirate-doom",
+    "title": "Pirate Doom",
+    "authors": [
+      "Arch"
+    ],
+    "difficulty_rating": 3.8,
+    "vibe": "Sun-bleached tropical islands, haunted galleons, and grog-filled taverns collide in a whimsical Caribbean odyssey inspired by the golden age of point-and-click adventures.",
+    "praise": "The imaginative world-building and clever asset replacements by Arch transform the engine into a vibrant, swashbuckling tribute to classic LucasArts adventures."
+  },
+  {
+    "slug": "plasmaplant",
+    "title": "Plasmaplant",
+    "authors": [
+      "Sverre Andr\u00e9 Kvernmo"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A high-contrast industrial facility bathed in monochromatic blue light, where sharp shadows hide unseen threats amidst intricate, sketch-inspired architecture.",
+    "praise": "The striking blue aesthetic and intricate geometry mark a triumphant return for Sverre Andr\u00e9 Kvernmo, blending his classic Cabal-era design with modern ZDoom detail."
+  },
+  {
+    "slug": "plutonia-2",
+    "title": "Plutonia 2",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.7,
+    "vibe": "Moss-slicked Amazonian ruins and rusted UAAF research facilities collide within a humid, vine-choked wilderness that eventually dissolves into a jagged, blood-stained abyss.",
+    "praise": "The punishing level design by Gusta and Rabotik perfectly captures the Casali spirit, propelled by a driving, original soundtrack from Jimmy."
+  },
+  {
+    "slug": "plutonia-revisited",
+    "title": "Plutonia Revisited",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.3,
+    "vibe": "Moss-covered Aztec temples and vine-choked brick fortresses sink into humid jungles, eventually fracturing into a recycled cyber-reality of jagged stone and toxic emerald pools.",
+    "praise": "Joshy\u2019s management unites veteran mappers like Matt Tropiano and Xaser to create a cohesive tribute punctuated by PRIMEVAL\u2019s aggressive, jungle-themed score."
+  },
+  {
+    "slug": "preacher",
+    "title": "Preacher",
+    "authors": [
+      "Darch"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Grim religious iconography haunts a pilgrimage through sun-scorched deserts, monochromatic noir cityscapes, and gothic cathedrals heavy with the weight of medieval martyrdom.",
+    "praise": "The haunting country-gothic melodies of Those Poor Bastards perfectly complement the grim religious themes and striking visual identity crafted by Darch."
+  },
+  {
+    "slug": "putrefier",
+    "title": "Putrefier",
+    "authors": [
+      "Edward Cripps"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "A decaying industrial facility rotting under a sickly green haze, where rusted machinery and organic filth merge into a claustrophobic nightmare of urban rot.",
+    "praise": "The meticulous GZDoom detailing and haunting Zombi 2 cover by Edward Cripps transform a single map into an unparalleled masterpiece of atmospheric dread."
+  },
+  {
+    "slug": "reelism",
+    "title": "Reelism",
+    "authors": [
+      "Kinsie"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A chaotic collision of digital voids, sugary landscapes, and gritty transit hubs shifting constantly under the neon glow of a cosmic slot machine.",
+    "praise": "The chaotic slot machine mechanic introduced by Kinsie and collaborators transforms every match into an unpredictable, high-energy arcade spectacle."
+  },
+  {
+    "slug": "rekkr",
+    "title": "REKKR",
+    "authors": [
+      "Revae"
+    ],
+    "difficulty_rating": 3.8,
+    "vibe": "Gritty Norse landscapes of shipwrecked coasts and frozen fjords give way to moss-covered swamps and ancient runic halls where the line between Viking myth and alien horror blurs.",
+    "praise": "The immersive low-fantasy world-building by Revae is elevated by Tom Jensen\u2019s atmospheric soundtrack and TerminusEst13\u2019s sound design for a complete transformation."
+  },
+  {
+    "slug": "remnant",
+    "title": "Remnant",
+    "authors": [
+      "Henry Koivula"
+    ],
+    "difficulty_rating": 6.4,
+    "vibe": "Ancient, moss-covered masonry and jagged spires emerge from a lush, waterlogged wilderness where nature slowly reclaims the skeletal remains of a forgotten civilization.",
+    "praise": "The sprawling scale and intricate environmental storytelling Henry Koivula crafts through the OTEX texture set earned this map its well-deserved Cacoward."
+  },
+  {
+    "slug": "resurgence",
+    "title": "Resurgence",
+    "authors": [
+      "Josh Sealy"
+    ],
+    "difficulty_rating": 7.4,
+    "vibe": "Sun-scorched savannas and frozen industrial complexes dissolve into blood-drenched libraries and jagged obsidian hellscapes suspended over claret-colored tides.",
+    "praise": "The relentless momentum of Josh Sealy\u2019s level design is elevated by the atmospheric, original compositions of John Weekley and Stuart Rynn."
+  },
+  {
+    "slug": "return-to-hadron",
+    "title": "Return to Hadron",
+    "authors": [
+      "Matt Powell"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "A sprawling, high-tech research facility modeled after the Large Hadron Collider where sterile laboratory corridors and massive particle reactors gradually succumb to a crimson, void-warped corruption.",
+    "praise": "The meticulous level design of Matt Powell transforms the scientific architecture of CERN into a series of award-winning, high-octane combat gauntlets."
+  },
+  {
+    "slug": "reverie",
+    "title": "Reverie",
+    "authors": [
+      "Michael Jan Krizik"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "Sun-bleached Egyptian ruins and industrial fortresses drift through a hazy, dreamlike atmosphere that pays homage to the architectural language of the mid-nineties.",
+    "praise": "The classic layouts of Michael Jan Krizik are elevated by a melodic, atmospheric soundtrack from PRIMEVAL, Jimmy, and stewboy."
+  },
+  {
+    "slug": "rowdy-rudy-ii-powertrip",
+    "title": "Rowdy Rudy II: POWERTRIP",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A gritty mercenary landscape where secret mountain laboratories and humid jungles house mutated super-soldiers and neon-eyed extraterrestrial invaders.",
+    "praise": "The high-octane weapon replacements and DeHackEd monsters curated by Doomkid and his team transform this vanilla-compatible sequel into a definitive mercenary power trip."
+  },
+  {
+    "slug": "rtc-3057",
+    "title": "RTC-3057",
+    "authors": [
+      "Team Future"
+    ],
+    "difficulty_rating": 3.9,
+    "vibe": "A sterile, high-tech labyrinth of flickering computer terminals and industrial decks suspended in the silent vacuum of deep space.",
+    "praise": "Cinematic storytelling pioneered by Jacob Kruse and Team Future relies on complex ACS scripting and Julian Aubourg\u2019s moody, atmospheric score."
+  },
+  {
+    "slug": "running-late-2",
+    "title": "Running Late 2",
+    "authors": [
+      "A2Rob"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Gritty urban sprawl transitions from rain-slicked city streets and construction sites to the sterile, fluorescent-lit corridors of a corporate office complex.",
+    "praise": "The punchy custom enemies and meticulously balanced pistol-start maps from A2Rob deliver a polished, high-energy experience that rightfully earned a Cacoward."
+  },
+  {
+    "slug": "saturnine-chapel",
+    "title": "Saturnine Chapel",
+    "authors": [
+      "Darryl Steffen"
+    ],
+    "difficulty_rating": 7.8,
+    "vibe": "A somber, gothic chapel stands isolated amidst a sea of toxic green sludge and skeletal trees, eventually dissolving into a surreal, silent void of descending bookshelves.",
+    "praise": "The oppressive atmosphere crafted by Darryl Steffen finds its perfect rhythmic pulse in the haunting, Egyptian-themed melodies composed by Ribbiks."
+  },
+  {
+    "slug": "scythe-2",
+    "title": "Scythe 2",
+    "authors": [
+      "Erik Alm"
+    ],
+    "difficulty_rating": 6.7,
+    "vibe": "Sun-bleached Egyptian tombs and overgrown jungle ruins give way to oppressive, obsidian-carved Gothic citadels and industrial complexes suspended over toxic wastes.",
+    "praise": "The transition from bite-sized action to sprawling, meticulously detailed environments showcases Erik Alm\u2019s evolution into one of the most influential level designers."
+  },
+  {
+    "slug": "sepia",
+    "title": "Sepia",
+    "authors": [
+      "Petyan"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A monochromatic landscape of muddy trenches and crumbling forts that gradually dissolves into a surrealist dreamscape of floating geometric cubes and glitching, redacted architecture.",
+    "praise": "The striking monochromatic aesthetic and abstract geometry envisioned by Petyan, alongside contributions from Master Medi and Meowgi, redefine traditional megawad structure."
+  },
+  {
+    "slug": "shadows-of-chronos",
+    "title": "Shadows of Chronos",
+    "authors": [
+      "Samuel Villarreal"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "A crumbling, ancient capital where overgrown gardens and gothic sanctuaries are suspended in a temporal haze of autumnal forests and forgotten stone outposts.",
+    "praise": "The atmospheric hub design by Samuel Villarreal perfectly captures the original game's spirit, enhanced by Kevin Schilder\u2019s hauntingly familiar compositions."
+  },
+  {
+    "slug": "shadows-of-the-nightmare-realm",
+    "title": "Shadows of the Nightmare Realm",
+    "authors": [
+      "Remilia Scarlet"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Non-Euclidean geometry twists through a dreamlike abyss of cosmic horror, where jagged textures and dynamic lighting illuminate a fractured, nightmarish subconscious.",
+    "praise": "The haunting original score and abstract, non-Euclidean environments crafted by Remilia Scarlet create a uniquely oppressive atmosphere that redefines Doom horror."
+  },
+  {
+    "slug": "sheer-poison",
+    "title": "Sheer Poison",
+    "authors": [
+      "Zan-zan-zawa-veia"
+    ],
+    "difficulty_rating": 5.7,
+    "vibe": "A sprawling, toxic industrial complex where emerald sludge seeps through jagged metal corridors and occult sigils pulse against rusted machinery.",
+    "praise": "The massive scale and intricate secret-hunting showcase Zan-zan-zawa-veia\u2019s ability to push vanilla limits alongside a catchy, self-composed soundtrack."
+  },
+  {
+    "slug": "shotgun-symphony",
+    "title": "Shotgun Symphony",
+    "authors": [
+      "Steve Duff"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "A singular, interconnected Phobos installation where sterile tech-bases and industrial pumping stations merge into a cohesive labyrinth of steel, slime, and sprawling subterranean infrastructure.",
+    "praise": "The seamless environmental transitions designed by Steve Duff transform this classic Phobos tribute into a singular, unbroken journey through a massive facility."
+  },
+  {
+    "slug": "sigil",
+    "title": "SIGIL",
+    "authors": [
+      "John Romero"
+    ],
+    "difficulty_rating": 4.5,
+    "vibe": "A stygian abyss of jagged obsidian and oppressive satanic iconography where flickering lava illuminates the hidden sigils of a corrupted, eldritch hellscape.",
+    "praise": "John Romero\u2019s return to hellish level design shines through punishing traps and satanic vistas accompanied by Buckethead\u2019s legendary, shredding soundtrack."
+  },
+  {
+    "slug": "simplicity",
+    "title": "Simplicity",
+    "authors": [
+      "Melissa McGee"
+    ],
+    "difficulty_rating": 3.2,
+    "vibe": "A progression from sterile industrial power plants and hazard labs into a shadowy underworld where dark-skinned demons haunt blood-soaked fortresses and forgotten mine shafts.",
+    "praise": "The tight, fast-paced level design by Melissa McGee revitalizes classic gameplay through creative ZDoom features and unique custom monster variants."
+  },
+  {
+    "slug": "simulacrum",
+    "title": "Simulacrum",
+    "authors": [
+      "Muumi",
+      "Alex Decker"
+    ],
+    "difficulty_rating": 6.2,
+    "vibe": "Vibrant purples and oranges saturate a shifting, surrealist landscape of impossible architecture that oscillates between organic decay and celestial clockwork.",
+    "praise": "The award-winning synergy between Muumi and Alex Decker delivers a polished, high-octane experience defined by its bold color theory and inventive MBF21-powered setpieces."
+  },
+  {
+    "slug": "sine-die",
+    "title": "Sine Die",
+    "authors": [
+      "Didy"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Sterile industrial corridors transition into the imposing glass-and-concrete sprawl of a metropolitan government headquarters looming over a desolate urban landscape.",
+    "praise": "The intricate architectural realism and atmospheric urban scale achieved by Didy demonstrate why these two maps secured a 2007 Cacoward."
+  },
+  {
+    "slug": "skulldash",
+    "title": "Skulldash",
+    "authors": [
+      "Joshua O'Sullivan"
+    ],
+    "difficulty_rating": 4.7,
+    "vibe": "A central hub anchors a sprawling network of portals leading to frozen mountain peaks, submerged yellow submarines, ancient Egyptian tombs, and high-tech refineries.",
+    "praise": "The frantic arcade-style scoring and time-trial mechanics introduced by Joshua O'Sullivan transform classic exploration into a high-speed, token-collecting dash."
+  },
+  {
+    "slug": "sleepwalking",
+    "title": "Sleepwalking",
+    "authors": [
+      "Ravendesk"
+    ],
+    "difficulty_rating": 7.8,
+    "vibe": "Surreal domestic interiors fracture into a pastel-hued fever dream of floating whales, jagged geometric voids, and unsettlingly vibrant, saturated architecture.",
+    "praise": "The haunting soundtrack and striking visual identity crafted by Ravendesk transform these intense combat puzzles into a cohesive, award-winning sensory experience."
+  },
+  {
+    "slug": "songs-of-the-damned",
+    "title": "Songs of the Damned",
+    "authors": [
+      "Trevor Primmett"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Vast marble courtyards and deep, subterranean pools connect through a series of monolithic structures that feel both ancient and industrial.",
+    "praise": "The sprawling architecture and moody atmosphere of Trevor Primmett\u2019s award-winning map create a sense of scale rarely seen in 2006."
+  },
+  {
+    "slug": "speed-of-doom",
+    "title": "Speed of Doom",
+    "authors": [
+      "Josh Sealy",
+      "Darkwave0000"
+    ],
+    "difficulty_rating": 7.4,
+    "vibe": "A seamless journey through moss-slicked coastal grottos and subterranean machinery that eventually fractures into a nightmare of overgrown ruins and obsidian hellscapes.",
+    "praise": "The punishing, high-octane level design of Josh Sealy and Darkwave0000 creates a relentless flow that evolves the brutal legacy of Plutonia."
+  },
+  {
+    "slug": "squenched-avacausage",
+    "title": "Squenched Avacausage",
+    "authors": [
+      "nova++"
+    ],
+    "difficulty_rating": 5.3,
+    "vibe": "Saturated neon greens and blues wash over a corporate nightmare of industrial food-processing plants, where pulsating organic veins merge with sterile, labyrinthine corridors.",
+    "praise": "The dense environmental storytelling and inventive Boom-powered gimmicks crafted by nova++ transform a corporate food-processing nightmare into a surreal, award-winning adventure."
+  },
+  {
+    "slug": "stardate-20x6",
+    "title": "Stardate 20X6",
+    "authors": [
+      "Zachary Stephens"
+    ],
+    "difficulty_rating": 8.2,
+    "vibe": "An amethyst-tinted alien landscape where jagged sci-fi architecture and crystalline formations are bathed in a pervasive, haunting glow of deep purple and violet.",
+    "praise": "The striking purple palette swap and intricate, punishing map design showcase the early mastery of Zachary Stephens over the slaughter genre."
+  },
+  {
+    "slug": "stardate-20x7",
+    "title": "Stardate 20X7",
+    "authors": [
+      "Zachary Stephens"
+    ],
+    "difficulty_rating": 8.4,
+    "vibe": "Ornate amethyst ballrooms and celestial sphinxes drift through a monochromatic void saturated in deep velvet violets and starlit purples.",
+    "praise": "The intricate, purple-hued architecture and meticulous difficulty balancing showcase Zachary Stephens\u2019 ability to craft punishing yet rewarding combat puzzles."
+  },
+  {
+    "slug": "strife-absolute-order",
+    "title": "Strife: Absolute Order",
+    "authors": [
+      "Adam Woodmansey"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "The rain-slicked town of Sweetwater serves as a gateway to industrial waterworks and surreal, light-starved voids where a crumbling religious dictatorship still clings to power.",
+    "praise": "The cohesive, interconnected world designed by Adam Woodmansey is perfectly complemented by a somber soundtrack featuring his own work and Sarah Mancuso."
+  },
+  {
+    "slug": "stronghold-on-the-edge-of-chaos",
+    "title": "Stronghold: On the Edge of Chaos",
+    "authors": [
+      "Stronghold team"
+    ],
+    "difficulty_rating": 5.2,
+    "vibe": "A sprawling network of fortified UAC outposts spanning asteroid belts, volcanic craters, and deep-space research stations connected by a central tactical command center.",
+    "praise": "Tormentor667 and his team, including skillsaw and Vader, deliver a high-tech defense epic defined by an interactive shop and massive arsenal."
+  },
+  {
+    "slug": "struggle-antaresian-legacy",
+    "title": "Struggle - Antaresian Legacy",
+    "authors": [
+      "Seongbae Park"
+    ],
+    "difficulty_rating": 5.8,
+    "vibe": "A high-tech military campaign that dissolves into a cerulean-tinted dimension of serpent-guarded temples, magical tridents, and crystalline monuments under the light of Alpha Scorpii.",
+    "praise": "The radical weapon overhauls and aggressive monster behaviors crafted by Seongbae Park transform the traditional Doom rhythm into a frantic, high-velocity experience."
+  },
+  {
+    "slug": "sunder",
+    "title": "Sunder",
+    "authors": [
+      "Insane_Gazebo"
+    ],
+    "difficulty_rating": 9.2,
+    "vibe": "Monolithic, hyper-detailed structures of obsidian and bone loom over vast, impossible voids where ancient gardens and industrial furnaces collide in a cold, geometric nightmare.",
+    "praise": "The architectural grandeur and innovative combat puzzles established by Insane_Gazebo redefined the slaughter genre, influencing a decade of map design."
+  },
+  {
+    "slug": "sunlust",
+    "title": "Sunlust",
+    "authors": [
+      "Zach Stephens",
+      "Daniel Jakobsson"
+    ],
+    "difficulty_rating": 8.4,
+    "vibe": "Sun-scorched ruins and crystalline spires dissolve into abstract, geometric voids of deep purple and burning orange.",
+    "praise": "Meticulous architectural precision from Zach Stephens and Daniel Jakobsson transforms high-contrast palettes into a visually stunning, award-winning masterclass of design."
+  },
+  {
+    "slug": "suspended-in-dusk",
+    "title": "Suspended in Dusk",
+    "authors": [
+      "Esa Repo"
+    ],
+    "difficulty_rating": 4.1,
+    "vibe": "Low-slung industrial complexes bathed in the amber glow of a dying sun, where rusted metal and heavy machinery cast long shadows across meticulously stacked crates.",
+    "praise": "The meticulous texture alignment and architectural depth achieved by Esa Repo prove that vanilla limits are no barrier to creating a hauntingly immersive atmosphere."
+  },
+  {
+    "slug": "swift-death",
+    "title": "Swift Death",
+    "authors": [
+      "Franck Livolant"
+    ],
+    "difficulty_rating": 7.8,
+    "vibe": "Hyper-compressed dioramas of carnage where sterile lunar outposts and jagged volcanic crags are crushed into claustrophobic, lethal snapshots.",
+    "praise": "The relentless, micro-scale combat puzzles designed by Franck Livolant prove that even the smallest rooms can harbor overwhelming, award-winning intensity."
+  },
+  {
+    "slug": "swim-with-the-whales",
+    "title": "Swim With The Whales",
+    "authors": [
+      "Zachary Stephens"
+    ],
+    "difficulty_rating": 8.4,
+    "vibe": "Shimmering azure sanctuaries and sleek, monochromatic architecture submerge the senses in a crystalline aquatic dreamscape of endless blue.",
+    "praise": "Striking monochromatic aesthetics and meticulous combat puzzles showcase the signature high-pressure design style that Zachary Stephens is celebrated for."
+  },
+  {
+    "slug": "syringe",
+    "title": "Syringe",
+    "authors": [
+      "Walker Wright",
+      "Richard Frei",
+      "Michael Fraize",
+      "Xaser"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A surreal odyssey through fleshy pits and overgrown tropical ruins that eventually ascends into a bleeding lunar landscape and fractured reality.",
+    "praise": "The distinct mapping styles of Walker Wright, Richard Frei, Michael Fraize, and Xaser converge in this punchy, high-concept adventure."
+  },
+  {
+    "slug": "tarnsman-s-projectile-hell",
+    "title": "Tarnsman's Projectile Hell",
+    "authors": [
+      "Tarnsman"
+    ],
+    "difficulty_rating": 6.8,
+    "vibe": "Moonlit shrines and haunted libraries transition into celestial temples and ghostly passenger ships drifting through a kaleidoscope of Eastern folklore and cosmic voids.",
+    "praise": "The meticulously rebalanced arsenal and projectile-focused encounters crafted by Tarnsman transform traditional combat into a rhythmic, high-speed dance of death."
+  },
+  {
+    "slug": "tech-gone-bad",
+    "title": "Tech Gone Bad",
+    "authors": [
+      "John Romero"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A sprawling Phobos facility where high-tech computer bays and jagged rock islands are slowly being consumed by glowing red fissures and toxic green waste.",
+    "praise": "This reimagined finale showcases the intricate sector detailing and verticality that John Romero pioneered, proving his classic design philosophy remains lethal."
+  },
+  {
+    "slug": "temple-of-chaos-2-warped-reality",
+    "title": "Temple of Chaos 2 - Warped Reality",
+    "authors": [
+      "Melissa McGee"
+    ],
+    "difficulty_rating": 6.3,
+    "vibe": "Sterile industrial corridors fracture and dissolve into a surreal landscape of red marble altars and glowing, molten rifts.",
+    "praise": "The atmospheric custom score and menacing new threats like the Hectebus showcase Melissa McGee\u2019s talent for creating dense, high-pressure ZDoom experiences."
+  },
+  {
+    "slug": "the-10x10-project",
+    "title": "The 10x10 Project",
+    "authors": [
+      "LunchLunch"
+    ],
+    "difficulty_rating": 7.4,
+    "vibe": "Minimalist geometric islands float within an infinite void, preceded by surreal, floating displays of the specific materials used to construct each reality.",
+    "praise": "LunchLunch transforms strict texture limitations into a cohesive visual journey, complemented by Scotty\u2019s interface work and Pixel Fiend\u2019s graphic additions."
+  },
+  {
+    "slug": "the-adventures-of-square",
+    "title": "The Adventures of Square",
+    "authors": [
+      "BigBrik Games"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "A cel-shaded universe of sharp-edged geometry where neon-colored polygons inhabit surreal landscapes of paint factories, arctic labs, and lunar cheese craters.",
+    "praise": "The imaginative world-building of BigBrik Games shines through James Paddock\u2019s catchy soundtrack and Xaser\u2019s inventive mechanics, creating a polished, pun-filled masterpiece."
+  },
+  {
+    "slug": "the-classic-episode-part-2",
+    "title": "The Classic Episode, Part 2",
+    "authors": [
+      "Jan Van der Veken"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "A sterile Martian industrial sprawl where high-tech laboratories and deep-space ports orbit a central, shifting hub of metallic corridors and glowing singularity chambers.",
+    "praise": "The interconnected hub-and-spoke structure designed by Jan Van der Veken provides a cohesive sense of progression through polished, atmospheric Martian environments."
+  },
+  {
+    "slug": "the-dying-end",
+    "title": "The Dying End",
+    "authors": [
+      "Christopher Lutz"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Ornate marble temples and crimson fortifications loom over a landscape of jagged rock, winding lava flows, and weeping flesh.",
+    "praise": "The grand architectural scale and moody lighting Christopher Lutz crafts earned this map a Cacoward for its immersive, high-fidelity hellscape."
+  },
+  {
+    "slug": "the-eye",
+    "title": "The Eye",
+    "authors": [
+      "Cyriak Harris"
+    ],
+    "difficulty_rating": 6.7,
+    "vibe": "A cyclopean arena of green stone and blood-slicked flesh tunnels spiraling upward toward a dizzying central staircase suspended over a dark, circular void.",
+    "praise": "The circular architecture and escalating carnage showcase Cyriak Harris\u2019s talent for transforming a single, massive arena into an award-winning gauntlet."
+  },
+  {
+    "slug": "the-magenta-spire",
+    "title": "The Magenta Spire",
+    "authors": [
+      "Cole Bryden"
+    ],
+    "difficulty_rating": 4.7,
+    "vibe": "An abstract, remote research station where reality fractures into a vivid spectrum of magenta hues and distorted, geometric corridors.",
+    "praise": "The mechanical overhauls and surreal palette shifts introduced by Cole Bryden transform standard encounters into a vibrant, high-octane experimental odyssey."
+  },
+  {
+    "slug": "the-outer-darkness",
+    "title": "The Outer Darkness",
+    "authors": [
+      "Varun Abhirama Krishna"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Intricate marble carvings and heavy timber beams form a decaying sanctuary adrift in a silent, pitch-black cosmic void.",
+    "praise": "The meticulous sector detailing by Varun Abhirama Krishna elevates this gothic nightmare, while Damian Lee\u2019s score heightens the sense of dread."
+  },
+  {
+    "slug": "the-ultimate-torment-and-torture",
+    "title": "The Ultimate Torment and Torture",
+    "authors": [
+      "Daniel Gimmer"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Fog-drenched gothic citadels and glowing industrial hellscapes collide in a world defined by intricate sector detail and shimmering particle effects.",
+    "praise": "The cinematic scripting and custom arsenal integration showcase Daniel Gimmer\u2019s pioneering ability to transform Doom into a high-fidelity, atmospheric adventure."
+  },
+  {
+    "slug": "the-wayfarer",
+    "title": "The Wayfarer",
+    "authors": [
+      "Not Jabba"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Verdant jade gardens and humid serpent pens give way to the cold, imposing architecture of obsidian citadels and mystical fountains hidden within a dark fantasy realm.",
+    "praise": "The meticulous rebalancing of classic fantasy foes by Not Jabba transforms a familiar realm into a fresh, mechanically refined masterpiece."
+  },
+  {
+    "slug": "the-zdoom-community-map-project-take-2",
+    "title": "The ZDoom Community Map Project \"Take 2\"",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.7,
+    "vibe": "A sprawling, high-tech research facility transitioning from industrial lagoons and simulation chambers into a massive subterranean dig site that ruptures into a dark, gothic underworld.",
+    "praise": "The monumental scale of this project unites Captain Toenail\u2019s custom weaponry and Xaser\u2019s scripting under Tormentor667\u2019s direction for a feature-rich odyssey."
+  },
+  {
+    "slug": "the-zdoom-community-map-project",
+    "title": "The ZDoom Community Map Project",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A sprawling, experimental odyssey through high-tech facilities, flooded caverns, and shifting geometric chambers that culminates in a grand, ancient temple.",
+    "praise": "Tormentor667\u2019s ambitious vision unites Nanami\u2019s custom bestiary and Grubber\u2019s weaponry into a landmark showcase of early ZDoom scripting and technical ingenuity."
+  },
+  {
+    "slug": "three-s-a-crowd",
+    "title": "Three's a Crowd",
+    "authors": [
+      "Scypek2"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "A sprawling research complex where sterile industrial corridors warp into surreal architectural anomalies, featuring deceptive storefronts and unsettlingly repetitive geometry.",
+    "praise": "The inventive level design by Scypek2 transforms a traditional research facility into a narrative-driven gauntlet filled with clever, experimental set-pieces."
+  },
+  {
+    "slug": "thunderpeak",
+    "title": "Thunderpeak",
+    "authors": [
+      "Bj\u00f6rn Ostmann"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A sprawling, high-tech industrial facility where humming reactors and massive cooling towers loom over a dense network of metallic catwalks and hidden ventilation shafts.",
+    "praise": "The intricate industrial detailing by Bj\u00f6rn Ostmann and Simon Judd\u2019s atmospheric score elevate this powerplant into a legendary, award-winning adventure."
+  },
+  {
+    "slug": "thy-flesh-turned-into-a-draft-excluder",
+    "title": "Thy Flesh turned into a draft-excluder",
+    "authors": [
+      "Matt Powell"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Gothic marble bastions and rusted industrial docklands sit precariously over toxic sludge, all under the oppressive gaze of a bruised orange sky.",
+    "praise": "The brutal spirit of the original fourth episode is captured through Matt Powell\u2019s knack for tight, punishing layouts and classic atmosphere."
+  },
+  {
+    "slug": "tnt-2-devilution",
+    "title": "TNT 2: Devilution",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 4.4,
+    "vibe": "A sprawling network of high-tech research facilities and industrial outposts carved into desolate lunar rock, where sterile laboratories bleed into subterranean caverns and rusted maritime harbors.",
+    "praise": "Intricate layouts by Alfonzo and valkiriforce breathe new life into the TNT legacy, perfectly complemented by Bucket\u2019s driving, industrial-tinged soundtrack."
+  },
+  {
+    "slug": "total-control",
+    "title": "Total Control",
+    "authors": [
+      "Ronald Lubbelinkhof"
+    ],
+    "difficulty_rating": 4.6,
+    "vibe": "A dense, hyper-detailed labyrinth of industrial machinery and flickering terminals where every corridor is packed with intricate metallic paneling and humming electrical conduits.",
+    "praise": "The meticulous sector work and atmospheric lighting by Ronald Lubbelinkhof earned this map a Cacoward for its impressive technical polish."
+  },
+  {
+    "slug": "tremor",
+    "title": "Tremor",
+    "authors": [
+      "Ross Mathieson"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "Sprawling industrial courtyards and hazardous chemical channels intersect within a massive, intricately detailed tech-base complex of hexagonal metal and flickering machinery.",
+    "praise": "The ambitious scale and intricate detailing of Ross Mathieson\u2019s architecture earned a Cacoward, perfectly complemented by DiluteCo\u2019s atmospheric custom soundtrack."
+  },
+  {
+    "slug": "tribute-this-is-not-the-best-wad-in-the-world",
+    "title": "Tribute - this is not the best wad in the world",
+    "authors": [
+      "Zalewa"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A desolate, post-WWIII Earth where silent towns and radio-static transmissions hide a surreal convergence of modern cults and ancient Hoplite ghosts.",
+    "praise": "The rare focus on single-player Skulltag features by Zalewa delivers a polished, boss-heavy experience that rightfully earned a 2009 Cacoward."
+  },
+  {
+    "slug": "uac-invasion-the-supply-depot",
+    "title": "UAC Invasion: The Supply Depot",
+    "authors": [
+      "DooMknight"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A sprawling industrial labyrinth of rusted metal and overgrown vines where massive cargo bays and flooded maintenance tunnels intersect beneath a lonely helipad.",
+    "praise": "The meticulous eleven-year development by DooMknight shines through in the massive scale and dense environmental detail of this award-winning industrial epic."
+  },
+  {
+    "slug": "uac-ultra",
+    "title": "UAC Ultra",
+    "authors": [
+      "Jamie Bainbridge",
+      "Jon Vail"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Rusted industrial complexes and subterranean excavations defined by heavy metal plating, grimy machinery, and a pervasive, soot-stained atmosphere of decay.",
+    "praise": "The cohesive industrial aesthetic forged by Jon Vail\u2019s custom textures allows Jamie Bainbridge\u2019s tight level design to shine through every gritty encounter."
+  },
+  {
+    "slug": "ultimate-doom-in-name-only",
+    "title": "Ultimate Doom In Name Only",
+    "authors": [
+      "Various"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A literalist architectural odyssey where abstract Phobos outposts and hellish voids are reconstructed into sprawling, functional industrial complexes and grand thematic monuments.",
+    "praise": "The ambitious literalist concept initiated by Tristan Clark reaches its peak through the steady leadership and creative contributions of cannonball and dobu gabu maru."
+  },
+  {
+    "slug": "unhallowed",
+    "title": "Unhallowed",
+    "authors": [
+      "Cyano Blugron"
+    ],
+    "difficulty_rating": 7.4,
+    "vibe": "Monolithic industrial masonry and ornate gothic architecture collide within a sprawling, open-air cathedral of weathered stone and rusted metal.",
+    "praise": "The grand architectural scale and meticulous OTEX detailing from Cyano Blugron create a cohesive, award-winning arena of overwhelming visual density."
+  },
+  {
+    "slug": "unholy-realms",
+    "title": "Unholy Realms",
+    "authors": [
+      "Brian Knox"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Grime-streaked industrial basins and rusted storage yards give way to a descent through gothic brickwork and the crimson-stained architecture of the seven deadly sins.",
+    "praise": "Compact, punchy layouts by Brian Knox find a perfect rhythm alongside PRIMEVAL's driving score and high-octane guest maps from skillsaw and Joshy."
+  },
+  {
+    "slug": "unloved",
+    "title": "Unloved",
+    "authors": [
+      "Paul Schneider"
+    ],
+    "difficulty_rating": 5.4,
+    "vibe": "A decaying, domestic nightmare where suburban architecture dissolves into blood-slicked basements and surreal, shadow-drenched halls of childhood trauma.",
+    "praise": "The oppressive atmosphere and terrifying custom monsters crafted by Paul Schneider transform a simple house into a haunting psychological masterpiece."
+  },
+  {
+    "slug": "urban-brawl-dead-of-winter",
+    "title": "Urban Brawl: Dead of Winter",
+    "authors": [
+      "Stephen Browning"
+    ],
+    "difficulty_rating": 3.8,
+    "vibe": "A gritty, cel-shaded metropolis of rain-slicked alleyways and flickering neon subways, framed by stark film noir shadows and hand-drawn comic book textures.",
+    "praise": "The gritty comic book aesthetic crafted by Stephen Browning thrives through Mike Watson\u2019s complex scripting and Ralph Vickers\u2019 driving urban soundtrack."
+  },
+  {
+    "slug": "vae-victus-2",
+    "title": "Vae Victus 2",
+    "authors": [
+      "Derek Braun"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "A somber, gothic-industrial descent through rain-slicked stone corridors and haunted mansions, where flickering shadows dance across cold masonry and rusted ironwork.",
+    "praise": "The atmospheric level design and curated horror soundtrack by Derek Braun earned this sequel a well-deserved spot among the 2006 Cacoward winners."
+  },
+  {
+    "slug": "valhalla",
+    "title": "Valhalla",
+    "authors": [
+      "Edward Cripps"
+    ],
+    "difficulty_rating": 3.8,
+    "vibe": "Oppressive industrial ruins and rusted machinery sit shrouded in a heavy, dark atmosphere that echoes the moody, low-lit gloom of a forgotten tech-base.",
+    "praise": "The staggering architectural detail and moody lighting crafted by Edward Cripps transform a single industrial map into a haunting, award-winning atmosphere."
+  },
+  {
+    "slug": "valiant",
+    "title": "Valiant",
+    "authors": [
+      "Paul DeBruyne"
+    ],
+    "difficulty_rating": 5.2,
+    "vibe": "Clinical lunar outposts and jagged industrial zones are overtaken by a mutagenic rot, merging flesh with high-tech machinery under the glow of a dying moon.",
+    "praise": "The extensive DeHackEd monster roster and refined map flow from Paul DeBruyne (skillsaw) create a relentlessly polished and modern megawad experience."
+  },
+  {
+    "slug": "vanguard",
+    "title": "Vanguard",
+    "authors": [
+      "Paul DeBruyne"
+    ],
+    "difficulty_rating": 5.6,
+    "vibe": "Moss-choked stone sepulchers and flooded shrines transition into industrial crate yards before descending into jagged, crimson-lit infernal chasms.",
+    "praise": "Vibrant aesthetics and a punchy episodic structure showcase Paul DeBruyne\u2019s talent for creating high-energy environments that feel classic yet fresh."
+  },
+  {
+    "slug": "vaporware-demo",
+    "title": "Vaporware Demo",
+    "authors": [
+      "Sarah Mancuso"
+    ],
+    "difficulty_rating": 3.4,
+    "vibe": "A worn-down industrial cargo hub where desaturated blue tones and translucent steam drift across polished floors reflecting the complex, multi-story architecture.",
+    "praise": "The technical wizardry of Sarah Mancuso transforms the Eternity Engine into a showcase of floor reflections and seamless room-over-room geometry."
+  },
+  {
+    "slug": "verdant-citadel",
+    "title": "Verdant Citadel",
+    "authors": [
+      "Dennis Meuwissen"
+    ],
+    "difficulty_rating": 4.3,
+    "vibe": "Moss-slicked stone ramparts and crumbling masonry are swallowed by aggressive overgrowth and winding waterways within a sprawling, emerald-hued fortress.",
+    "praise": "The intricate architectural detail and lush environmental storytelling crafted by Dennis Meuwissen elevate this single-map adventure into a premier GZDoom showcase."
+  },
+  {
+    "slug": "void-and-rainbow",
+    "title": "Void and Rainbow",
+    "authors": [
+      "Serious\uff3fMOod"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "Prismatic architecture and neon-lit pathways float within a silent, infinite vacuum, pulsing to the rhythm of a cyberpunk fever dream.",
+    "praise": "The ethereal atmosphere and custom bestiary crafted by Serious\uff3fMOod transform a single map into a haunting, award-winning psychedelic journey."
+  },
+  {
+    "slug": "whispers-of-satan",
+    "title": "Whispers of Satan",
+    "authors": [
+      "Paul Corfiatis",
+      "Kristian Aro"
+    ],
+    "difficulty_rating": 5.2,
+    "vibe": "Sterile high-tech outposts and urban brick corridors give way to vine-choked stone temples and a classic, obsidian-and-lava descent into the heart of the abyss.",
+    "praise": "The atmospheric original soundtrack and diverse, high-detail environments crafted by Paul Corfiatis and Kristian Aro deliver a polished, award-winning megawad experience."
+  },
+  {
+    "slug": "winter-s-fury",
+    "title": "Winter's Fury",
+    "authors": [
+      "Pyroscourge"
+    ],
+    "difficulty_rating": 4.8,
+    "vibe": "A frigid Siberian landscape where high-tech UAC vaults are buried beneath the jagged, snow-choked peaks of Mount Baphomet and patrolled by crystalline, ice-encrusted demons.",
+    "praise": "The cinematic storytelling and intricate, portal-heavy architecture showcase Pyroscourge\u2019s ability to transform a frozen wasteland into a cohesive, atmospheric journey."
+  },
+  {
+    "slug": "worm-v-wood",
+    "title": "worm\\V/wood",
+    "authors": [
+      "Zachary Stephens",
+      "Grain of Salt"
+    ],
+    "difficulty_rating": 8.4,
+    "vibe": "A neon-drenched Halloween nightmare where glowing green eyes and vivid orange flames pierce through a surreal landscape of purple-tinted gothic architecture and flickering candlelight.",
+    "praise": "The ingenious curse system and randomized item spawns highlight the mechanical brilliance Zachary Stephens and Grain of Salt bring to this eerie collaboration."
+  }
+]

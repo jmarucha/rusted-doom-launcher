@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { ref, computed, onUnmounted } from "vue";
 import type { WadEntry } from "../lib/schema";
 import type { DownloadProgress } from "../composables/useDownload";
 import { useWadSummaries } from "../composables/useWadSummaries";
+
+// Slideshow interval in milliseconds
+const SLIDESHOW_INTERVAL_MS = 2000;
 
 const { getDifficulty, getVibe } = useWadSummaries();
 
@@ -54,11 +57,42 @@ const progressText = computed(() => {
   return `${formatBytes(progress)} / ${formatBytes(total)}`;
 });
 
-// Image source - prefer screenshot over thumbnail
-const imageSrc = computed(() => {
-  if (props.wad.screenshots.length > 0) return props.wad.screenshots[0].url;
-  if (props.wad.thumbnail) return props.wad.thumbnail;
-  return null;
+// All available images: thumbnail first, then screenshots
+const allImages = computed(() => {
+  const images: string[] = [];
+  if (props.wad.thumbnail) images.push(props.wad.thumbnail);
+  for (const s of props.wad.screenshots) {
+    images.push(s.url);
+  }
+  return images;
+});
+
+// Slideshow state
+const currentImageIndex = ref(0);
+let slideshowInterval: ReturnType<typeof setInterval> | null = null;
+
+const currentImage = computed(() => {
+  if (allImages.value.length === 0) return null;
+  return allImages.value[currentImageIndex.value];
+});
+
+function startSlideshow() {
+  if (allImages.value.length <= 1) return;
+  slideshowInterval = setInterval(() => {
+    currentImageIndex.value = (currentImageIndex.value + 1) % allImages.value.length;
+  }, SLIDESHOW_INTERVAL_MS);
+}
+
+function stopSlideshow() {
+  if (slideshowInterval) {
+    clearInterval(slideshowInterval);
+    slideshowInterval = null;
+  }
+  currentImageIndex.value = 0;
+}
+
+onUnmounted(() => {
+  stopSlideshow();
 });
 
 // Author display (truncated if too long)
@@ -73,13 +107,17 @@ const authorDisplay = computed(() => {
 <template>
   <div class="overflow-hidden rounded-lg bg-zinc-900 shadow-lg">
     <!-- Image area with overlay -->
-    <div class="relative aspect-video overflow-hidden">
-      <!-- Screenshot/thumbnail -->
+    <div
+      class="relative aspect-video overflow-hidden"
+      @mouseenter="startSlideshow"
+      @mouseleave="stopSlideshow"
+    >
+      <!-- Screenshot/thumbnail with slideshow -->
       <img
-        v-if="imageSrc"
-        :src="imageSrc"
+        v-if="currentImage"
+        :src="currentImage"
         :alt="wad.title"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
       />
 
       <!-- Fallback for no image -->

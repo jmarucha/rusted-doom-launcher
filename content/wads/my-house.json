@@ -50,7 +50,7 @@
   ],
   "tags": ["horror", "psychological", "non-euclidean"],
   "difficulty": "medium",
-  "notes": "Requires GZDoom with hardware renderer. Use myhouse.pk3, not .wad file.",
+  "notes": "Requires GZDoom with hardware renderer. Archive.org version is outdated - for GZDoom 4.14+ get updated pk3 from Google Drive.",
   "_schemaVersion": 1,
   "_source": "manual",
   "urls": [

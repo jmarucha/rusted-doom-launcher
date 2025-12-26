@@ -39,17 +39,18 @@ const sortOptions = [
   { value: "alpha", label: "A-Z" },
 ];
 
-// Only WADs that have been played (have saves)
-const playedWads = computed(() =>
+// WADs that are downloaded OR have saves (ready to play)
+const playableWads = computed(() =>
   props.wads.filter(w => {
     const info = props.getSaveInfo(w.slug);
-    return info && info.saveCount > 0;
+    const hasSaves = info && info.saveCount > 0;
+    return props.isDownloaded(w.slug) || hasSaves;
   })
 );
 
 // Filtered and sorted WADs
 const filteredWads = computed(() => {
-  let result = [...playedWads.value];
+  let result = [...playableWads.value];
 
   // Search filter
   if (searchQuery.value) {
@@ -102,17 +103,17 @@ const filteredWads = computed(() => {
       {{ error }}
     </div>
 
-    <div v-else-if="playedWads.length === 0" class="flex flex-col items-center justify-center py-20 text-center">
+    <div v-else-if="playableWads.length === 0" class="flex flex-col items-center justify-center py-20 text-center">
       <Gamepad2 :size="48" :stroke-width="1.5" class="text-zinc-600 mb-4" />
-      <p class="text-zinc-500">No WADs played yet</p>
-      <p class="text-zinc-600 text-sm mt-2">Pick a WAD from Explore to start playing</p>
+      <p class="text-zinc-500">No WADs downloaded yet</p>
+      <p class="text-zinc-600 text-sm mt-2">Pick a WAD from Explore to download and play</p>
     </div>
 
     <template v-else>
       <FilterBar
         :sort-options="sortOptions"
         default-sort="last-played"
-        :item-count="playedWads.length"
+        :item-count="playableWads.length"
         :filtered-count="filteredWads.length"
         @update:search="searchQuery = $event"
         @update:sort="sortBy = $event"

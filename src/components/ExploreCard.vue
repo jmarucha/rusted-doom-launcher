@@ -8,6 +8,7 @@ const { getDifficulty, getVibe } = useWadSummaries();
 
 const props = defineProps<{
   wad: WadEntry;
+  isDownloaded: boolean;
   isDownloading: boolean;
   downloadProgress?: DownloadProgress;
 }>();
@@ -132,10 +133,10 @@ const authorDisplay = computed(() => {
         {{ wad.description.slice(0, 120) }}{{ wad.description.length > 120 ? '...' : '' }}
       </p>
 
-      <!-- Download button -->
+      <!-- Play/Download button -->
       <button
         class="w-full rounded px-4 py-2 text-sm font-bold text-white transition-all duration-200 relative overflow-hidden"
-        :class="isDownloading ? 'bg-zinc-700 cursor-wait' : 'bg-red-600 hover:bg-red-500 hover:shadow-lg hover:shadow-red-600/20'"
+        :class="isDownloading ? 'bg-zinc-700 cursor-wait' : isDownloaded ? 'bg-green-600 hover:bg-green-500 hover:shadow-lg hover:shadow-green-600/20' : 'bg-red-600 hover:bg-red-500 hover:shadow-lg hover:shadow-red-600/20'"
         :disabled="isDownloading"
         @click="emit('play', wad)"
       >
@@ -146,7 +147,7 @@ const authorDisplay = computed(() => {
           :style="{ width: `${progressPercent}%` }"
         />
         <span class="relative z-10">
-          {{ isDownloading ? progressText : "Download & Play" }}
+          {{ isDownloading ? progressText : isDownloaded ? "▶ Play" : "Download & Play" }}
         </span>
       </button>
     </div>

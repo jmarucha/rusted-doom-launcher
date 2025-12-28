@@ -170,16 +170,7 @@ pub fn run() {
             extract_and_save_level_names
         ]);
 
-    // Enable MCP plugin for AI debugging in development builds (only when feature enabled)
-    #[cfg(all(debug_assertions, feature = "mcp"))]
-    {
-        use log::info;
-        info!("Development build: enabling MCP plugin for AI debugging");
-        builder = builder.plugin(tauri_plugin_mcp::init_with_config(
-            tauri_plugin_mcp::PluginConfig::new("doom-launcher".to_string())
-                .start_socket_server(true),
-        ));
-    }
+    // MCP plugin disabled for CI builds - see .cargo/config.toml for local dev setup
 
     builder
         .run(tauri::generate_context!())

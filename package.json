@@ -15,9 +15,11 @@
     "@tauri-apps/plugin-upload": "^2.3.2",
     "fflate": "^0.8.2",
     "lucide-vue-next": "^0.562.0",
-    "tauri-plugin-mcp": "file:../tauri-plugin-mcp",
     "vue": "^3.5.13",
     "zod": "^3.23.8"
+  },
+  "optionalDependencies": {
+    "tauri-plugin-mcp": "file:../tauri-plugin-mcp"
   },
   "devDependencies": {
     "@tauri-apps/api": "^2.1.1",

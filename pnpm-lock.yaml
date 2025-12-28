@@ -17,9 +17,6 @@ importers:
       lucide-vue-next:
         specifier: ^0.562.0
         version: 0.562.0(vue@3.5.25(typescript@5.6.3))
-      tauri-plugin-mcp:
-        specifier: file:../tauri-plugin-mcp
-        version: file:../tauri-plugin-mcp
       vue:
         specifier: ^3.5.13
         version: 3.5.25(typescript@5.6.3)
@@ -75,6 +72,10 @@ importers:
       vue-tsc:
         specifier: ^2.1.10
         version: 2.2.12(typescript@5.6.3)
+    optionalDependencies:
+      tauri-plugin-mcp:
+        specifier: file:../tauri-plugin-mcp
+        version: file:../tauri-plugin-mcp
 
 packages:
 
@@ -1901,6 +1902,7 @@ snapshots:
   tauri-plugin-mcp@file:../tauri-plugin-mcp:
     dependencies:
       '@tauri-apps/api': 2.9.0
+    optional: true
 
   thenify-all@1.6.0:
     dependencies:

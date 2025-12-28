@@ -12,10 +12,6 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 [build-dependencies]
 tauri-build = { version = "2", features = [] }
 
-[features]
-default = []
-mcp = ["tauri-plugin-mcp"]
-
 [dependencies]
 tauri = { version = "2", features = ["devtools"] }
 tauri-plugin-fs = "2"
@@ -23,8 +19,7 @@ tauri-plugin-shell = "2"
 tauri-plugin-http = "2"
 tauri-plugin-dialog = "2"
 tauri-plugin-upload = "2"
-# MCP plugin only available locally for AI debugging (not on CI)
-tauri-plugin-mcp = { path = "../../tauri-plugin-mcp", optional = true }
+# Note: tauri-plugin-mcp removed for CI compatibility (local dev only via path override)
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 log = "0.4"

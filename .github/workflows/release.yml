@@ -9,20 +9,8 @@ jobs:
   release:
     permissions:
       contents: write
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - platform: macos-latest
-            args: --target aarch64-apple-darwin
-          - platform: macos-15
-            args: --target x86_64-apple-darwin
-          - platform: ubuntu-22.04
-            args: ''
-          - platform: windows-latest
-            args: ''
+    runs-on: macos-latest
 
-    runs-on: ${{ matrix.platform }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,20 +27,10 @@ jobs:
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@stable
 
-      - name: Add Rust target (macOS x86_64)
-        if: matrix.args == '--target x86_64-apple-darwin'
-        run: rustup target add x86_64-apple-darwin
-
       - name: Rust cache
         uses: swatinem/rust-cache@v2
         with:
           workspaces: './src-tauri -> target'
-
-      - name: Install dependencies (Ubuntu)
-        if: matrix.platform == 'ubuntu-22.04'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
 
       - name: Install frontend dependencies
         run: pnpm install
@@ -66,14 +44,15 @@ jobs:
           releaseName: 'Rusted Doom Launcher ${{ github.ref_name }}'
           releaseBody: |
             ## Download
-            - **macOS (Apple Silicon):** `.dmg` file ending in `aarch64`
-            - **macOS (Intel):** `.dmg` file ending in `x64`
-            - **Windows:** `.exe` installer
-            - **Linux:** `.AppImage` or `.deb`
+            - **macOS (Apple Silicon):** `.dmg` file
 
             ## Requirements
             - [GZDoom](https://zdoom.org/downloads) must be installed
             - DOOM.WAD or DOOM2.WAD (from Steam or GOG)
+
+            ## First Launch (macOS)
+            macOS will block the app. Go to System Settings → Privacy & Security → "Open Anyway"
+            Or run: `xattr -cr /Applications/Rusted\ Doom\ Launcher.app`
           releaseDraft: true
           prerelease: false
-          args: ${{ matrix.args }}
+          args: --target aarch64-apple-darwin

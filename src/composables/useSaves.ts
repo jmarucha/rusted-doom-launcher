@@ -1,8 +1,7 @@
 import { ref } from "vue";
-import { readDir, readFile, stat } from "@tauri-apps/plugin-fs";
+import { exists, readDir, readFile, stat } from "@tauri-apps/plugin-fs";
 import { unzipSync, strFromU8 } from "fflate";
 import { useSettings } from "./useSettings";
-import { isNotFoundError } from "../lib/errors";
 
 export interface LevelStats {
   levelname: string;
@@ -52,6 +51,12 @@ export function useSaves() {
 
     try {
       const saveDir = await getSaveDir(slug);
+
+      // No save directory = no saves
+      if (!(await exists(saveDir))) {
+        return null;
+      }
+
       const entries = await readDir(saveDir);
       const saveFiles = entries.filter(e => e.name?.endsWith(".zds"));
 
@@ -90,10 +95,7 @@ export function useSaves() {
       saveInfoCache.value.set(slug, info);
       return info;
     } catch (e) {
-      if (!isNotFoundError(e)) {
-        console.error(`Error getting save info for ${slug}:`, e);
-      }
-      // Save directory doesn't exist or other error
+      console.error(`Error getting save info for ${slug}:`, e);
       return null;
     }
   }

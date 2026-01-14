@@ -1,6 +1,6 @@
 # Doom WAD Launcher
 
-Tauri 2 + Vue 3 + TypeScript app for launching GZDoom with community WADs.
+Tauri 2 + Vue 3 + TypeScript app for launching Doom source ports (UZDoom/GZDoom) with community WADs.
 
 ## Key Takeaways
 

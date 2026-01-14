@@ -64,7 +64,7 @@ watch(isRunning, async (running, wasRunning) => {
 async function handlePlay(wad: WadEntry) {
   errorMsg.value = "";
   if (!isGZDoomFound()) {
-    errorMsg.value = "GZDoom not found. Configure path in Settings.";
+    errorMsg.value = "Doom engine not found. Configure path in Settings.";
     activeView.value = "settings";
     return;
   }
@@ -145,13 +145,13 @@ async function handleDelete(wad: WadEntry) {
       <AboutView v-else-if="activeView === 'about'" />
     </main>
 
-    <!-- GZDoom Running Indicator -->
+    <!-- Game Running Indicator -->
     <div
       v-if="isRunning"
       class="fixed bottom-4 right-4 rounded-lg bg-rose-600 px-4 py-2 text-white shadow-lg flex items-center gap-2"
     >
       <span class="h-2 w-2 rounded-full bg-white animate-pulse" />
-      GZDoom running...
+      Game running...
     </div>
   </div>
 </template>

@@ -6,7 +6,7 @@ Classic Doom is timeless, but managing thousands of community-made WADs shouldn'
 
 ## Requirements
 
-- **[GZDoom](https://github.com/ZDoom/gzdoom/releases)** - the Doom source port
+- **[UZDoom](https://github.com/UZDoom/UZDoom/releases)** or **[GZDoom](https://github.com/ZDoom/gzdoom/releases)** - modern Doom source ports
 - **DOOM.WAD or DOOM2.WAD** - game data from [GOG](https://www.gog.com/en/game/doom_doom_ii) or [Steam](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
 
 ## Install
@@ -16,7 +16,7 @@ Classic Doom is timeless, but managing thousands of community-made WADs shouldn'
 The easiest way:
 
 ```bash
-brew install --cask gzdoom
+brew install --cask gzdoom  # or uzdoom
 brew install stared/doom/rusted-doom-launcher
 ```
 
@@ -27,7 +27,7 @@ Then run with `rusted-doom-launcher` or open the app from `/opt/homebrew/opt/rus
 Get the `.dmg` from [GitHub Releases](https://github.com/stared/rusted-doom-launcher/releases).
 
 1. Download and open the `.dmg`, drag app to Applications
-2. Install [GZDoom](https://github.com/ZDoom/gzdoom/releases) separately
+2. Install [UZDoom](https://github.com/UZDoom/UZDoom/releases) or [GZDoom](https://github.com/ZDoom/gzdoom/releases) separately
 3. **First launch:** The app is not signed with an Apple certificate. Open Terminal and run:
    ```
    xattr -cr /Applications/Rusted\ Doom\ Launcher.app
@@ -37,7 +37,7 @@ Get the `.dmg` from [GitHub Releases](https://github.com/stared/rusted-doom-laun
 ## Features
 
 - **Visual Browsing:** Explore WADs with embedded YouTube previews
-- **Instant Action:** One-click launch with GZDoom
+- **Instant Action:** One-click launch with UZDoom/GZDoom
 - **Mod Manager:** Download new WADs directly within the app
 - **Stat Tracking:** Track your play stats per level
 

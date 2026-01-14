@@ -8,12 +8,14 @@ interface Settings {
   libraryPath: string | null; // null = default location
 }
 
-// GZDoom auto-detect locations
+// Doom engine auto-detect locations (UZDoom preferred, GZDoom fallback)
 const GZDOOM_LOCATIONS = [
+  "/Applications/UZDoom.app/Contents/MacOS/uzdoom",
   "/Applications/GZDoom.app/Contents/MacOS/gzdoom",
+  "/opt/homebrew/bin/uzdoom",
   "/opt/homebrew/bin/gzdoom",
+  "/usr/local/bin/uzdoom",
   "/usr/local/bin/gzdoom",
-  // Note: $HOME paths need to be resolved at runtime
 ];
 
 // Singleton state
@@ -64,13 +66,14 @@ export function useSettings() {
     // Add user home paths
     const allLocations = [
       ...GZDOOM_LOCATIONS,
+      `${h}/Applications/UZDoom.app/Contents/MacOS/uzdoom`,
       `${h}/Applications/GZDoom.app/Contents/MacOS/gzdoom`,
     ];
 
-    // If user has set a custom path, validate it looks like gzdoom before trusting
+    // If user has set a custom path, validate it looks like a doom engine
     if (settings.value.gzdoomPath) {
       const pathLower = settings.value.gzdoomPath.toLowerCase();
-      if (pathLower.includes("gzdoom")) {
+      if (pathLower.includes("gzdoom") || pathLower.includes("uzdoom")) {
         gzdoomDetectedPath.value = settings.value.gzdoomPath;
         return;
       }

@@ -64,17 +64,17 @@ async fn extract_and_save_level_names(wad_path: String) -> Result<String, String
     Ok(json_path.to_string_lossy().to_string())
 }
 
-/// Launch GZDoom with the specified executable path and arguments.
+/// Launch GZDoom/UZDoom with the specified executable path and arguments.
 /// Captures stdout/stderr for later retrieval via get_gzdoom_log.
 #[tauri::command]
 async fn launch_gzdoom(
     gzdoom_path: String,
     args: Vec<String>,
 ) -> Result<(), String> {
-    // Security: Validate the path looks like gzdoom
+    // Security: Validate the path looks like a doom engine
     let path_lower = gzdoom_path.to_lowercase();
-    if !path_lower.contains("gzdoom") {
-        return Err("Invalid GZDoom path: must contain 'gzdoom'".to_string());
+    if !path_lower.contains("gzdoom") && !path_lower.contains("uzdoom") {
+        return Err("Invalid path: must be GZDoom or UZDoom".to_string());
     }
 
     // Initialize or reset the session
@@ -93,7 +93,7 @@ async fn launch_gzdoom(
         .stdout(Stdio::piped())
         .stderr(Stdio::piped())
         .spawn()
-        .map_err(|e| format!("Failed to launch GZDoom at '{}': {}", gzdoom_path, e))?;
+        .map_err(|e| format!("Failed to launch engine at '{}': {}", gzdoom_path, e))?;
 
     // Take ownership of stdout and stderr
     let stdout = child.stdout.take();

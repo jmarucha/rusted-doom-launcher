@@ -12,7 +12,7 @@ import { Skull } from "lucide-vue-next";
     </div>
 
     <div class="text-sm text-zinc-400 max-w-md space-y-2">
-      <p>A modern launcher for GZDoom community WADs.</p>
+      <p>A modern launcher for Doom community WADs.</p>
       <p>Browse, download, and play the best Doom mods with one click.</p>
     </div>
 

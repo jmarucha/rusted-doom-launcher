@@ -81,10 +81,13 @@ export function useGZDoom() {
   }
 
   function pollForExit() {
+    // Derive process name from path (e.g., /bin/uzdoom -> uzdoom)
+    const enginePath = getGZDoomPath();
+    const processName = enginePath?.split("/").pop() ?? "gzdoom";
+
     const pollInterval = setInterval(async () => {
       try {
-        // Check if gzdoom process is still running via Rust
-        const running = await invoke<boolean>("is_process_running", { processName: "gzdoom" });
+        const running = await invoke<boolean>("is_process_running", { processName });
         if (!running) {
           clearInterval(pollInterval);
           isRunning.value = false;

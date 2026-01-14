@@ -19,7 +19,7 @@ getLibraryPath().then(p => libraryPathDisplay.value = p);
 
 async function browseGZDoom() {
   const selected = await open({
-    title: "Select GZDoom Application",
+    title: "Select Doom Engine (UZDoom or GZDoom)",
     filters: [{ name: "Application", extensions: ["app"] }],
     directory: false,
     multiple: false,
@@ -27,11 +27,13 @@ async function browseGZDoom() {
   if (selected) {
     const path = typeof selected === "string" ? selected : selected[0];
     const appName = path.split("/").pop()?.toLowerCase() ?? "";
-    if (!appName.includes("gzdoom")) {
-      errorMsg.value = `"${appName}" doesn't appear to be GZDoom. Please select GZDoom.app`;
+    if (!appName.includes("gzdoom") && !appName.includes("uzdoom")) {
+      errorMsg.value = `"${appName}" doesn't appear to be a Doom engine. Please select UZDoom.app or GZDoom.app`;
       return;
     }
-    const execPath = path.endsWith(".app") ? `${path}/Contents/MacOS/gzdoom` : path;
+    // Derive executable name from app name (e.g., UZDoom.app -> uzdoom)
+    const execName = appName.replace(".app", "").toLowerCase();
+    const execPath = path.endsWith(".app") ? `${path}/Contents/MacOS/${execName}` : path;
     await setGZDoomPath(execPath);
     errorMsg.value = "";
   }
@@ -77,14 +79,14 @@ async function handleRescan() {
     <div v-if="errorMsg" class="rounded bg-red-900/50 p-3 text-red-200 text-sm">{{ errorMsg }}</div>
 
     <div class="space-y-4">
-      <!-- GZDoom Path -->
+      <!-- Doom Engine Path -->
       <div class="rounded-lg bg-zinc-800/50 p-4">
         <div class="flex items-center justify-between">
           <div>
-            <label class="text-sm font-medium text-zinc-300">GZDoom Path</label>
+            <label class="text-sm font-medium text-zinc-300">Doom Engine</label>
             <p class="text-sm text-zinc-500 mt-1">{{ shortenPath(gzdoomDetectedPath) }}</p>
-            <p v-if="isGZDoomFound()" class="text-xs text-green-400 mt-1">GZDoom found</p>
-            <p v-else class="text-xs text-red-400 mt-1">GZDoom not found</p>
+            <p v-if="isGZDoomFound()" class="text-xs text-green-400 mt-1">Engine found</p>
+            <p v-else class="text-xs text-red-400 mt-1">Engine not found</p>
           </div>
           <button
             class="rounded bg-zinc-700 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-zinc-600"

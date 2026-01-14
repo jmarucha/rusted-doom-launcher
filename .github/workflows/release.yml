@@ -43,19 +43,21 @@ jobs:
           tagName: ${{ github.ref_name }}
           releaseName: 'Rusted Doom Launcher ${{ github.ref_name }}'
           releaseBody: |
-            ## Download
-            - **macOS (Apple Silicon):** `.dmg` file
+            ## Install via Homebrew (recommended)
+            ```
+            brew tap stared/doom
+            brew install --cask rusted-doom-launcher
+            ```
+
+            ## Manual Install
+            1. Download the `.dmg` file below (Apple Silicon)
+            2. Drag to Applications
+            3. Run: `xattr -cr /Applications/Rusted\ Doom\ Launcher.app`
+            4. Open the app
 
             ## Requirements
-            - [GZDoom](https://zdoom.org/downloads) must be installed
+            - [GZDoom](https://github.com/ZDoom/gzdoom) - `brew install --cask gzdoom`
             - DOOM.WAD or DOOM2.WAD (from Steam or GOG)
-
-            ## First Launch (macOS Sequoia 15+)
-            macOS blocks unsigned apps. After installing, open Terminal and run:
-            ```
-            xattr -cr /Applications/Rusted\ Doom\ Launcher.app
-            ```
-            Then open the app normally.
           releaseDraft: true
           prerelease: false
           args: --target aarch64-apple-darwin

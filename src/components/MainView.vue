@@ -26,7 +26,7 @@ function getDownloadProgress(slug: string): DownloadProgress | undefined {
 const emit = defineEmits<{
   play: [wad: WadEntry];
   delete: [wad: WadEntry];
-  navigate: [view: string, query?: string];
+  navigate: [view: "explore", query?: string];
 }>();
 
 const { getVibe } = useWadSummaries();

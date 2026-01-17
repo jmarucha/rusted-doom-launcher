@@ -11,3 +11,4 @@ scripts/data/.*_cache.json
 scripts/data/*-metadata.json
 scripts/data/cacowards_raw.json
 scripts/data/wads_metadata.json
+src/lib/version.ts

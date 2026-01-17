@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from "vue";
+import { ref, computed, watch, onMounted, onUnmounted } from "vue";
 import { Search, X, ChevronDown, RotateCcw } from "lucide-vue-next";
 
 export type SortOption = {
@@ -19,6 +19,7 @@ const props = defineProps<{
   filters?: FilterDef[];
   itemCount: number;
   filteredCount: number;
+  initialSearch?: string;
 }>();
 
 const emit = defineEmits<{
@@ -28,11 +29,19 @@ const emit = defineEmits<{
 }>();
 
 // State
-const search = ref("");
+const search = ref(props.initialSearch ?? "");
 const sort = ref(props.defaultSort);
 const activeFilters = ref<Record<string, string>>({});
 const searchFocused = ref(false);
 const openDropdown = ref<string | null>(null);
+
+// Update search when initialSearch prop changes (immediate to handle initial value)
+watch(() => props.initialSearch, (newVal) => {
+  if (newVal !== undefined && newVal !== search.value) {
+    search.value = newVal;
+    emit("update:search", newVal);
+  }
+}, { immediate: true });
 
 // Emit changes
 function updateSearch(value: string) {

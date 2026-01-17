@@ -28,6 +28,7 @@ const { captureStats } = useStats();
 
 const activeView = ref<View>("main");
 const errorMsg = ref("");
+const exploreInitialQuery = ref("");
 
 // Track last played WAD to refresh its save info when game closes
 const lastPlayedSlug = ref<string | null>(null);
@@ -100,7 +101,7 @@ async function handleDelete(wad: WadEntry) {
 <template>
   <div class="flex h-screen bg-zinc-950 text-zinc-100">
     <!-- Sidebar -->
-    <Sidebar :active-view="activeView" @navigate="activeView = $event" />
+    <Sidebar :active-view="activeView" @navigate="(view) => { activeView = view; exploreInitialQuery = ''; }" />
 
     <!-- Main Content -->
     <main class="flex-1 overflow-y-auto p-8">
@@ -122,6 +123,7 @@ async function handleDelete(wad: WadEntry) {
         :get-save-info="getCachedSaveInfo"
         @play="handlePlay"
         @delete="handleDelete"
+        @navigate="(view, query) => { activeView = view; exploreInitialQuery = query ?? ''; }"
       />
       <ExploreView
         v-else-if="activeView === 'explore'"
@@ -130,6 +132,7 @@ async function handleDelete(wad: WadEntry) {
         :is-downloading="isDownloading"
         :download-progress="downloadProgress"
         :get-save-info="getCachedSaveInfo"
+        :initial-query="exploreInitialQuery"
         @play="handlePlay"
         @delete="handleDelete"
       />

@@ -6,6 +6,7 @@ import WadList from "./WadList.vue";
 import type { WadEntry } from "../lib/schema";
 import type { WadSaveInfo } from "../composables/useSaves";
 import type { DownloadProgress } from "../composables/useDownload";
+import { useWadSummaries } from "../composables/useWadSummaries";
 
 const props = defineProps<{
   wads: WadEntry[];
@@ -25,7 +26,10 @@ function getDownloadProgress(slug: string): DownloadProgress | undefined {
 const emit = defineEmits<{
   play: [wad: WadEntry];
   delete: [wad: WadEntry];
+  navigate: [view: string, query?: string];
 }>();
+
+const { getVibe } = useWadSummaries();
 
 // Filter/sort state
 const searchQuery = ref("");
@@ -91,6 +95,28 @@ const filteredWads = computed(() => {
 
   return result;
 });
+
+// When search has no results in collection, count matches in Explore
+const exploreMatchCount = computed(() => {
+  // Only count if there's a search query and no results in collection
+  if (!searchQuery.value || filteredWads.value.length > 0) return 0;
+
+  const q = searchQuery.value.toLowerCase();
+  return props.wads.filter(w => {
+    // Exclude already playable WADs
+    const info = props.getSaveInfo(w.slug);
+    const hasSaves = info && info.saveCount > 0;
+    if (props.isDownloaded(w.slug) || hasSaves) return false;
+
+    // Search title, authors, and vibe
+    const vibe = getVibe(w.slug) ?? "";
+    return (
+      w.title.toLowerCase().includes(q) ||
+      w.authors.some(a => a.name.toLowerCase().includes(q)) ||
+      vibe.toLowerCase().includes(q)
+    );
+  }).length;
+});
 </script>
 
 <template>
@@ -122,7 +148,14 @@ const filteredWads = computed(() => {
 
       <div v-if="filteredWads.length === 0" class="flex flex-col items-center justify-center py-20 text-center">
         <Gamepad2 :size="48" :stroke-width="1.5" class="text-zinc-600 mb-4" />
-        <p class="text-zinc-500">No WADs match your search</p>
+        <p class="text-zinc-500">No WADs match your search in your collection</p>
+        <button
+          v-if="exploreMatchCount > 0"
+          class="mt-2 text-zinc-400 hover:text-zinc-200 transition-colors"
+          @click="emit('navigate', 'explore', searchQuery)"
+        >
+          See {{ exploreMatchCount }} {{ exploreMatchCount === 1 ? 'match' : 'matches' }} in Explore →
+        </button>
       </div>
 
       <div v-else class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { Compass } from "lucide-vue-next";
 import FilterBar from "./FilterBar.vue";
 import ExploreCard from "./ExploreCard.vue";
@@ -14,6 +14,7 @@ const props = defineProps<{
   isDownloading: (slug: string) => boolean;
   downloadProgress: Record<string, DownloadProgress>;
   getSaveInfo: (slug: string) => WadSaveInfo | null;
+  initialQuery?: string;
 }>();
 
 // Helper to get progress for a specific slug
@@ -29,9 +30,14 @@ const emit = defineEmits<{
 const { getDifficulty, getVibe } = useWadSummaries();
 
 // Filter/sort state
-const searchQuery = ref("");
+const searchQuery = ref(props.initialQuery ?? "");
 const sortBy = ref("year-desc");
 const activeFilters = ref<Record<string, string>>({});
+
+// Update search when navigating from Play with a query
+watch(() => props.initialQuery, (newQuery) => {
+  if (newQuery) searchQuery.value = newQuery;
+}, { immediate: true });
 
 // Sort options - Year (newest) is default, Alpha is last
 const sortOptions = [
@@ -177,6 +183,7 @@ const filteredWads = computed(() => {
       :filters="filterDefs"
       :item-count="wads.length"
       :filtered-count="filteredWads.length"
+      :initial-search="initialQuery"
       @update:search="searchQuery = $event"
       @update:sort="sortBy = $event"
       @update:filters="activeFilters = $event"

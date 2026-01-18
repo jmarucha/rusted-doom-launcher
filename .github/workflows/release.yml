@@ -43,10 +43,11 @@ jobs:
           tagName: ${{ github.ref_name }}
           releaseName: 'Rusted Doom Launcher ${{ github.ref_name }}'
           releaseBody: |
+            A modern launcher for classic Doom. Browse community-made maps and episodes, then install and launch them with a single click.
+
             ## Install via Homebrew (recommended)
             ```
-            brew tap stared/doom
-            brew install --cask rusted-doom-launcher
+            brew install --cask stared/doom/rusted-doom-launcher
             ```
 
             ## Manual Install
@@ -56,8 +57,8 @@ jobs:
             4. Open the app
 
             ## Requirements
-            - [UZDoom](https://github.com/UZDoom/UZDoom) or [GZDoom](https://github.com/ZDoom/gzdoom) - `brew install --cask gzdoom`
-            - DOOM.WAD or DOOM2.WAD (from GOG or Steam)
+            - [UZDoom](https://github.com/UZDoom/UZDoom) or [GZDoom](https://github.com/ZDoom/gzdoom) - `brew install --cask stared/doom/uzdoom`
+            - doom.wad or doom2.wad from [GOG](https://www.gog.com/en/game/doom_doom_ii) or Steam
           releaseDraft: true
           prerelease: false
           args: --target aarch64-apple-darwin

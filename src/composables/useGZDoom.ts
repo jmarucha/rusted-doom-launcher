@@ -29,7 +29,13 @@ export function useGZDoom() {
   async function detectIwads() {
     const dir = settings.value.libraryPath;
     if (!dir) return;
-    const entries = await readDir(dir);
+    const iwadsDir = `${dir}/iwads`;
+    let entries: Awaited<ReturnType<typeof readDir>> = [];
+    try {
+      entries = await readDir(iwadsDir);
+    } catch {
+      // iwads/ folder doesn't exist yet
+    }
     iwadFilenames.clear();
     availableIwads.value = IWADS.filter(iwad => {
       const found = entries.find(e =>
@@ -53,7 +59,7 @@ export function useGZDoom() {
     const dir = settings.value.libraryPath;
     const filename = iwadFilenames.get(iwad);
     if (!filename) throw new Error(`IWAD ${iwad} not detected`);
-    const iwadPath = `${dir}/${filename}`;
+    const iwadPath = `${dir}/iwads/${filename}`;
 
     // Create per-WAD save directory if slug provided
     const saveDir = wadSlug ? `${dir}/saves/${wadSlug}` : null;

@@ -9,7 +9,7 @@ import { useLevelNames } from "../composables/useLevelNames";
 import { useWads } from "../composables/useWads";
 import type { Iwad } from "../lib/schema";
 
-const { settings, isFirstRun, setGZDoomPath, setLibraryPath } = useSettings();
+const { settings, isFirstRun, migratedIwads, setGZDoomPath, setLibraryPath } = useSettings();
 const { availableIwads, detectIwads } = useGZDoom();
 const { rescanAllWads } = useLevelNames();
 const { wads } = useWads();
@@ -26,6 +26,20 @@ const requiredIwads = computed<Iwad[]>(() => {
 });
 
 const hasAnyIwad = computed(() => requiredIwads.value.some(iwad => availableIwads.value.includes(iwad)));
+
+// Group migrated IWADs by source path for display
+const migratedIwadsBySource = computed(() => {
+  const groups = new Map<string, string[]>();
+  for (const iwad of migratedIwads.value) {
+    const existing = groups.get(iwad.from) || [];
+    existing.push(iwad.name);
+    groups.set(iwad.from, existing);
+  }
+  return Array.from(groups.entries()).map(([from, names]) => ({
+    from: shortenPath(from),
+    names: names.join(", "),
+  }));
+});
 
 const errorMsg = ref("");
 const rescanning = ref(false);
@@ -146,7 +160,10 @@ async function handleRescan() {
           <div>
             <label class="text-sm font-medium text-zinc-300">Data Folder</label>
             <p class="text-sm text-zinc-500 mt-1">{{ shortenPath(settings.libraryPath) }}</p>
-            <p class="text-xs text-zinc-500 mt-1">Place IWADs in this folder. Saves and statistics will also be stored here.</p>
+            <p class="text-xs text-zinc-500 mt-1">Place IWADs in the <code class="bg-zinc-700 px-1 rounded">iwads</code> subfolder. Saves and statistics will also be stored here.</p>
+            <p v-for="group in migratedIwadsBySource" :key="group.from" class="text-xs text-green-400 mt-1">
+              Copied {{ group.names }} from {{ group.from }}
+            </p>
           </div>
           <button
             class="rounded bg-zinc-700 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-zinc-600"
@@ -168,7 +185,7 @@ async function handleRescan() {
           </span>
         </p>
         <p v-if="!hasAnyIwad" class="text-xs text-red-400 mt-2">
-          No IWADs found. Place WAD files in {{ shortenPath(settings.libraryPath) }}.
+          No IWADs found. Place WAD files in {{ shortenPath(settings.libraryPath) }}/iwads/.
         </p>
       </div>
 

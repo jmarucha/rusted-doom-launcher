@@ -25,6 +25,8 @@
         "$APPDATA/**",
         "$HOME/Library/Application Support/gzdoom",
         "$HOME/Library/Application Support/gzdoom/**",
+        "$HOME/Library/Application Support/rusted-doom-launcher",
+        "$HOME/Library/Application Support/rusted-doom-launcher/**",
         "/Applications/UZDoom.app/**",
         "/Applications/GZDoom.app/**",
         "/opt/homebrew/bin/uzdoom",
@@ -40,7 +42,8 @@
     {
       "identifier": "upload:allow-download",
       "allow": [
-        { "path": "$HOME/Library/Application Support/gzdoom/**" }
+        { "path": "$HOME/Library/Application Support/gzdoom/**" },
+        { "path": "$HOME/Library/Application Support/rusted-doom-launcher/**" }
       ]
     },
     {

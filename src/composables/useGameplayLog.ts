@@ -24,11 +24,10 @@ function sanitizeTimestamp(isoString: string): string {
 }
 
 export function useGameplayLog() {
-  const { getLibraryPath } = useSettings();
+  const { settings } = useSettings();
 
-  async function getSessionsDir(slug: string): Promise<string> {
-    const libraryPath = await getLibraryPath();
-    return `${libraryPath}/sessions/${slug}`;
+  function getSessionsDir(slug: string): string {
+    return `${settings.value.libraryPath}/sessions/${slug}`;
   }
 
   /**
@@ -106,7 +105,7 @@ export function useGameplayLog() {
     startedAt: Date,
     endedAt: Date
   ): Promise<string> {
-    const sessionsDir = await getSessionsDir(slug);
+    const sessionsDir = getSessionsDir(slug);
 
     // Ensure directory exists
     try {
@@ -150,7 +149,7 @@ export function useGameplayLog() {
    * Load all gameplay logs for a WAD
    */
   async function loadAllGameplayLogs(slug: string): Promise<GameplayLog[]> {
-    const sessionsDir = await getSessionsDir(slug);
+    const sessionsDir = getSessionsDir(slug);
 
     try {
       if (!(await exists(sessionsDir))) {

@@ -10,14 +10,13 @@ import { isNotFoundError } from "../lib/errors";
 const levelNamesCache = ref<Map<string, Map<string, string>>>(new Map());
 
 export function useLevelNames() {
-  const { getLibraryPath } = useSettings();
+  const { settings } = useSettings();
 
   /**
    * Get the path to the level names JSON file for a slug.
    */
-  async function getLevelNamesPath(slug: string): Promise<string> {
-    const libraryPath = await getLibraryPath();
-    return `${libraryPath}/level-names/${slug}.json`;
+  function getLevelNamesPath(slug: string): string {
+    return `${settings.value.libraryPath}/level-names/${slug}.json`;
   }
 
   /**
@@ -25,7 +24,7 @@ export function useLevelNames() {
    */
   async function loadFromStorage(slug: string): Promise<Map<string, string> | null> {
     try {
-      const path = await getLevelNamesPath(slug);
+      const path = getLevelNamesPath(slug);
       if (await exists(path)) {
         const content = await readTextFile(path);
         const data = JSON.parse(content) as Record<string, string>;
@@ -44,11 +43,10 @@ export function useLevelNames() {
    */
   async function saveToStorage(slug: string, levels: Map<string, string>): Promise<void> {
     try {
-      const libraryPath = await getLibraryPath();
-      const dir = `${libraryPath}/level-names`;
+      const dir = `${settings.value.libraryPath}/level-names`;
       await mkdir(dir, { recursive: true });
 
-      const path = await getLevelNamesPath(slug);
+      const path = getLevelNamesPath(slug);
       const data = Object.fromEntries(levels);
       await writeTextFile(path, JSON.stringify(data, null, 2));
       console.log(`[LevelNames] Saved ${levels.size} level names for ${slug}`);
@@ -62,8 +60,7 @@ export function useLevelNames() {
    */
   async function getDownloadInfo(slug: string): Promise<{ filename: string } | null> {
     try {
-      const libraryPath = await getLibraryPath();
-      const content = await readTextFile(`${libraryPath}/launcher-downloads.json`);
+      const content = await readTextFile(`${settings.value.libraryPath}/launcher-downloads.json`);
       const parsed = LauncherDownloadsSchema.safeParse(JSON.parse(content));
       if (parsed.success && parsed.data.downloads[slug]) {
         return parsed.data.downloads[slug];
@@ -102,8 +99,7 @@ export function useLevelNames() {
         return null;
       }
 
-      const libraryPath = await getLibraryPath();
-      const filePath = `${libraryPath}/${downloadInfo.filename}`;
+      const filePath = `${settings.value.libraryPath}/${downloadInfo.filename}`;
       const filename = downloadInfo.filename.toLowerCase();
 
       let allLevels = new Map<string, string>();
@@ -206,8 +202,7 @@ export function useLevelNames() {
    */
   async function rescanAllWads(): Promise<number> {
     try {
-      const libraryPath = await getLibraryPath();
-      const content = await readTextFile(`${libraryPath}/launcher-downloads.json`);
+      const content = await readTextFile(`${settings.value.libraryPath}/launcher-downloads.json`);
       const parsed = LauncherDownloadsSchema.safeParse(JSON.parse(content));
 
       if (!parsed.success) {

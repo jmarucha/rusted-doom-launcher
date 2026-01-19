@@ -20,9 +20,9 @@ declare const window: Window & typeof globalThis & { __TAURI_INTERNALS__?: unkno
 type View = "main" | "explore" | "runs" | "logs" | "settings" | "about";
 
 const { wads, loading, error } = useWads();
-const { detectIwads, availableIwads, launch, isRunning, isGZDoomFound } = useGZDoom();
+const { detectIwads, availableIwads, launch, isRunning } = useGZDoom();
 const { loadState: loadDownloadState, isDownloaded, isDownloading, downloadProgress, downloadWithDeps, deleteWad } = useDownload();
-const { loadSettings } = useSettings();
+const { settings, isFirstRun, initSettings } = useSettings();
 const { loadAllSaveInfo, getCachedSaveInfo, refreshSaveInfo } = useSaves();
 const { captureStats } = useStats();
 
@@ -39,9 +39,13 @@ onMounted(async () => {
     return;
   }
   try {
-    await loadSettings();
+    await initSettings();
     await loadDownloadState();
     await detectIwads();
+    // On first run, open Settings so user can verify configuration
+    if (isFirstRun.value) {
+      activeView.value = "settings";
+    }
   } catch (e) {
     errorMsg.value = e instanceof Error ? e.message : "Startup failed";
   }
@@ -64,13 +68,14 @@ watch(isRunning, async (running, wasRunning) => {
 
 async function handlePlay(wad: WadEntry) {
   errorMsg.value = "";
-  if (!isGZDoomFound()) {
+  if (!settings.value.gzdoomPath) {
     errorMsg.value = "Doom engine not found. Configure path in Settings.";
     activeView.value = "settings";
     return;
   }
   if (!availableIwads.value.includes(wad.iwad)) {
-    errorMsg.value = `Missing IWAD: ${wad.iwad.toUpperCase()}.WAD`;
+    const shortPath = settings.value.libraryPath.replace(/^\/Users\/[^/]+/, "~");
+    errorMsg.value = `${wad.iwad.toUpperCase()}.WAD not found in ${shortPath}. This IWAD is required to run the mod.`;
     return;
   }
   try {

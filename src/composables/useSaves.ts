@@ -36,11 +36,10 @@ export interface WadSaveInfo {
 const saveInfoCache = ref<Map<string, WadSaveInfo>>(new Map());
 
 export function useSaves() {
-  const { getLibraryPath } = useSettings();
+  const { settings } = useSettings();
 
-  async function getSaveDir(slug: string): Promise<string> {
-    const libraryPath = await getLibraryPath();
-    return `${libraryPath}/saves/${slug}`;
+  function getSaveDir(slug: string): string {
+    return `${settings.value.libraryPath}/saves/${slug}`;
   }
 
   async function getSaveInfo(slug: string): Promise<WadSaveInfo | null> {
@@ -50,7 +49,7 @@ export function useSaves() {
     }
 
     try {
-      const saveDir = await getSaveDir(slug);
+      const saveDir = getSaveDir(slug);
 
       // No save directory = no saves
       if (!(await exists(saveDir))) {

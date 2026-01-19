@@ -52,16 +52,14 @@ function generateSessionHash(session: Omit<PlaySession, "capturedAt">): string {
 }
 
 export function useStats() {
-  const { getLibraryPath } = useSettings();
+  const { settings } = useSettings();
 
-  async function getStatsDir(slug: string): Promise<string> {
-    const libraryPath = await getLibraryPath();
-    return `${libraryPath}/stats/${slug}`;
+  function getStatsDir(slug: string): string {
+    return `${settings.value.libraryPath}/stats/${slug}`;
   }
 
-  async function getSavesDir(slug: string): Promise<string> {
-    const libraryPath = await getLibraryPath();
-    return `${libraryPath}/saves/${slug}`;
+  function getSavesDir(slug: string): string {
+    return `${settings.value.libraryPath}/saves/${slug}`;
   }
 
   // Load or create level names mapping for a WAD
@@ -175,8 +173,8 @@ export function useStats() {
 
   // Capture stats from all save files for a WAD
   async function captureStats(slug: string): Promise<number> {
-    const savesDir = await getSavesDir(slug);
-    const statsDir = await getStatsDir(slug);
+    const savesDir = getSavesDir(slug);
+    const statsDir = getStatsDir(slug);
 
     // Check if saves directory exists
     try {
@@ -294,7 +292,7 @@ export function useStats() {
 
   // Load all play sessions for a WAD
   async function loadAllSessions(slug: string): Promise<PlaySession[]> {
-    const statsDir = await getStatsDir(slug);
+    const statsDir = getStatsDir(slug);
 
     try {
       if (!(await exists(statsDir))) {

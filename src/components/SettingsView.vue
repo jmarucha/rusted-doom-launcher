@@ -5,17 +5,13 @@ import { useSettings } from "../composables/useSettings";
 import { useGZDoom } from "../composables/useGZDoom";
 import { useLevelNames } from "../composables/useLevelNames";
 
-const { setGZDoomPath, setLibraryPath, getLibraryPath, gzdoomDetectedPath, isGZDoomFound } = useSettings();
+const { settings, setGZDoomPath, setLibraryPath } = useSettings();
 const { availableIwads, detectIwads } = useGZDoom();
 const { rescanAllWads } = useLevelNames();
 
-const libraryPathDisplay = ref("");
 const errorMsg = ref("");
 const rescanning = ref(false);
 const rescanResult = ref<number | null>(null);
-
-// Load current library path
-getLibraryPath().then(p => libraryPathDisplay.value = p);
 
 async function browseGZDoom() {
   const selected = await open({
@@ -48,7 +44,6 @@ async function browseLibrary() {
   if (selected) {
     const path = typeof selected === "string" ? selected : selected[0];
     await setLibraryPath(path);
-    libraryPathDisplay.value = path;
     await detectIwads();
   }
 }
@@ -58,6 +53,13 @@ function shortenPath(path: string | null): string {
   const home = path.match(/^\/Users\/[^/]+/)?.[0];
   if (home) return path.replace(home, "~");
   return path;
+}
+
+function getEngineName(path: string | null): string {
+  if (!path) return "";
+  if (path.toLowerCase().includes("uzdoom")) return "UZDoom";
+  if (path.toLowerCase().includes("gzdoom")) return "GZDoom";
+  return "Doom engine";
 }
 
 async function handleRescan() {
@@ -84,9 +86,14 @@ async function handleRescan() {
         <div class="flex items-center justify-between">
           <div>
             <label class="text-sm font-medium text-zinc-300">Doom Engine</label>
-            <p class="text-sm text-zinc-500 mt-1">{{ shortenPath(gzdoomDetectedPath) }}</p>
-            <p v-if="isGZDoomFound()" class="text-xs text-green-400 mt-1">Engine found</p>
-            <p v-else class="text-xs text-red-400 mt-1">Engine not found</p>
+            <template v-if="settings.gzdoomPath">
+              <p class="text-sm text-green-400 mt-1">Detected {{ getEngineName(settings.gzdoomPath) }}</p>
+              <p class="text-xs text-zinc-500 mt-1">{{ shortenPath(settings.gzdoomPath) }}</p>
+            </template>
+            <template v-else>
+              <p class="text-sm text-red-400 mt-1">No engine found</p>
+              <p class="text-xs text-zinc-500 mt-1">Install <a href="https://zdoom.org/downloads" target="_blank" class="underline hover:text-zinc-300">GZDoom</a> or browse to select it</p>
+            </template>
           </div>
           <button
             class="rounded bg-zinc-700 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-zinc-600"
@@ -102,7 +109,7 @@ async function handleRescan() {
         <div class="flex items-center justify-between">
           <div>
             <label class="text-sm font-medium text-zinc-300">WAD Library</label>
-            <p class="text-sm text-zinc-500 mt-1">{{ shortenPath(libraryPathDisplay) }}</p>
+            <p class="text-sm text-zinc-500 mt-1">{{ shortenPath(settings.libraryPath) }}</p>
           </div>
           <button
             class="rounded bg-zinc-700 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-zinc-600"
@@ -119,7 +126,13 @@ async function handleRescan() {
         <p v-if="availableIwads.length > 0" class="text-sm text-zinc-400 mt-1">
           {{ availableIwads.map(i => i.toUpperCase()).join(', ') }}
         </p>
-        <p v-else class="text-sm text-red-400 mt-1">None found</p>
+        <template v-else>
+          <p class="text-sm text-red-400 mt-1">No IWADs found</p>
+          <p class="text-xs text-zinc-500 mt-1">
+            Place DOOM2.WAD or DOOM.WAD in {{ shortenPath(settings.libraryPath) }}.
+            Most mods require Doom II. A few need Heretic, Hexen, or Plutonia.
+          </p>
+        </template>
       </div>
 
       <!-- Level Names -->

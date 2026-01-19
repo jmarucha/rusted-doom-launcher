@@ -23,11 +23,12 @@ const currentSession = ref<SessionInfo | null>(null);
 const iwadFilenames = new Map<Iwad, string>(); // e.g., "doom" -> "doom.wad"
 
 export function useGZDoom() {
-  const { getLibraryPath, getGZDoomPath, isGZDoomFound, gzdoomDetectedPath } = useSettings();
+  const { settings } = useSettings();
   const { saveGameplayLog } = useGameplayLog();
 
   async function detectIwads() {
-    const dir = await getLibraryPath();
+    const dir = settings.value.libraryPath;
+    if (!dir) return;
     const entries = await readDir(dir);
     iwadFilenames.clear();
     availableIwads.value = IWADS.filter(iwad => {
@@ -49,7 +50,7 @@ export function useGZDoom() {
     wadSlug?: string,
     skill: SkillLevel = "HMP"
   ) {
-    const dir = await getLibraryPath();
+    const dir = settings.value.libraryPath;
     const filename = iwadFilenames.get(iwad);
     if (!filename) throw new Error(`IWAD ${iwad} not detected`);
     const iwadPath = `${dir}/${filename}`;
@@ -72,9 +73,9 @@ export function useGZDoom() {
       ...(saveDir ? ["-savedir", saveDir] : []),
     ];
 
-    const gzdoomPath = getGZDoomPath();
+    const gzdoomPath = settings.value.gzdoomPath;
     if (!gzdoomPath) {
-      throw new Error("GZDoom not found");
+      throw new Error("GZDoom not configured");
     }
 
     // Track session info for gameplay log
@@ -96,7 +97,7 @@ export function useGZDoom() {
 
   function pollForExit() {
     // Derive process name from path (e.g., /bin/uzdoom -> uzdoom)
-    const enginePath = getGZDoomPath();
+    const enginePath = settings.value.gzdoomPath;
     const processName = enginePath?.split("/").pop() ?? "gzdoom";
 
     const pollInterval = setInterval(async () => {
@@ -134,5 +135,5 @@ export function useGZDoom() {
     }, 2000); // Check every 2 seconds
   }
 
-  return { isRunning, availableIwads, detectIwads, launch, isGZDoomFound, gzdoomDetectedPath };
+  return { isRunning, availableIwads, detectIwads, launch };
 }

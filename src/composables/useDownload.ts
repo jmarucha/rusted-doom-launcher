@@ -47,11 +47,11 @@ async function validateDownload(path: string, filename: string): Promise<void> {
 }
 
 export function useDownload() {
-  const { getLibraryPath } = useSettings();
+  const { settings } = useSettings();
   const { loadLevelNames } = useLevelNames();
 
   async function loadState() {
-    const dir = await getLibraryPath();
+    const dir = settings.value.libraryPath;
     try {
       const content = await readTextFile(`${dir}/launcher-downloads.json`);
       const parsed = LauncherDownloadsSchema.safeParse(JSON.parse(content));
@@ -67,8 +67,7 @@ export function useDownload() {
   }
 
   async function saveState() {
-    const dir = await getLibraryPath();
-    await writeTextFile(`${dir}/launcher-downloads.json`, JSON.stringify(downloads.value, null, 2));
+    await writeTextFile(`${settings.value.libraryPath}/launcher-downloads.json`, JSON.stringify(downloads.value, null, 2));
   }
 
   function isDownloaded(slug: string): boolean {
@@ -84,7 +83,7 @@ export function useDownload() {
   }
 
   async function downloadWad(wad: WadEntry): Promise<string> {
-    const dir = await getLibraryPath();
+    const dir = settings.value.libraryPath;
 
     if (!wad.downloads || wad.downloads.length === 0) {
       throw new Error(`No download URL configured for "${wad.title}"`);
@@ -172,7 +171,7 @@ export function useDownload() {
   async function deleteWad(slug: string) {
     const info = downloads.value.downloads[slug];
     if (!info) return;
-    const dir = await getLibraryPath();
+    const dir = settings.value.libraryPath;
     try {
       await remove(`${dir}/${info.filename}`);
     } catch (e) {
@@ -183,5 +182,5 @@ export function useDownload() {
     await saveState();
   }
 
-  return { loadState, isDownloaded, isDownloading, getDownloadProgress, downloadProgress, downloadWad, downloadWithDeps, deleteWad, getLibraryPath };
+  return { loadState, isDownloaded, isDownloading, getDownloadProgress, downloadProgress, downloadWad, downloadWithDeps, deleteWad };
 }

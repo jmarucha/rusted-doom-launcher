@@ -1,17 +1,35 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, watch, onMounted } from "vue";
 import { open } from "@tauri-apps/plugin-dialog";
+import { invoke } from "@tauri-apps/api/core";
 import { useSettings } from "../composables/useSettings";
 import { useGZDoom } from "../composables/useGZDoom";
 import { useLevelNames } from "../composables/useLevelNames";
 
-const { settings, setGZDoomPath, setLibraryPath } = useSettings();
+const { settings, isFirstRun, setGZDoomPath, setLibraryPath } = useSettings();
 const { availableIwads, detectIwads } = useGZDoom();
 const { rescanAllWads } = useLevelNames();
 
 const errorMsg = ref("");
 const rescanning = ref(false);
 const rescanResult = ref<number | null>(null);
+const engineVersion = ref<string | null>(null);
+
+async function fetchEngineVersion() {
+  if (!settings.value.gzdoomPath) {
+    engineVersion.value = null;
+    return;
+  }
+  try {
+    engineVersion.value = await invoke<string>("get_engine_version", { enginePath: settings.value.gzdoomPath });
+  } catch {
+    engineVersion.value = null;
+  }
+}
+
+// Fetch version when component mounts and when path changes
+onMounted(fetchEngineVersion);
+watch(() => settings.value.gzdoomPath, fetchEngineVersion);
 
 async function browseGZDoom() {
   const selected = await open({
@@ -86,13 +104,14 @@ async function handleRescan() {
         <div class="flex items-center justify-between">
           <div>
             <label class="text-sm font-medium text-zinc-300">Doom Engine</label>
+            <p class="text-sm text-zinc-500 mt-1">{{ shortenPath(settings.gzdoomPath) }}</p>
             <template v-if="settings.gzdoomPath">
-              <p class="text-sm text-green-400 mt-1">Detected {{ getEngineName(settings.gzdoomPath) }}</p>
-              <p class="text-xs text-zinc-500 mt-1">{{ shortenPath(settings.gzdoomPath) }}</p>
+              <p class="text-xs mt-1" :class="isFirstRun ? 'text-green-400' : 'text-zinc-400'">
+                <span v-if="isFirstRun">Detected </span>{{ getEngineName(settings.gzdoomPath) }} <span v-if="engineVersion">{{ engineVersion }}</span>
+              </p>
             </template>
             <template v-else>
-              <p class="text-sm text-red-400 mt-1">No engine found</p>
-              <p class="text-xs text-zinc-500 mt-1">Install <a href="https://zdoom.org/downloads" target="_blank" class="underline hover:text-zinc-300">GZDoom</a> or browse to select it</p>
+              <p class="text-xs text-red-400 mt-1">No GZDoom or UZDoom found. Check if it is installed or browse to select it.</p>
             </template>
           </div>
           <button

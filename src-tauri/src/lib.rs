@@ -26,6 +26,44 @@ impl GZDoomSession {
     }
 }
 
+/// Get the version of GZDoom/UZDoom from the app bundle's Info.plist.
+/// Returns the version string (e.g., "g4.14.2") or an error.
+#[tauri::command]
+async fn get_engine_version(engine_path: String) -> Result<String, String> {
+    // Security: Validate the path looks like a doom engine
+    let path_lower = engine_path.to_lowercase();
+    if !path_lower.contains("gzdoom") && !path_lower.contains("uzdoom") {
+        return Err("Invalid path: must be GZDoom or UZDoom".to_string());
+    }
+
+    // Extract app bundle path from executable path
+    // e.g., /Applications/GZDoom.app/Contents/MacOS/gzdoom -> /Applications/GZDoom.app
+    let path = Path::new(&engine_path);
+    let app_path = path
+        .ancestors()
+        .find(|p| p.extension().map_or(false, |ext| ext == "app"))
+        .ok_or("Could not find .app bundle")?;
+
+    let info_plist = app_path.join("Contents/Info.plist");
+
+    // Use defaults read to get CFBundleShortVersionString
+    let output = Command::new("defaults")
+        .arg("read")
+        .arg(&info_plist)
+        .arg("CFBundleShortVersionString")
+        .output()
+        .map_err(|e| format!("Failed to read Info.plist: {}", e))?;
+
+    if output.status.success() {
+        let version = String::from_utf8_lossy(&output.stdout).trim().to_string();
+        if !version.is_empty() {
+            return Ok(version);
+        }
+    }
+
+    Err("Could not read version from Info.plist".to_string())
+}
+
 /// Check if a process with the given name is running.
 #[tauri::command]
 async fn is_process_running(process_name: String) -> Result<bool, String> {
@@ -156,7 +194,7 @@ async fn get_gzdoom_log() -> Result<Option<Vec<(u64, String)>>, String> {
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
-    let mut builder = tauri::Builder::default()
+    let builder = tauri::Builder::default()
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_shell::init())
         .plugin(tauri_plugin_http::init())
@@ -165,6 +203,7 @@ pub fn run() {
         .invoke_handler(tauri::generate_handler![
             launch_gzdoom,
             get_gzdoom_log,
+            get_engine_version,
             is_process_running,
             extract_wad_level_names,
             extract_and_save_level_names

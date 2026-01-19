@@ -72,7 +72,7 @@ async function browseGZDoom() {
 
 async function browseLibrary() {
   const selected = await open({
-    title: "Select WAD Library Folder",
+    title: "Select Data Folder",
     directory: true,
     multiple: false,
   });
@@ -140,12 +140,13 @@ async function handleRescan() {
         </div>
       </div>
 
-      <!-- Library Path -->
+      <!-- Data Folder -->
       <div class="rounded-lg bg-zinc-800/50 p-4">
         <div class="flex items-center justify-between">
           <div>
-            <label class="text-sm font-medium text-zinc-300">WAD Library</label>
+            <label class="text-sm font-medium text-zinc-300">Data Folder</label>
             <p class="text-sm text-zinc-500 mt-1">{{ shortenPath(settings.libraryPath) }}</p>
+            <p class="text-xs text-zinc-500 mt-1">Place IWADs in this folder. Saves and statistics will also be stored here.</p>
           </div>
           <button
             class="rounded bg-zinc-700 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-zinc-600"

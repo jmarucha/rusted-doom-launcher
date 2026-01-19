@@ -1,14 +1,31 @@
 <script setup lang="ts">
-import { ref, watch, onMounted } from "vue";
+import { ref, watch, onMounted, computed } from "vue";
 import { open } from "@tauri-apps/plugin-dialog";
 import { invoke } from "@tauri-apps/api/core";
+import { Check, X } from "lucide-vue-next";
 import { useSettings } from "../composables/useSettings";
 import { useGZDoom } from "../composables/useGZDoom";
 import { useLevelNames } from "../composables/useLevelNames";
+import { useWads } from "../composables/useWads";
+import type { Iwad } from "../lib/schema";
 
 const { settings, isFirstRun, setGZDoomPath, setLibraryPath } = useSettings();
 const { availableIwads, detectIwads } = useGZDoom();
 const { rescanAllWads } = useLevelNames();
+const { wads } = useWads();
+
+// IWADs required by games in the catalog
+const requiredIwads = computed<Iwad[]>(() => {
+  const iwadSet = new Set<Iwad>();
+  for (const wad of wads.value) {
+    iwadSet.add(wad.iwad);
+  }
+  // Sort by importance: doom2, doom, then others alphabetically
+  const priority: Iwad[] = ["doom2", "doom", "plutonia", "tnt", "heretic", "hexen", "freedoom1", "freedoom2"];
+  return priority.filter(iwad => iwadSet.has(iwad));
+});
+
+const hasAnyIwad = computed(() => requiredIwads.value.some(iwad => availableIwads.value.includes(iwad)));
 
 const errorMsg = ref("");
 const rescanning = ref(false);
@@ -142,16 +159,16 @@ async function handleRescan() {
       <!-- Available IWADs -->
       <div class="rounded-lg bg-zinc-800/50 p-4">
         <label class="text-sm font-medium text-zinc-300">Available IWADs</label>
-        <p v-if="availableIwads.length > 0" class="text-sm text-zinc-400 mt-1">
-          {{ availableIwads.map(i => i.toUpperCase()).join(', ') }}
+        <p class="text-sm text-zinc-400 mt-2 flex flex-wrap gap-x-4 gap-y-1">
+          <span v-for="iwad in requiredIwads" :key="iwad" class="whitespace-nowrap inline-flex items-center gap-1">
+            <Check v-if="availableIwads.includes(iwad)" class="w-4 h-4 text-green-400" />
+            <X v-else class="w-4 h-4 text-red-400" />
+            {{ iwad }}.wad
+          </span>
         </p>
-        <template v-else>
-          <p class="text-sm text-red-400 mt-1">No IWADs found</p>
-          <p class="text-xs text-zinc-500 mt-1">
-            Place DOOM2.WAD or DOOM.WAD in {{ shortenPath(settings.libraryPath) }}.
-            Most mods require Doom II. A few need Heretic, Hexen, or Plutonia.
-          </p>
-        </template>
+        <p v-if="!hasAnyIwad" class="text-xs text-red-400 mt-2">
+          No IWADs found. Place WAD files in {{ shortenPath(settings.libraryPath) }}.
+        </p>
       </div>
 
       <!-- Level Names -->

@@ -14,6 +14,10 @@ Tauri 2 + Vue 3 + TypeScript app for launching Doom source ports (UZDoom/GZDoom)
 - Always show actual error messages, never generic "Failed" fallbacks
 - Use `console.error()` AND display to user
 
+### File Safety
+- **NEVER use `rm -rf`** - always use `mv` to move files to a backup location instead of deleting
+- When testing or debugging, preserve original data by moving, not deleting
+
 ### Debugging Tauri
 - Run with `RUST_BACKTRACE=1 pnpm tauri dev`
 - WebView DevTools: Cmd+Option+I

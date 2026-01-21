@@ -187,7 +187,6 @@ async function extractFromGOG(
   const extractResult = await Command.create(innoextractCmd, [
     ...includeArgs,
     "--output-dir", iwadsDir,
-    "--flatten",
     installerPath
   ]).execute();
 

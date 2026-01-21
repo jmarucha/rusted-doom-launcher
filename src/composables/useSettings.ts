@@ -178,17 +178,17 @@ export function useSettings() {
       }
     }
 
-    // 4. Save to new location
-    if (needsSave) {
-      // Ensure new config directory exists
+    // 4. Save to new location (always save on first run to ensure settings persist)
+    if (needsSave || !settingsExist) {
       try {
         if (!(await exists(newConfigDir))) {
           await mkdir(newConfigDir, { recursive: true });
         }
+        await saveSettings();
+        console.log("[initSettings] Saved settings to", newPath);
       } catch (e) {
-        console.error("Failed to create config directory:", e);
+        console.error("[initSettings] Failed to save settings:", e);
       }
-      await saveSettings();
     }
 
     // 5. Migrate IWADs to iwads/ subfolder

@@ -48,6 +48,11 @@ export function useSaves() {
       return saveInfoCache.value.get(slug)!;
     }
 
+    // Skip if settings not initialized yet (prevents permission errors on startup)
+    if (!settings.value.libraryPath) {
+      return null;
+    }
+
     try {
       const saveDir = getSaveDir(slug);
 

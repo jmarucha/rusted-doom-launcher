@@ -28,13 +28,17 @@ export function useGZDoom() {
 
   async function detectIwads() {
     const dir = settings.value.libraryPath;
-    if (!dir) return;
+    if (!dir) {
+      console.warn("[detectIwads] No libraryPath set, skipping");
+      return;
+    }
     const iwadsDir = `${dir}/iwads`;
     let entries: Awaited<ReturnType<typeof readDir>> = [];
     try {
       entries = await readDir(iwadsDir);
-    } catch {
-      // iwads/ folder doesn't exist yet
+      console.log("[detectIwads] Read", entries.length, "entries from", iwadsDir);
+    } catch (e) {
+      console.warn("[detectIwads] Failed to read:", iwadsDir, e);
     }
     iwadFilenames.clear();
     availableIwads.value = IWADS.filter(iwad => {
@@ -47,6 +51,7 @@ export function useGZDoom() {
       }
       return false;
     });
+    console.log("[detectIwads] Available IWADs:", availableIwads.value);
   }
 
   async function launch(

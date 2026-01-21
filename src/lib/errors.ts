@@ -1,33 +1,34 @@
 /**
- * Error checking utilities for handling expected vs unexpected errors.
- *
- * Use these to only catch specific expected errors (like file-not-found)
- * instead of silently swallowing all errors with empty catch blocks.
+ * Error utilities for Tauri apps.
+ * Tauri often throws strings instead of Error objects, so we handle both.
  */
 
 /**
- * Check if error is "file/directory not found" (expected when file doesn't exist yet)
+ * Extract message from any thrown value (Error, string, or object).
  */
-export function isNotFoundError(e: unknown): boolean {
-  if (e instanceof Error) {
-    const msg = e.message.toLowerCase();
-    return (
-      msg.includes("no such file") ||
-      msg.includes("enoent") ||
-      msg.includes("not found") ||
-      msg.includes("does not exist")
-    );
-  }
-  return false;
+export function getErrorMessage(e: unknown): string {
+  if (e instanceof Error) return e.message;
+  if (typeof e === "string") return e;
+  return JSON.stringify(e);
 }
 
 /**
- * Check if error is "already exists" (expected when creating dir that exists)
+ * Check if error is "file/directory not found" (expected on first run).
+ */
+export function isNotFoundError(e: unknown): boolean {
+  const msg = getErrorMessage(e).toLowerCase();
+  return (
+    msg.includes("no such file") ||
+    msg.includes("enoent") ||
+    msg.includes("not found") ||
+    msg.includes("does not exist")
+  );
+}
+
+/**
+ * Check if error is "already exists" (expected when creating existing dir).
  */
 export function isExistsError(e: unknown): boolean {
-  if (e instanceof Error) {
-    const msg = e.message.toLowerCase();
-    return msg.includes("eexist") || msg.includes("already exists");
-  }
-  return false;
+  const msg = getErrorMessage(e).toLowerCase();
+  return msg.includes("eexist") || msg.includes("already exists");
 }

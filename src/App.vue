@@ -14,6 +14,7 @@ import { useSettings } from "./composables/useSettings";
 import { useSaves } from "./composables/useSaves";
 import { useStats } from "./composables/useStats";
 import type { WadEntry } from "./lib/schema";
+import { getErrorMessage } from "./lib/errors";
 
 declare const window: Window & typeof globalThis & { __TAURI_INTERNALS__?: unknown };
 
@@ -22,7 +23,7 @@ type View = "main" | "explore" | "runs" | "logs" | "settings" | "about";
 const { wads, loading, error } = useWads();
 const { detectIwads, availableIwads, launch, isRunning } = useGZDoom();
 const { loadState: loadDownloadState, isDownloaded, isDownloading, downloadProgress, downloadWithDeps, deleteWad } = useDownload();
-const { settings, isFirstRun, initSettings } = useSettings();
+const { settings, isFirstRun, migratedIwads, initSettings } = useSettings();
 const { loadAllSaveInfo, getCachedSaveInfo, refreshSaveInfo } = useSaves();
 const { captureStats } = useStats();
 
@@ -42,21 +43,36 @@ onMounted(async () => {
     await initSettings();
     await loadDownloadState();
     await detectIwads();
+
+    // If IWADs were migrated but not detected, retry after short delay
+    if (migratedIwads.value.length > 0 && availableIwads.value.length === 0) {
+      console.log("[App] IWADs migrated but not detected, retrying...");
+      await new Promise(r => setTimeout(r, 100));
+      await detectIwads();
+    }
+
+    // Load save info now that settings are initialized
+    // (the watch fires before initSettings completes, so we retry here)
+    if (wads.value.length > 0) {
+      await loadAllSaveInfo(wads.value.map(w => w.slug));
+    }
+
     // On first run, open Settings so user can verify configuration
     if (isFirstRun.value) {
       activeView.value = "settings";
     }
   } catch (e) {
-    errorMsg.value = e instanceof Error ? e.message : "Startup failed";
+    console.error("[App] Startup error:", e);
+    errorMsg.value = getErrorMessage(e);
   }
 });
 
-// Load save info once WADs are available
+// Load save info when WADs change (initial load handled in onMounted after initSettings)
 watch(wads, async (newWads) => {
-  if (newWads.length > 0) {
+  if (newWads.length > 0 && settings.value.libraryPath) {
     await loadAllSaveInfo(newWads.map(w => w.slug));
   }
-}, { immediate: true });
+});
 
 // Refresh save info and capture stats when game closes
 watch(isRunning, async (running, wasRunning) => {
@@ -84,13 +100,7 @@ async function handlePlay(wad: WadEntry) {
     await launch(wadPath, wad.iwad, depPaths, wad.slug);
   } catch (e) {
     console.error(`[Play] Error launching ${wad.slug}:`, e);
-    if (e instanceof Error) {
-      errorMsg.value = e.message;
-    } else if (typeof e === "string") {
-      errorMsg.value = e;
-    } else {
-      errorMsg.value = `Failed to launch: ${JSON.stringify(e)}`;
-    }
+    errorMsg.value = getErrorMessage(e);
   }
 }
 
@@ -98,7 +108,7 @@ async function handleDelete(wad: WadEntry) {
   try {
     await deleteWad(wad.slug);
   } catch (e) {
-    errorMsg.value = e instanceof Error ? e.message : "Delete failed";
+    errorMsg.value = getErrorMessage(e);
   }
 }
 </script>

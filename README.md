@@ -74,6 +74,17 @@ Build for production:
 pnpm tauri build
 ```
 
+### AI-Assisted Debugging (MCP)
+
+The app includes [tauri-plugin-mcp-bridge](https://github.com/hypothesi/mcp-server-tauri) for AI debugging via Claude Code.
+
+```bash
+# Install MCP server for Claude Code
+npx -y install-mcp @hypothesi/tauri-mcp-server --client claude-code
+```
+
+With the app running (`pnpm tauri dev`), Claude Code can take screenshots, click elements, execute JS, and inspect the DOM.
+
 ## Tech
 
 - [Tauri 2](https://v2.tauri.app/) (it's in Rust, hence the project name)

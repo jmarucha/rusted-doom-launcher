@@ -1,11 +1,13 @@
 {
   "mcpServers": {
     "tauri-mcp": {
-      "command": "node",
-      "args": ["/Users/pmigdal/my_repos/vibe_coding/tauri-plugin-mcp/mcp-server-ts/build/index.js"],
-      "env": {
-        "TAURI_MCP_IPC_PATH": "/var/folders/tt/y3fxb5jj0pb94lc4fq3kg3xr0000gn/T/tauri-mcp.sock"
-      }
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@hypothesi/tauri-mcp-server"
+      ],
+      "env": {}
     }
   }
 }

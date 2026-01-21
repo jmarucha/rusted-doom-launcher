@@ -209,7 +209,9 @@ pub fn run() {
             extract_and_save_level_names
         ]);
 
-    // MCP plugin disabled for CI builds - see .cargo/config.toml for local dev setup
+    // MCP bridge for Claude Code debugging (dev mode only)
+    #[cfg(debug_assertions)]
+    let builder = builder.plugin(tauri_plugin_mcp_bridge::init());
 
     builder
         .run(tauri::generate_context!())

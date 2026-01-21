@@ -19,7 +19,8 @@ tauri-plugin-shell = "2"
 tauri-plugin-http = "2"
 tauri-plugin-dialog = "2"
 tauri-plugin-upload = "2"
-# Note: tauri-plugin-mcp removed for CI compatibility (local dev only via path override)
+# MCP bridge for Claude Code debugging (hypothesi/tauri-mcp-server)
+tauri-plugin-mcp-bridge = "0.8"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 log = "0.4"

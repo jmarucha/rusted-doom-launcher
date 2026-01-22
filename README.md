@@ -3,7 +3,8 @@
 A modern open-source launcher for classic Doom WADs and mods.
 Browse community-made maps and episodes, then install and launch them with a single click—essentially bringing the Steam experience to Doom.
 
-I got inspired by [Doom & Retro FPS Mods](https://www.facebook.com/groups/495775970100553/) FaceBook group and gameplays of modern maps - the scence is alive and well! For now, the library consists of the top maps from [Cacowards](https://www.doomworld.com/cacowards/). I am open to expand it.
+The scene is alive and well - see [newest releases at Doomworld](https://www.doomworld.com/forum/4-map-releases-development/).
+I got inspired by gameplaces shared at [Doom & Retro FPS Mods](https://www.facebook.com/groups/495775970100553/) Facebook group. For now, the library consists of the top maps from [Cacowards](https://www.doomworld.com/cacowards/) - yearly awards for the best Doom maps, megawads and mod releases. I am open to expanding it.
 
 It is currently in alpha. I build it for myself, but sharing it so others may enjoys as well.
 There are similar apps, notably [Doom Launcher](https://github.com/nstlaurent/DoomLauncher), but they are either Windows-only or lack features I wanted.

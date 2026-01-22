@@ -19,9 +19,6 @@
     "vue": "^3.5.13",
     "zod": "^3.23.8"
   },
-  "optionalDependencies": {
-    "tauri-plugin-mcp": "file:../tauri-plugin-mcp"
-  },
   "devDependencies": {
     "@tauri-apps/api": "^2.1.1",
     "@tauri-apps/cli": "^2.1.0",

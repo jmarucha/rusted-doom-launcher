@@ -72,10 +72,6 @@ importers:
       vue-tsc:
         specifier: ^2.1.10
         version: 2.2.12(typescript@5.6.3)
-    optionalDependencies:
-      tauri-plugin-mcp:
-        specifier: file:../tauri-plugin-mcp
-        version: file:../tauri-plugin-mcp
 
 packages:
 
@@ -966,9 +962,6 @@ packages:
     resolution: {integrity: sha512-6A2rnmW5xZMdw11LYjhcI5846rt9pbLSabY5XPxo+XWdxwZaFEn47Go4NzFiHu9sNNmr/kXivP1vStfvMaK1GQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
-
-  tauri-plugin-mcp@file:../tauri-plugin-mcp:
-    resolution: {directory: ../tauri-plugin-mcp, type: directory}
 
   thenify-all@1.6.0:
     resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
@@ -1898,11 +1891,6 @@ snapshots:
     transitivePeerDependencies:
       - tsx
       - yaml
-
-  tauri-plugin-mcp@file:../tauri-plugin-mcp:
-    dependencies:
-      '@tauri-apps/api': 2.9.0
-    optional: true
 
   thenify-all@1.6.0:
     dependencies:
